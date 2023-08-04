@@ -3,8 +3,8 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../../styles/utils.module.css";
 import Link from "next/link";
-import Navbar from "../navbar/navbar";
 import Script from "next/script";
+import NavBar from "../navbar/navbar";
 
 const name = "Andrew";
 export const siteTitle = "McMillan Farms";
@@ -43,7 +43,7 @@ const Layout = ({ children, home }) => {
         </Script>
       </div>
 
-      <Navbar />
+      <NavBar />
       <main className={styles.main}>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

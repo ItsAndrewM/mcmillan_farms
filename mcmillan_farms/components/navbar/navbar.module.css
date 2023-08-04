@@ -1,3 +1,22 @@
 .pageHeader {
-  min-height: 100px;
+  min-height: 60px;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.navigation {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  height: 100%;
 }

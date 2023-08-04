@@ -1,16 +1,18 @@
-import { menuItems } from "@/data/menuItems";
+import { menuItems } from "../../data/menuItems";
 import navbarStyles from "./navbar.module.css";
 import Link from "next/link";
 
 const NavBar = () => {
   return (
     <header className={navbarStyles.pageHeader}>
-      <nav>
-        <ul>
+      <nav className={navbarStyles.navigation}>
+        <ul className={navbarStyles.menuItem}>
           {menuItems.map((menuItem, index) => {
-            <li key={index}>
-              <Link href={menuItem.link}>{menuItem.name}</Link>
-            </li>;
+            return (
+              <li key={index}>
+                <Link href={menuItem.link}>{menuItem.name}</Link>
+              </li>
+            );
           })}
         </ul>
       </nav>
