@@ -26,21 +26,6 @@ const Layout = ({ children, home }) => {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
-        <div className="google-analytics-container">
-          {/* <!-- Google tag (gtag.js) --> */}
-          <Script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-C4HJJ32CM8"
-          ></Script>
-          <Script id="google-analytics">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'G-C4HJJ32CM8');`}
-          </Script>
-        </div>
       </Head>
 
       <Navbar />
