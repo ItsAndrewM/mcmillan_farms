@@ -1,0 +1,13 @@
+.heroWrapper {
+  width: 100%;
+  max-width: 100vw;
+  height: 750px;
+  min-height: 750px;
+  padding: 0 1em;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

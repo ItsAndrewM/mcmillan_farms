@@ -14,10 +14,7 @@ const Layout = ({ children, home }) => {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
+        <meta name="description" content="McMillan Farms" />
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(

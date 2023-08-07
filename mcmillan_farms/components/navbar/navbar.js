@@ -14,7 +14,12 @@ const NavBar = () => {
           {menuItems.map((menuItem, index) => {
             return (
               <li key={index}>
-                <Link href={menuItem.link}>{menuItem.name}</Link>
+                <Link
+                  href={menuItem.link}
+                  className={`${utilStyles.capitalize}`}
+                >
+                  {menuItem.name}
+                </Link>
               </li>
             );
           })}
@@ -31,7 +36,12 @@ const NavBar = () => {
           {menuItemsRight.map((menuItem, index) => {
             return (
               <li key={index}>
-                <Link href={menuItem.link}>{menuItem.name}</Link>
+                <Link
+                  href={menuItem.link}
+                  className={`${utilStyles.capitalize}`}
+                >
+                  {menuItem.name}
+                </Link>
               </li>
             );
           })}
