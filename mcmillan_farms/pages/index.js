@@ -5,6 +5,8 @@ import Layout from "@/components/layout/layout";
 import layoutStyles from "@/components/layout/layout.module.css";
 import Hero from "@/components/hero/hero";
 import backgroundImage from "../public/images/farm3.jpg";
+import Banner from "@/components/banner/banner";
+import Comparison from "@/components/comparison/comparison";
 
 // https://oishii.com/
 
@@ -27,6 +29,12 @@ export default function Home() {
           link={"/"}
           linkText={"BOOK YOUR TICKETS ONLINE"}
         />
+      </section>
+      <section className={layoutStyles.section}>
+        <Banner />
+      </section>
+      <section className={layoutStyles.section}>
+        <Comparison />
       </section>
     </Layout>
   );
