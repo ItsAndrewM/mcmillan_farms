@@ -4,7 +4,7 @@ export const menuItems = [
     link: "/activities",
   },
   {
-    name: "faq",
-    link: "/faq",
+    name: "about",
+    link: "/about",
   },
 ];

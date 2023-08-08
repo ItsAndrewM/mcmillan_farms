@@ -1,10 +1,16 @@
 import Image from "next/image";
 import styles from "./hero.module.css";
-const Hero = ({ imageSrc }) => {
+import Link from "next/link";
+const Hero = ({ imageSrc, header, description, link, linkText }) => {
   console.log(imageSrc);
   return (
     <div className={`${styles.heroWrapper}`}>
       <Image src={imageSrc} className={styles.image} />
+      <div className={styles.container}>
+        <h1>{header}</h1>
+        <p>{description}</p>
+        <Link href={link}>{linkText}</Link>
+      </div>
     </div>
   );
 };

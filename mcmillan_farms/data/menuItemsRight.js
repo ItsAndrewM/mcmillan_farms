@@ -1,7 +1,7 @@
 export const menuItemsRight = [
   {
-    name: "about",
-    link: "/about",
+    name: "faq",
+    link: "/faq",
   },
   {
     name: "contact us",
