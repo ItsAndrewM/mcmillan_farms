@@ -7,6 +7,7 @@ import Hero from "@/components/hero/hero";
 import backgroundImage from "../public/images/farm3.jpg";
 import Banner from "@/components/banner/banner";
 import Comparison from "@/components/comparison/comparison";
+import Cta from "@/components/cta/cta";
 
 // https://oishii.com/
 
@@ -35,6 +36,9 @@ export default function Home() {
       </section>
       <section className={layoutStyles.section}>
         <Comparison />
+      </section>
+      <section className={layoutStyles.section}>
+        <Cta />
       </section>
     </Layout>
   );
