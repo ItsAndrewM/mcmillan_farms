@@ -25,7 +25,7 @@ export default function Home() {
           imageSrc={backgroundImage}
           header={"Fall Fun at McMillan Farms"}
           description={
-            "Celebrate fall at our farm with amazing attractions and pick-your-own produce. Experience nature’s beauty and bounty at McMillan Farms!"
+            "Celebrate fall at our farm with amazing attractions and pick-your-own produce. Experience nature&apos;s beauty and bounty at McMillan Farms!"
           }
           link={"/"}
           linkText={"BOOK YOUR TICKETS ONLINE"}

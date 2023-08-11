@@ -51,7 +51,7 @@ const Cta = () => {
             <h1>Walk Among the Sunflowers</h1>
             <p>
               Grab your sunglasses and come on out to see all 5 acres of our
-              sunflowers! You won&apos;t find a more beautiful spot in all of
+              sunflowers! You wont find a more beautiful spot in all of
               Kelowna.
             </p>
           </div>
