@@ -14,7 +14,7 @@ const Page = () => {
               <li key={index} className={`${style.listItem}`}>
                 <Link href={item.link}>
                   <div className={`${style.imageWrapper}`}>
-                    <Image src={item.image} />
+                    <Image src={item.image} alt={""} />
                   </div>
                   <div>
                     <small>{item.name}</small>

@@ -10,20 +10,20 @@ const Banner = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.imageWrapper}>
-        <Image src={castanet} width={150} />
+        <Image src={castanet} width={150} alt={"castanet logo"} />
       </div>
       <div className={style.imageWrapper}>
-        <Image src={cbc} width={150} />
+        <Image src={cbc} width={150} alt={"cbc news logo"} />
       </div>
       <div className={style.imageWrapper}>
-        <Image src={global} width={150} />
+        <Image src={global} width={150} alt={"global news logo"} />
       </div>
       <div className={style.imageWrapper}>
-        <Image src={kcn} width={150} />
+        <Image src={kcn} width={150} alt={"kelowna capital news logo"} />
       </div>
 
       <div className={style.imageWrapper}>
-        <Image src={kelownaNow} width={150} />
+        <Image src={kelownaNow} width={150} alt={"kelowna now logo"} />
       </div>
     </div>
   );

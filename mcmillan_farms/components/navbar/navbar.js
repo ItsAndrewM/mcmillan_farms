@@ -29,7 +29,7 @@ const NavBar = () => {
             src={logo}
             height={250}
             className={utilStyles.borderCircle}
-            alt="McMillan Farms logo"
+            alt={"McMillan Farms logo"}
           />
         </Link>
         <ul className={navbarStyles.menuItem}>
