@@ -1,0 +1,15 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.skinnyContainer {}
+
+.container {
+    width: 470px;
+    max-width: 470px;
+    height: 670px;
+    max-height: 670px;
+}

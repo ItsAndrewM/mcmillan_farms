@@ -1,6 +1,29 @@
 .wrapper {
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 2em;
+}
+
+.container {
+  width: 800px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.textContainer p,
+.textContainer h1,
+.textContainer a {
+  text-align: left;
 }

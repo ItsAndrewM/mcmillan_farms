@@ -8,6 +8,9 @@ import backgroundImage from "../public/images/farm3.jpg";
 import Banner from "@/components/banner/banner";
 import Comparison from "@/components/comparison/comparison";
 import Cta from "@/components/cta/cta";
+import CtaLeft from "@/components/ctaLeft/ctaLeft";
+import CtaRight from "@/components/ctaRight/ctaRight";
+import HeroBanner from "@/components/heroBanner/heroBanner";
 
 // https://oishii.com/
 
@@ -25,7 +28,7 @@ export default function Home() {
           imageSrc={backgroundImage}
           header={"Fall Fun at McMillan Farms"}
           description={
-            "Celebrate fall at our farm with amazing attractions and pick-your-own produce. Experience nature&apos;s beauty and bounty at McMillan Farms!"
+            "Celebrate fall at our farm with amazing attractions and pick-your-own produce. Experience nature's beauty and bounty at McMillan Farms!"
           }
           link={"/"}
           linkText={"BOOK YOUR TICKETS ONLINE"}
@@ -37,7 +40,9 @@ export default function Home() {
       <section className={layoutStyles.section}>
         <Cta />
       </section>
-      <section className={layoutStyles.section}></section>
+      <section className={layoutStyles.section}><CtaLeft /></section>
+      <section className={layoutStyles.section}><CtaRight /></section>
+      <section className={layoutStyles.section}><HeroBanner /></section>
     </Layout>
   );
 }
