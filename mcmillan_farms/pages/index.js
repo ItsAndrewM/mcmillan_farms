@@ -35,11 +35,9 @@ export default function Home() {
         <Banner />
       </section>
       <section className={layoutStyles.section}>
-        <Comparison />
-      </section>
-      <section className={layoutStyles.section}>
         <Cta />
       </section>
+      <section className={layoutStyles.section}></section>
     </Layout>
   );
 }
