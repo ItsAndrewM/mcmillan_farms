@@ -16,6 +16,7 @@ const Cta = () => {
             height={800}
             quality={100}
             className={style.image}
+            alt={"pumpkins in a pile"}
           />
         </div>
         <div className={style.contentWrapper}>
@@ -42,6 +43,7 @@ const Cta = () => {
             height={800}
             quality={100}
             className={style.image}
+            alt={"One sunflower in a field"}
           />
         </div>
         <div className={style.contentWrapper}>
