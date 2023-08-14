@@ -12,7 +12,7 @@ const HeroBanner = () => {
                 <Image src={collab} width={470} alt={"lentelus collab with McMillan Farms"} />
             </div>
             <div className={style.skinnyContainer}>
-                <Image src={sunflower} alt={"picture of sunflowers"} className={`${utilStyles./>
+                <Image src={sunflower} alt={"picture of sunflowers"} height={700} width={690} className={`${utilStyles.imageCover}`} />
             </div>
             <div className={style.container}>
                 <div>

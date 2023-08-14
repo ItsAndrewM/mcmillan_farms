@@ -5,7 +5,12 @@
     padding: 2em;
 }
 
-.skinnyContainer {}
+.skinnyContainer {
+    width: 520px;
+    max-width: 520px;
+    height: 690px;
+    max-height: 690px;
+}
 
 .container {
     width: 470px;

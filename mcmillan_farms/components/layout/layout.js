@@ -10,7 +10,6 @@ const name = "Andrew";
 export const siteTitle = "McMillan Farms";
 
 const Layout = ({ children, home }) => {
-  console.log(home)
   return (
     <div className={styles.container}>
       <Head>
