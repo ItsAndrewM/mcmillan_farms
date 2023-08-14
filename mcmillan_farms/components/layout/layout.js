@@ -10,6 +10,7 @@ const name = "Andrew";
 export const siteTitle = "McMillan Farms";
 
 const Layout = ({ children, home }) => {
+  console.log(home)
   return (
     <div className={styles.container}>
       <Head>
@@ -42,13 +43,13 @@ const Layout = ({ children, home }) => {
 
       <NavBar />
       <main className={styles.main}>{children}</main>
-      {/* {!home && (
+      {!home && (
         <div className={styles.backToHome}>
           <Link href="/" className={styles.smallLink}>
             ← Back to home
           </Link>
         </div>
-      )} */}
+      )}
     </div>
   );
 };

@@ -16,7 +16,7 @@ import HeroBanner from "@/components/heroBanner/heroBanner";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout home>
       <Head>
         <title>McMillan Farms</title>
         <meta name="description" content="McMillan Farms" />

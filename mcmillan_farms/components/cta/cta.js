@@ -1,7 +1,7 @@
 import Image from "next/image";
 import style from "./cta.module.css";
 import pumpkin from "../../public/images/pumpkins2.jpg";
-import sunflower from "../../public/images/sunflower.jpg";
+import cornmaze from "../../public/images/cornmaze.jpg";
 import Link from "next/link";
 import heroStyles from "../hero/hero.module.css";
 import utilStyles from "../../styles/utils.module.css";
@@ -39,7 +39,7 @@ const Cta = () => {
       <div className={style.container}>
         <div className={style.imageWrapper}>
           <Image
-            src={sunflower}
+            src={cornmaze}
             height={800}
             quality={100}
             className={style.image}
