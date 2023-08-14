@@ -3,7 +3,7 @@ import style from "./heroBanner.module.css"
 import utilStyles from "../../styles/utils.module.css"
 import Image from "next/image";
 import collab from "../../public/images/lentelusXmf.png"
-import collab2 from "../../public/images/lentelusXmf2.jpg"
+import sunflower from "../../public/images/sunflower.jpg"
 
 const HeroBanner = () => {
     return (
@@ -12,7 +12,7 @@ const HeroBanner = () => {
                 <Image src={collab} width={470} alt={"lentelus collab with McMillan Farms"} />
             </div>
             <div className={style.skinnyContainer}>
-                <Image src={collab2} alt={"lentelus collab with McMillan Farms - pic of owners"} />
+                <Image src={sunflower} alt={"picture of sunflowers"} className={`${utilStyles./>
             </div>
             <div className={style.container}>
                 <div>
