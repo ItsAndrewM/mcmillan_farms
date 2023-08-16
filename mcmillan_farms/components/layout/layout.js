@@ -5,6 +5,7 @@ import utilStyles from "../../styles/utils.module.css";
 import Link from "next/link";
 import Script from "next/script";
 import NavBar from "../navbar/navbar";
+import Footer from "../footer/footer";
 
 const name = "Andrew";
 export const siteTitle = "McMillan Farms";
@@ -49,6 +50,7 @@ const Layout = ({ children, home }) => {
           </Link>
         </div>
       )}
+      <Footer />
     </div>
   );
 };
