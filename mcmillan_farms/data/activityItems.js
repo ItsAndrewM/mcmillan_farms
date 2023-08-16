@@ -7,21 +7,25 @@ export const activityItems = [
   {
     name: "attractions",
     link: "/activities/attractions",
+    slug: "attractions",
     image: cornMaze,
   },
   {
     name: "products",
     link: "/activities/products",
+    slug: "products",
     image: pumpkins,
   },
   {
     name: "weddings",
     link: "/activities/weddings",
+    slug: "weddings",
     image: wedding,
   },
   {
     name: "school bookings",
     link: "/activities/school-bookings",
+    slug: "school-bookings",
     image: fieldTrip,
   },
 ];

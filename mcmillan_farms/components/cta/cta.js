@@ -5,6 +5,7 @@ import cornmaze from "../../public/images/cornmaze.jpg";
 import Link from "next/link";
 import heroStyles from "../hero/hero.module.css";
 import utilStyles from "../../styles/utils.module.css";
+import layoutStyles from "../layout/layout.module.css";
 
 const Cta = () => {
   return (
@@ -28,12 +29,14 @@ const Cta = () => {
               pie? Look no further with our vast and varied selection.
             </p>
           </div>
-          <Link
-            href={"/"}
-            className={`${utilStyles.alignCenter} ${utilStyles.capitalize} ${utilStyles.white}`}
-          >
-            Directions to your dream pumpkin
-          </Link>
+          <span>
+            <Link
+              href={"/"}
+              className={`${utilStyles.alignCenter} ${utilStyles.capitalize} ${utilStyles.white} ${layoutStyles.link}`}
+            >
+              Directions to your dream pumpkin
+            </Link>
+          </span>
         </div>
       </div>
       <div className={style.container}>
@@ -51,16 +54,17 @@ const Cta = () => {
             <h1>Walk Among the Sunflowers</h1>
             <p>
               Grab your sunglasses and come on out to see all 5 acres of our
-              sunflowers! You wont find a more beautiful spot in all of
-              Kelowna.
+              sunflowers! You wont find a more beautiful spot in all of Kelowna.
             </p>
           </div>
-          <Link
-            href={"/"}
-            className={`${utilStyles.alignCenter} ${utilStyles.capitalize} ${utilStyles.white}`}
-          >
-            Book Your Sunflower Adventure
-          </Link>
+          <span>
+            <Link
+              href={"/"}
+              className={`${utilStyles.alignCenter} ${utilStyles.capitalize} ${utilStyles.white} ${layoutStyles.link}`}
+            >
+              Book Your Sunflower Adventure
+            </Link>
+          </span>
         </div>
       </div>
     </div>

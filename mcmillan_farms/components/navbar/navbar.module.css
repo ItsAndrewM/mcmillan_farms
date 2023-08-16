@@ -25,3 +25,19 @@
   height: 100%;
   padding-bottom: 1em;
 }
+
+.subMenuItemHide {
+  display: none;
+}
+
+.subMenuItemShow {
+  position: absolute;
+  top: 2.7em;
+  left: 22em;
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  padding: 0 1em 1em 1em;
+}

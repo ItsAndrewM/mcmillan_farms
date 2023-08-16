@@ -1,7 +1,15 @@
+import Layout from "@/components/layout/layout";
+import layoutStyles from "@/components/layout/layout.module.css";
 import { activityItems } from "@/data/activityItems";
 
 const Page = ({ found }) => {
-  return <div>this is a page for {found.name}</div>;
+  return (
+    <Layout>
+      <section className={layoutStyles.section}>
+        <div>this is a page for {found.name}</div>
+      </section>
+    </Layout>
+  );
 };
 
 export default Page;
@@ -9,7 +17,7 @@ export default Page;
 export const getStaticPaths = async () => {
   // Return a list of possible value for id
   const paths = activityItems.map((vals) => {
-    return { params: { id: vals.name } };
+    return { params: { id: vals.slug } };
   });
   return {
     paths,

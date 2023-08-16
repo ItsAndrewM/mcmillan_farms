@@ -1,5 +1,14 @@
+import Layout from "@/components/layout/layout";
+import layoutStyles from "@/components/layout/layout.module.css";
+
 const Page = () => {
-  return <div>This is a page for faq</div>;
+  return (
+    <Layout>
+      <section className={layoutStyles.section}>
+        <div>This is a page for FAQ</div>
+      </section>
+    </Layout>
+  );
 };
 
 export default Page;

@@ -1,6 +1,6 @@
 export const menuItemsRight = [
   {
-    name: "faq",
+    name: "FAQ",
     link: "/faq",
   },
   {

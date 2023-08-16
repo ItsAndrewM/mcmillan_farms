@@ -2,24 +2,70 @@ import Image from "next/image";
 import { menuItems } from "../../data/menuItems";
 import navbarStyles from "./navbar.module.css";
 import utilStyles from "../../styles/utils.module.css";
+import layoutStyles from "../layout/layout.module.css";
 import Link from "next/link";
 import logo from "../../public/images/logo_large.png";
 import { menuItemsRight } from "@/data/menuItemsRight";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const NavBar = () => {
+  const [show, setShow] = useState(false);
+  const pathname = usePathname();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    setShow(true);
+  };
+
+  const handleLeave = (e) => {
+    e.preventDefault();
+    setShow(false);
+  };
   return (
     <header className={navbarStyles.pageHeader}>
       <nav className={navbarStyles.navigation}>
         <ul className={navbarStyles.menuItem}>
           {menuItems.map((menuItem, index) => {
             return (
-              <li key={index}>
+              <li key={index} onMouseEnter={menuItem.subMenu && handleClick}>
                 <Link
                   href={menuItem.link}
-                  className={`${utilStyles.capitalize}`}
+                  className={`${utilStyles.capitalize} ${
+                    pathname == menuItem.link
+                      ? layoutStyles.active
+                      : layoutStyles.link
+                  }`}
                 >
                   {menuItem.name}
                 </Link>
+                {menuItem.subMenu && (
+                  <ul
+                    className={
+                      show == false
+                        ? navbarStyles.subMenuItemHide
+                        : navbarStyles.subMenuItemShow
+                    }
+                    onMouseLeave={handleLeave}
+                  >
+                    {menuItem.subMenu.map((subMenuItem, index) => {
+                      return (
+                        <li key={index}>
+                          <Link
+                            href={subMenuItem.link}
+                            className={`${utilStyles.capitalize} ${
+                              pathname == subMenuItem.link
+                                ? layoutStyles.active
+                                : layoutStyles.link
+                            }`}
+                          >
+                            {subMenuItem.name}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
               </li>
             );
           })}
@@ -38,7 +84,11 @@ const NavBar = () => {
               <li key={index}>
                 <Link
                   href={menuItem.link}
-                  className={`${utilStyles.capitalize}`}
+                  className={`${utilStyles.capitalize} ${
+                    pathname == menuItem.link
+                      ? layoutStyles.active
+                      : layoutStyles.link
+                  }`}
                 >
                   {menuItem.name}
                 </Link>

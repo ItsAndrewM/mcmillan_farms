@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./hero.module.css";
 import Link from "next/link";
+import layoutStyles from "../layout/layout.module.css";
 const Hero = ({ imageSrc, header, description, link, linkText }) => {
   return (
     <div className={`${styles.heroWrapper}`}>
@@ -8,7 +9,11 @@ const Hero = ({ imageSrc, header, description, link, linkText }) => {
       <div className={styles.container}>
         <h1>{header}</h1>
         <p>{description}</p>
-        <Link href={link}>{linkText}</Link>
+        <span>
+          <Link href={link} className={`${layoutStyles.link}`}>
+            {linkText}
+          </Link>
+        </span>
       </div>
     </div>
   );
