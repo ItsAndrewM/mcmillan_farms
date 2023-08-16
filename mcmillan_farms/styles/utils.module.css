@@ -93,6 +93,10 @@
   gap: 1em;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .alignCenter {
   text-align: center;
 }
