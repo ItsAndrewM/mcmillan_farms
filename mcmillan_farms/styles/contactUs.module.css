@@ -44,7 +44,6 @@
 .textWrapper p {
     width: 100%;
     text-align: center;
-
 }
 
 .container {
@@ -167,4 +166,29 @@
 
 .invalid {
     border: 2px solid var(--orange) !important;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+/* /////////////////////////mobile styling///////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+@media (max-width: 600px) {
+    .textWrapper {
+        width: 100%;
+    }
+
+    .textWrapper h1,
+    .textWrapper p {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        gap: 1em;
+        padding: 0 2em;
+    }
+
+    .row {
+        flex-direction: column;
+    }
 }
