@@ -22,7 +22,7 @@ export const menuItems = [
     ],
   },
   {
-    name: "about",
-    link: "/about",
+    name: "about us",
+    link: "/about-us",
   },
 ];

@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <Layout>
       <section className={layoutStyles.section}>
-        <div>This is a page for about</div>
+        <div>This is a page for about us</div>
       </section>
     </Layout>
   );
