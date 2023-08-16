@@ -28,7 +28,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   // Fetch necessary data for the blog post using params.id
   const found = activityItems.find((val) => {
-    return val.name === params.id;
+    return val.slug === params.id;
   });
   return {
     props: {
