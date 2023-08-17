@@ -28,6 +28,26 @@
   gap: 0.5em;
 }
 
-.container h1 {
+/* .container h1 {
   font-size: 32px;
+} */
+
+/* //////////////////////////////////////////////////////////////// */
+/* /////////////////////////mobile styling///////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+@media (max-width: 600px) {
+  .heroWrapper {
+    height: 600px;
+    min-height: 600px;
+    max-height: 600px;
+  }
+
+  .container {
+    max-width: 311px;
+  }
+
+  .container a {
+    /* border-bottom: 1px solid var(--teal); */
+  }
 }
