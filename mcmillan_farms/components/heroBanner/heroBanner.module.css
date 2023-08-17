@@ -1,20 +1,41 @@
 .wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 2em;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
 }
 
 .skinnyContainer {
-    width: 520px;
-    max-width: 520px;
-    height: 690px;
-    max-height: 690px;
+  width: 520px;
+  max-width: 520px;
+  height: 690px;
+  max-height: 690px;
 }
 
 .container {
-    width: 470px;
-    max-width: 470px;
-    height: 670px;
-    max-height: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 470px;
+  max-width: 470px;
+  height: 670px;
+  max-height: 670px;
+}
+
+.image {
+  padding: 0 2em;
+  object-fit: cover;
+  object-position: right;
+  width: 100%;
+  height: 100%;
+}
+
+.backgroundImage {
+  background-image: url("../../public/images/sunset.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

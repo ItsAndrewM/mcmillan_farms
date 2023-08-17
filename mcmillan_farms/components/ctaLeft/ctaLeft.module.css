@@ -1,5 +1,6 @@
 .wrapper {
   width: 100%;
+  max-height: 600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,10 +11,17 @@
 .container {
   width: 800px;
   max-width: 800px;
+  max-height: 540px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* overflow: hidden; */
+}
+
+.container img {
+  max-height: 540px;
+  object-fit: cover;
 }
 
 .textContainer {

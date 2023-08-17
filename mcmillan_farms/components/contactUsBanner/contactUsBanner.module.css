@@ -1,0 +1,47 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 550px;
+  padding: 2em;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  background-color: var(--cream);
+  padding: 2em;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.textWrapper h2,
+.textWrapper p {
+  text-align: center;
+}
+
+.imageWrapper {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.imageWrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container span {
+  margin-top: 2em;
+}

@@ -112,3 +112,7 @@
 .paddingTop1 {
   padding-top: 1em;
 }
+
+.cream {
+  background-color: var(--cream);
+}

@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1em;
-  padding: 2em 0;
+  gap: 2em;
+  padding: 2em;
 }
 
 .container {
@@ -24,6 +24,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .textWrapper {
@@ -44,10 +45,12 @@
   filter: saturate(0.55);
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .imageWrapper {
   height: 800px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

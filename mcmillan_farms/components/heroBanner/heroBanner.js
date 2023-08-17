@@ -1,6 +1,8 @@
 import Link from "next/link";
 import style from "./heroBanner.module.css";
 import utilStyles from "../../styles/utils.module.css";
+import heroStyles from "../hero/hero.module.css";
+import ctaLeftStyles from "../ctaLeft/ctaLeft.module.css";
 import layoutStyles from "../layout/layout.module.css";
 import Image from "next/image";
 import collab from "../../public/images/lentelusXmf.png";
@@ -8,7 +10,7 @@ import sunflower from "../../public/images/sunflower.jpg";
 
 const HeroBanner = () => {
   return (
-    <div className={style.wrapper}>
+    <div className={`${style.wrapper}`}>
       <div className={style.container}>
         <Image
           src={collab}
@@ -22,11 +24,11 @@ const HeroBanner = () => {
           alt={"picture of sunflowers"}
           height={700}
           width={690}
-          className={`${utilStyles.imageCover}`}
+          className={`${style.image}`}
         />
       </div>
       <div className={style.container}>
-        <div>
+        <div className={ctaLeftStyles.textContainer}>
           <h1>Find Oishii at Whole Foods Market</h1>
           <p>
             Oishii and Whole Foods have partnered to bring our berries to

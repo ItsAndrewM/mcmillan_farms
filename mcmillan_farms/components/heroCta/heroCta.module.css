@@ -1,0 +1,33 @@
+.heroWrapper {
+  width: 100%;
+  max-width: 100vw;
+  height: 750px;
+  min-height: 750px;
+  padding: 2em;
+  position: relative;
+  z-index: 1;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 90px;
+  z-index: 1000;
+  width: 100%;
+  max-width: 1664px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 0.5em;
+}
+
+.container h1 {
+  font-size: 32px;
+}

@@ -2,7 +2,7 @@ import Image from "next/image";
 import style from "./ctaLeft.module.css";
 import utilStyles from "../../styles/utils.module.css";
 import layoutStyles from "../layout/layout.module.css";
-import pumpkin from "../../public/images/pumpkins.jpg";
+import pumpkin from "../../public/images/pumpkins4.jpg";
 import Link from "next/link";
 
 const CtaLeft = () => {

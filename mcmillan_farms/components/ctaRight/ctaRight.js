@@ -2,7 +2,7 @@ import Image from "next/image";
 import style from "../ctaLeft/ctaLeft.module.css";
 import utilStyles from "../../styles/utils.module.css";
 import layoutStyles from "../layout/layout.module.css";
-import pumpkin from "../../public/images/pumpkins.jpg";
+import hayride from "../../public/images/hayride.jpg";
 import Link from "next/link";
 
 const CtaRight = () => {
@@ -27,10 +27,9 @@ const CtaRight = () => {
       </div>
       <div className={style.container}>
         <Image
-          src={pumpkin}
-          height={800}
+          src={hayride}
           quality={100}
-          alt={"small orange pumpkins in a pile"}
+          alt={"2 tractors parked pulling wagons for a hayride"}
         />
       </div>
     </div>
