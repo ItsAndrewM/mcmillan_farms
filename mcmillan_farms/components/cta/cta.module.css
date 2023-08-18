@@ -55,3 +55,26 @@
   justify-content: center;
   align-items: center;
 }
+
+/* //////////////////////////////////////////////////////////////// */
+/* /////////////////////////mobile styling///////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+@media (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 1em;
+    gap: 0;
+  }
+
+  .contentWrapper,
+  .textWrapper {
+    width: 288px;
+  }
+
+  .contentWrapper span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

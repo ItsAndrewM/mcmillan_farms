@@ -40,6 +40,10 @@
   background-size: cover;
 }
 
+#collabHorizontal {
+  display: none;
+}
+
 /* //////////////////////////////////////////////////////////////// */
 /* /////////////////////////mobile styling///////////////////////// */
 /* //////////////////////////////////////////////////////////////// */
@@ -47,7 +51,28 @@
 @media (max-width: 600px) {
   .wrapper {
     flex-direction: column;
-    height: 1200px
+    padding: 1em;
+    max-width: 320px;
+  }
+  .container {
+    max-width: 320px;
+    height: 220px;
+    padding: 1em;
   }
 
+  #collabVertical {
+    display: none;
+  }
+
+  #collabHorizontal {
+    display: flex;
+  }
+  .skinnyContainer {
+    padding: 1em;
+    width: 100%;
+  }
+  .skinnyContainer img {
+    padding: 0;
+    object-position: 100%;
+  }
 }

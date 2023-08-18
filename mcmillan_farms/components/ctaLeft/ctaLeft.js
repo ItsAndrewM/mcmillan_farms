@@ -8,7 +8,7 @@ import Link from "next/link";
 const CtaLeft = () => {
   return (
     <div className={style.wrapper}>
-      <div className={style.container}>
+      <div className={`${style.container}`}>
         <Image
           src={pumpkin}
           height={800}
@@ -16,7 +16,7 @@ const CtaLeft = () => {
           alt={"small orange pumpkins in a pile"}
         />
       </div>
-      <div className={style.container}>
+      <div className={`${style.container}`}>
         <div className={style.textContainer}>
           <h1>Now Available In Washington D.C.</h1>
           <p>

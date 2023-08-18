@@ -16,7 +16,7 @@ const CtaLeftColoured = () => {
           alt={"small orange pumpkins in a pile"}
         />
       </div>
-      <div className={style.container}>
+      <div className={`${style.container}  ${style.cream}`}>
         <div className={style.textContainer}>
           <h1>Now Available In Washington D.C.</h1>
           <p>

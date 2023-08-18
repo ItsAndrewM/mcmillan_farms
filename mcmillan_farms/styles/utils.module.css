@@ -116,3 +116,7 @@
 .cream {
   background-color: var(--cream);
 }
+
+.borderBottomGrey {
+  border-bottom: 1px solid var(--grey);
+}

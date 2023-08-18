@@ -247,7 +247,7 @@
   .section {
     width: 100%;
     position: relative;
-    top: 75px;
+    /* top: 75px; */
   }
 
   .bannerList {

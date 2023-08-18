@@ -7,6 +7,7 @@ import layoutStyles from "../layout/layout.module.css";
 import Image from "next/image";
 import collab from "../../public/images/lentelusXmf.png";
 import sunflower from "../../public/images/sunflower.jpg";
+import collabHorizontal from "../../public/images/collab_horizontal.png";
 
 const HeroBanner = () => {
   return (
@@ -16,6 +17,13 @@ const HeroBanner = () => {
           src={collab}
           width={470}
           alt={"lentelus collab with McMillan Farms"}
+          id={style.collabVertical}
+        />
+        <Image
+          src={collabHorizontal}
+          width={300}
+          alt={"lentelus collab with McMillan Farms"}
+          id={style.collabHorizontal}
         />
       </div>
       <div className={style.skinnyContainer}>

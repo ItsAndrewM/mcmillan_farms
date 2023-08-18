@@ -8,6 +8,7 @@ import logo from "../../public/images/logo_large.png";
 import { menuItemsRight } from "@/data/menuItemsRight";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { mobileMenu } from "@/data/mobileMenu";
 
 const NavBar = () => {
   const [show, setShow] = useState(false);
@@ -25,6 +26,34 @@ const NavBar = () => {
   return (
     <header className={navbarStyles.pageHeader}>
       <nav className={navbarStyles.navigation}>
+        {/* mobile menu */}
+        <div id={navbarStyles.menuToggle}>
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id={navbarStyles.menu}>
+            <li className={utilStyles.borderBottomGrey}>
+              <h3>McMillan Farms</h3>
+            </li>
+            {mobileMenu.map((menuItem, index) => {
+              return (
+                <li key={index}>
+                  <Link
+                    href={menuItem.link}
+                    className={`${layoutStyles.link} ${utilStyles.capitalize} ${
+                      pathname == menuItem.link
+                        ? layoutStyles.active
+                        : layoutStyles.link
+                    }`}
+                  >
+                    {menuItem.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
         <ul className={navbarStyles.menuItem}>
           {menuItems.map((menuItem, index) => {
             return (

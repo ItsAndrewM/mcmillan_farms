@@ -35,3 +35,46 @@
 .textContainer a {
   text-align: left;
 }
+
+/* .cream {
+  background-color: inherit;
+} */
+
+/* //////////////////////////////////////////////////////////////// */
+/* /////////////////////////mobile styling///////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+@media (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 1em;
+    /* height: 600px; */
+    background-color: inherit;
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .container img {
+    max-height: 338px;
+    object-fit: contain;
+  }
+
+  .textContainer p,
+  .textContainer h1,
+  .textContainer a {
+    font-size: 15px;
+  }
+
+  .textContainer {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+  }
+
+  .cream {
+    background-color: var(--cream);
+  }
+}

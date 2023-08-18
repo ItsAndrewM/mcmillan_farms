@@ -34,3 +34,26 @@
 .container h1 {
   font-size: 32px;
 }
+
+/* //////////////////////////////////////////////////////////////// */
+/* /////////////////////////mobile styling///////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1em;
+    width: 288px;
+  }
+  .heroWrapper {
+    padding: 1em;
+  }
+  .container p,
+  .container h1,
+  .container span {
+    width: 100%;
+    text-align: center;
+  }
+  .container h1 {
+    font-size: var(--mobile-h);
+  }
+}
