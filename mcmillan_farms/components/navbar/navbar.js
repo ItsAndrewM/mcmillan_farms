@@ -9,6 +9,7 @@ import { menuItemsRight } from "@/data/menuItemsRight";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { mobileMenu } from "@/data/mobileMenu";
+import { socialLinks } from "@/data/socialLinks";
 
 const NavBar = () => {
   const [show, setShow] = useState(false);
@@ -52,6 +53,19 @@ const NavBar = () => {
                 </li>
               );
             })}
+            <li>
+              <ul id={navbarStyles.social}>
+                {socialLinks.map((menuItem, index) => {
+                  return (
+                    <li key={index}>
+                      <Link href={menuItem.link} className={layoutStyles.link}>
+                        {menuItem.icon}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </li>
           </ul>
         </div>
         <ul className={navbarStyles.menuItem}>

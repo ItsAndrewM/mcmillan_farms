@@ -150,4 +150,13 @@
   #menuToggle input:checked ~ ul {
     transform: none;
   }
+
+  #social {
+    border-top: 1px solid var(--grey);
+    padding-top: 1em;
+    margin-top: 10em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
