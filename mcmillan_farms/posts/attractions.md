@@ -1,3 +1,8 @@
+---
+title: "Attractions"
+date: "2023-08-18"
+---
+
 # McMillan Farms: A Fun and Family-Friendly Place to Visit
 
 If you are looking for a fun and family-friendly place to visit in Kelowna, BC, Canada, look no further than McMillan Farms. McMillan Farms is a 112-acre farm that offers a variety of attractions and activities for all ages and interests. Whether you want to pick your own pumpkins, explore a corn maze, enjoy a hay ride, or pet some farm animals, McMillan Farms has something for everyone. Here are some of the attractions that you can find at McMillan Farms.

@@ -18,18 +18,20 @@ const Page = () => {
                   key={index}
                   className={`${style.listItem} ${utilStyles.columnFlex} ${utilStyles.alignCenter} ${utilStyles.marginBottom1}`}
                 >
-                  <Link href={item.link}>
+                  <Link href={item.link} className={style.image}>
                     <div className={`${style.imageWrapper}`}>
                       <Image src={item.image} alt={""} />
                     </div>
                   </Link>
                   <span>
-                    <Link
-                      href={item.link}
-                      className={`${utilStyles.capitalize} ${layoutStyles.link}`}
-                    >
-                      <small>{item.name}</small>
-                    </Link>
+                    <h3>
+                      <Link
+                        href={item.link}
+                        className={`${utilStyles.capitalize} ${layoutStyles.link}`}
+                      >
+                        {item.name}
+                      </Link>
+                    </h3>
                   </span>
                 </li>
               );

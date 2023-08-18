@@ -39,11 +39,11 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.container}>
-          <div><p>Copyright © 2023 by Ron & Colleen McMillan</p></div>
+          <div><p>© McMillan Farms 2023 • Site by MuffinWare</p></div>
           <div className={styles.legal}>
-            <span><Link className={layoutStyles.link} href={"/"}>Privacy Policy</Link></span>
+            <span><Link className={layoutStyles.link} href={"/legal/privacy-policy"}>Privacy Policy</Link></span>
             <span>|</span>
-            <span><Link className={layoutStyles.link} href={"/"}>Terms and Conditions</Link></span>
+            <span><Link className={layoutStyles.link} href={"/legal/terms-and-conditions"}>Terms and Conditions</Link></span>
           </div>
         </div>
       </div>

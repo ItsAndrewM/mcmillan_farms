@@ -43,13 +43,13 @@ const Layout = ({ children, home }) => {
 
       <NavBar />
       <main className={styles.main}>{children}</main>
-      {!home && (
+      {/* {!home && (
         <div className={styles.backToHome}>
           <Link href="/" className={styles.smallLink}>
             ← Back to home
           </Link>
         </div>
-      )}
+      )} */}
       <Footer />
     </div>
   );
