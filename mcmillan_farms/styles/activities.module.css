@@ -23,6 +23,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  gap: 1em;
 }
 
 .listItem {
@@ -36,7 +37,7 @@
 }
 
 .image:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 /* //////////////////////////////////////////////////////////////// */

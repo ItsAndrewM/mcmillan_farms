@@ -1,49 +1,49 @@
 import Layout from "@/components/layout/layout";
 import layoutStyles from "@/components/layout/layout.module.css";
-import utilStyles from "../../../styles/utils.module.css"
-import styles from "../../../styles/post.module.css"
-import { activityItems } from "@/data/activityItems";
-import {
-  getAllPostIds,
-  getPostData,
-  getSortedPostsData,
-} from "../../../lib/posts";
+import utilStyles from "../../../styles/utils.module.css";
+import styles from "../../../styles/activities.module.css";
+import { attractionsAndProducts } from "@/data/attractionsAndProducts";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
+import { data } from "@/data/data";
+import { usePathname } from "next/navigation";
 
-
-const Page = ({ postData }) => {
+const Page = ({ attractionData }) => {
+  const pathname = usePathname();
   return (
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>{pathname.split("/")[pathname.split("/").length - 1]}</title>
       </Head>
       <section className={layoutStyles.section}>
         <div className={styles.wrapper}>
-          <div
-            className={utilStyles.lightText}
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              width: "60%",
-            }}
-          >
-            {/* <Date dateString={postData.date} /> */}
-            <Link href={`/stories/${postData.genre}`}>
-              <small
-                className={utilStyles.lightText}
-                style={{ textTransform: "capitalize" }}
-              >
-                {postData.genre}
-              </small>
-            </Link>
-            <small className={utilStyles.lightText}>{postData.author}</small>
-          </div>
-          <div
-            className={layoutStyles.postWrapper}
-            dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-          />
+          <ul className={`${styles.list} ${utilStyles.flexWrap}`}>
+            {attractionData.map((item, index) => {
+              return (
+                <li
+                  key={index}
+                  className={`${styles.listItem} ${utilStyles.columnFlex} ${utilStyles.alignCenter} ${utilStyles.marginBottom1} ${utilStyles.width20}`}
+                >
+                  <Link href={item.link} className={styles.image}>
+                    <div className={`${styles.imageWrapper}`}>
+                      <Image src={item.image} alt={""} />
+                    </div>
+                  </Link>
+                  <span>
+                    <h3>
+                      <Link
+                        href={item.link}
+                        className={`${utilStyles.capitalize} ${layoutStyles.link}`}
+                      >
+                        {item.name}
+                      </Link>
+                    </h3>
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
     </Layout>
@@ -54,7 +54,7 @@ export default Page;
 
 export const getStaticPaths = async () => {
   // Return a list of possible value for id
-  const paths = activityItems.map((vals) => {
+  const paths = attractionsAndProducts.map((vals) => {
     return { params: { id: vals.slug } };
   });
   return {
@@ -65,10 +65,10 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   // Fetch necessary data for the blog post using params.id
-  const postData = await getPostData(params.id);
+  const attractionData = data[params.id];
   return {
     props: {
-      postData,
+      attractionData,
     },
   };
 };

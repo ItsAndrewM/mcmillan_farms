@@ -120,3 +120,11 @@
 .borderBottomGrey {
   border-bottom: 1px solid var(--grey);
 }
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.width20 {
+  width: 20% !important;
+}
