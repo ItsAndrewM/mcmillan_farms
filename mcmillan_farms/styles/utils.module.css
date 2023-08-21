@@ -128,3 +128,7 @@
 .width20 {
   width: 20% !important;
 }
+
+.bullets {
+  list-style-type: disc;
+}

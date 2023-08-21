@@ -229,6 +229,17 @@
   border-bottom: 1px solid var(--teal);
 }
 
+#breadcrumb {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em;
+  gap: .5em;
+  text-transform: capitalize;
+}
+
+
 /* //////////////////////////////////////////////////////////////// */
 /* /////////////////////////mobile styling///////////////////////// */
 /* //////////////////////////////////////////////////////////////// */

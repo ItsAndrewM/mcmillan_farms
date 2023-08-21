@@ -5,6 +5,16 @@
   flex-direction: column;
 }
 
+.container {
+  margin-top: 2em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2em;
+}
+
 .imageWrapper {
   max-width: 400px;
   max-height: 400px;
@@ -38,6 +48,45 @@
 
 .image:hover {
   opacity: 0.7;
+}
+
+.skeletonListItem {
+  background-color: var(--lightGrey);
+  border: 1px solid red;
+}
+
+.textWrapper {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  gap: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.textWrapper h1,
+.textWrapper small,
+.textWrapper p {
+  text-align: left;
+}
+
+.textWrapper p {
+  line-height: 1.5;
+}
+
+.textWrapper h1,
+.textWrapper small {
+  text-transform: uppercase;
+}
+
+.textWrapper small {
+  color: var(--lightGrey);
+}
+
+.textWrapper h1 {
+  font-size: var(--font-xxl)
 }
 
 /* //////////////////////////////////////////////////////////////// */
