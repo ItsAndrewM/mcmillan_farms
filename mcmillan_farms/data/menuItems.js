@@ -1,23 +1,27 @@
 export const menuItems = [
   {
-    name: "activities",
-    link: "/activities",
+    name: "the farm",
+    link: "/the-farm",
     subMenu: [
       {
-        name: "attractions",
-        link: "/activities/attractions",
+        name: "fall attractions",
+        link: "/the-farm/fall-attractions",
       },
       {
-        name: "products",
-        link: "/activities/products",
+        name: "summer activities",
+        link: "/the-farm/summer-activities",
       },
       {
-        name: "weddings",
-        link: "/activities/weddings",
+        name: "seasonal goods",
+        link: "/the-farm/seasonal-goods",
+      },
+      {
+        name: "events",
+        link: "/the-farm/events",
       },
       {
         name: "school bookings",
-        link: "/activities/school-bookings",
+        link: "/the-farm/school-bookings",
       },
     ],
   },

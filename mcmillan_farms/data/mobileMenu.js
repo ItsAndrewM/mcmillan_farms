@@ -1,23 +1,23 @@
 export const mobileMenu = [
   {
-    name: "activities",
-    link: "/activities",
+    name: "the farm",
+    link: "/the-farm",
     subMenu: [
       {
         name: "attractions",
-        link: "/activities/attractions",
+        link: "/the-farm/attractions",
       },
       {
-        name: "products",
-        link: "/activities/products",
+        name: "seasonal goods",
+        link: "/the-farm/seasonal-goods",
       },
       {
-        name: "weddings",
-        link: "/activities/weddings",
+        name: "events",
+        link: "/the-farm/events",
       },
       {
         name: "school bookings",
-        link: "/activities/school-bookings",
+        link: "/the-farm/school-bookings",
       },
     ],
   },

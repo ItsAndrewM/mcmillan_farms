@@ -35,7 +35,7 @@ export default function Home() {
           description={
             "Celebrate fall at our farm with amazing attractions and pick-your-own produce. Experience nature's beauty and bounty at McMillan Farms!"
           }
-          link={"/"}
+          link={"https://www.showpass.com/o/mcmillan-farms/"}
           linkText={"BOOK YOUR TICKETS ONLINE"}
         />
       </section>

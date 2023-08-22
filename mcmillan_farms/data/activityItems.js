@@ -1,30 +1,44 @@
 import cornMaze from "../public/images/cornmaze.jpg";
 import pumpkins from "../public/images/pumpkins.jpg";
 import wedding from "../public/images/wedding.jpg";
-import fieldTrip from "../public/images/fieldTrip.jpg";
+import fieldTrip from "../public/images/fieldTrip1.jpg";
+import sunflower from "../public/images/sunflower2.jpg";
+import pumpkinsFall from "../public/images/pumpkins7.jpg";
 
 export const activityItems = [
   {
-    name: "attractions",
-    link: "/activities/attractions",
-    slug: "attractions",
-    image: cornMaze,
+    name: "summer activities",
+    link: "/the-farm/summer-activities",
+    slug: "summer-activities",
+    image: sunflower,
   },
   {
-    name: "products",
-    link: "/activities/products",
-    slug: "products",
+    name: "fall attractions",
+    link: "/the-farm/fall-attractions",
+    slug: "fall-attractions",
+    image: pumpkinsFall,
+  },
+  // {
+  //   name: "attractions",
+  //   link: "/the-farm/attractions",
+  //   slug: "attractions",
+  //   image: cornMaze,
+  // },
+  {
+    name: "seasonal goods",
+    link: "/the-farm/seasonal-goods",
+    slug: "seasonal-goods",
     image: pumpkins,
   },
   {
-    name: "weddings",
-    link: "/activities/weddings",
-    slug: "weddings",
+    name: "events",
+    link: "/the-farm/events",
+    slug: "events",
     image: wedding,
   },
   {
     name: "school bookings",
-    link: "/activities/school-bookings",
+    link: "/the-farm/school-bookings",
     slug: "school-bookings",
     image: fieldTrip,
   },
