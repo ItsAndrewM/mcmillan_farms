@@ -4,8 +4,12 @@ export const mobileMenu = [
     link: "/the-farm",
     subMenu: [
       {
-        name: "attractions",
-        link: "/the-farm/attractions",
+        name: "fall attractions",
+        link: "/the-farm/fall-attractions",
+      },
+      {
+        name: "summer activities",
+        link: "/the-farm/summer-activities",
       },
       {
         name: "seasonal goods",
