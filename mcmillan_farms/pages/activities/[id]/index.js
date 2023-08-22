@@ -19,16 +19,24 @@ const Page = ({ attractionData }) => {
         <title>{attractionData.title}</title>
       </Head>
       <section className={layoutStyles.section}>
-        <HeroActivities imageSrc={attractionData.image} title={attractionData.title} />
+        <HeroActivities
+          imageSrc={attractionData.image}
+          title={attractionData.title}
+        />
       </section>
       <section className={layoutStyles.section}>
-        <TextHero tagline={attractionData.small} headline={attractionData.title} content={attractionData.content} />
+        <TextHero
+          tagline={attractionData.small}
+          headline={attractionData.title}
+          content={attractionData.content}
+        />
       </section>
       <section className={layoutStyles.section}>
         <ul className={`${styles.list} ${utilStyles.flexWrap}`}>
           {attractionData.data.map((item, index) => {
             return (
-              <li key={index}
+              <li
+                key={index}
                 className={`${styles.listItem} ${utilStyles.columnFlex} ${utilStyles.alignCenter} ${utilStyles.marginBottom1} ${utilStyles.width20}`}
               >
                 <Link href={item.link} className={styles.image}>

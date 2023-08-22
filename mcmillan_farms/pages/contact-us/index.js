@@ -1,61 +1,77 @@
 import Layout from "@/components/layout/layout";
 import layoutStyles from "@/components/layout/layout.module.css";
-import contactUsStyles from "../../styles/contactUs.module.css"
-import utilStyles from "../../styles/utils.module.css"
-import { useState, useEffect } from 'react'
+import contactUsStyles from "../../styles/contactUs.module.css";
+import utilStyles from "../../styles/utils.module.css";
+import { useState, useEffect } from "react";
+import Head from "next/head";
 
 const Page = () => {
-  const [errors, setErrors] = useState({})
+  const [errors, setErrors] = useState({});
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const isValid = e.target.checkValidity()
-    const form = e.target
+    const isValid = e.target.checkValidity();
+    const form = e.target;
     const formData = new FormData(e.currentTarget);
-    const validationMessages = Array
-      .from(formData.keys())
-      .reduce((acc, key) => {
-        acc[key] = form.elements[key].validationMessage
-        return acc
-      }, {})
+    const validationMessages = Array.from(formData.keys()).reduce(
+      (acc, key) => {
+        acc[key] = form.elements[key].validationMessage;
+        return acc;
+      },
+      {}
+    );
     if (isValid) {
       // here you do what you need to do if is valid
       const data = Array.from(formData.keys()).reduce((acc, key) => {
-        acc[key] = formData.get(key)
-        return acc
-      }, {})
+        acc[key] = formData.get(key);
+        return acc;
+      }, {});
       try {
-        const response = await fetch('/api/contact-us', {
-          method: 'post',
+        const response = await fetch("/api/contact-us", {
+          method: "post",
           body: new URLSearchParams(data),
         });
         if (!response.ok) {
           throw new Error(`Invalid response: ${response.status}`);
         }
-        alert('Thanks for contacting us, we will get back to you soon!');
+        alert("Thanks for contacting us, we will get back to you soon!");
       } catch (err) {
         console.error(err);
         alert("We can't submit the form, try again later?");
       }
+    } else {
+      setErrors(validationMessages);
     }
-    else {
-      setErrors(validationMessages)
-    }
-  }
+  };
 
-  const getError = (field) => errors[field]
+  const getError = (field) => errors[field];
 
   return (
     <Layout>
+      <Head>
+        <title>Contact us</title>
+      </Head>
       <section className={layoutStyles.section}>
         <div className={contactUsStyles.wrapper}>
           <div className={contactUsStyles.textWrapper}>
             <h1>Get in touch</h1>
-            <p>If youd like to get in touch, please send us a message below or email us at <span className={utilStyles.underline}>information@mcmillanfarms.com</span></p>
+            <p>
+              If youd like to get in touch, please send us a message below or
+              email us at{" "}
+              <span className={utilStyles.underline}>
+                information@mcmillanfarms.com
+              </span>
+            </p>
           </div>
-          <form className={`${contactUsStyles.container}`} onSubmit={handleSubmit} noValidate>
+          <form
+            className={`${contactUsStyles.container}`}
+            onSubmit={handleSubmit}
+            noValidate
+          >
             <div className={`${contactUsStyles.row}`}>
-              <div className={`${contactUsStyles.name} ${contactUsStyles.block}`}>
+              <div
+                className={`${contactUsStyles.name} ${contactUsStyles.block}`}
+              >
                 <label htmlFor="frm-fullName">Full Name*</label>
                 <input
                   id="frm-fullName"
@@ -64,11 +80,17 @@ const Page = () => {
                   autoComplete="given-name"
                   placeholder="Enter full name"
                   required
-                  className={getError('fullName') ? contactUsStyles.invalid : ""}
+                  className={
+                    getError("fullName") ? contactUsStyles.invalid : ""
+                  }
                 />
-                <span className={contactUsStyles.error}>{getError('fullName')}</span>
+                <span className={contactUsStyles.error}>
+                  {getError("fullName")}
+                </span>
               </div>
-              <div className={`${contactUsStyles.email} ${contactUsStyles.block}`}>
+              <div
+                className={`${contactUsStyles.email} ${contactUsStyles.block}`}
+              >
                 <label htmlFor="frm-email">Email*</label>
                 <input
                   id="frm-email"
@@ -77,14 +99,17 @@ const Page = () => {
                   autoComplete="email"
                   placeholder="Enter email address"
                   required
-                  className={getError('email') ? contactUsStyles.invalid : ""}
+                  className={getError("email") ? contactUsStyles.invalid : ""}
                 />
-                <span className={contactUsStyles.error}>{getError('email')}</span>
-
+                <span className={contactUsStyles.error}>
+                  {getError("email")}
+                </span>
               </div>
             </div>
             <div className={`${contactUsStyles.row}`}>
-              <div className={`${contactUsStyles.phone} ${contactUsStyles.block}`}>
+              <div
+                className={`${contactUsStyles.phone} ${contactUsStyles.block}`}
+              >
                 <label htmlFor="frm-phone">Phone*</label>
                 <input
                   id="frm-phone"
@@ -93,37 +118,70 @@ const Page = () => {
                   autoComplete="tel"
                   placeholder="Enter phone number"
                   required
-                  className={getError('phone') ? contactUsStyles.invalid : ""}
+                  className={getError("phone") ? contactUsStyles.invalid : ""}
                 />
-                <span className={contactUsStyles.error}>{getError('phone')}</span>
+                <span className={contactUsStyles.error}>
+                  {getError("phone")}
+                </span>
               </div>
-              <div className={`${contactUsStyles.phone} ${contactUsStyles.block}`}>
+              <div
+                className={`${contactUsStyles.phone} ${contactUsStyles.block}`}
+              >
                 <label htmlFor="frm-subject">Subject*</label>
                 <select
                   id="frm-subject"
                   name="subject"
                   required
-                  className={`${utilStyles.lightText} ${getError('subject') ? contactUsStyles.invalid : ""}`}
-
+                  className={`${utilStyles.lightText} ${
+                    getError("subject") ? contactUsStyles.invalid : ""
+                  }`}
                 >
-                  <option disabled={true} value="" className={utilStyles.lightText}>Select a subject</option>
+                  <option
+                    disabled={true}
+                    value=""
+                    className={utilStyles.lightText}
+                  >
+                    Select a subject
+                  </option>
                   <option value="general inquiry">General Inquiry</option>
                   <option value="school booking inquiry">School Booking</option>
                   <option value="donation inquiry">Donation Inquiry</option>
-                  <option value="Feedback/suggestion">Feedback or suggestion</option>
-                  <option value="problem/issue">Report a problem or issue</option>
-                  <option value="collaboration/partnership">Interest in collaboration or partnership</option>
+                  <option value="Feedback/suggestion">
+                    Feedback or suggestion
+                  </option>
+                  <option value="problem/issue">
+                    Report a problem or issue
+                  </option>
+                  <option value="collaboration/partnership">
+                    Interest in collaboration or partnership
+                  </option>
                 </select>
-                <span className={contactUsStyles.error}>{getError('subject')}</span>
+                <span className={contactUsStyles.error}>
+                  {getError("subject")}
+                </span>
               </div>
             </div>
-            <div className={`${contactUsStyles.message} ${contactUsStyles.block}`}>
+            <div
+              className={`${contactUsStyles.message} ${contactUsStyles.block}`}
+            >
               <label htmlFor="frm-message">Message*</label>
-              <textarea id="frm-message" rows="6" name="message" required className={getError('message') ? contactUsStyles.invalid : ""}></textarea>
-              <span className={contactUsStyles.error}>{getError('message')}</span>
+              <textarea
+                id="frm-message"
+                rows="6"
+                name="message"
+                required
+                className={getError("message") ? contactUsStyles.invalid : ""}
+              ></textarea>
+              <span className={contactUsStyles.error}>
+                {getError("message")}
+              </span>
             </div>
-            <div className={`${contactUsStyles.button} ${contactUsStyles.block}`}>
-              <button type="submit" className={contactUsStyles.buttonInput}>Submit</button>
+            <div
+              className={`${contactUsStyles.button} ${contactUsStyles.block}`}
+            >
+              <button type="submit" className={contactUsStyles.buttonInput}>
+                Submit
+              </button>
             </div>
           </form>
         </div>

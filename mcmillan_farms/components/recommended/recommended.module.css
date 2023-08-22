@@ -1,55 +1,55 @@
 .wrapper {
-    width: 100%;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
 }
 
 .textWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .textWrapper h1 {
-    font-size: var(--font-xl)
+  font-size: var(--font-xl);
 }
 
 .list {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imageWrapper {
-    max-width: 250px;
-    max-height: 250px;
-    height: 250px;
-    width: 250px;
+  max-width: 250px;
+  max-height: 250px;
+  height: 250px;
+  width: 250px;
 }
 
 .imageWrapper img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .listItem {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .image {
-    transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .image:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 /* //////////////////////////////////////////////////////////////// */
@@ -57,22 +57,32 @@
 /* //////////////////////////////////////////////////////////////// */
 
 @media (max-width: 600px) {
-    .list {
-        flex-direction: column;
-    }
+  .list {
+    flex-direction: column;
+  }
 
-    .wrapper {
-        padding: 1em;
-    }
+  .wrapper {
+    padding: 1em;
+  }
 
-    .imageWrapper {
-        width: 343px;
-        height: 300px;
-        max-width: 343px;
-    }
+  .imageWrapper {
+    width: 100%;
+    height: 300px;
+    max-width: 343px;
+    max-height: 343px;
+  }
 
-    .listItem {
-        flex-direction: column;
-        gap: 1em;
-    }
+  .listItem {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .listItem a {
+    width: 100%;
+  }
+
+  .textWrapper h1 {
+    width: 100%;
+    text-align: center;
+  }
 }
