@@ -9,9 +9,32 @@ import Head from "next/head";
 import Recommended from "@/components/recommended/recommended";
 import { Suspense } from "react";
 import Loading from "./loading";
+import utilStyles from "../../../../styles/utils.module.css";
 import productStyles from "../../../../styles/product.module.css";
+import HeroActivities from "@/components/heroActivities/heroActivities";
+import TextHero from "@/components/textHero/texthero";
+import { seasonalGoods } from "@/data/seasonalGoods";
 
 const Page = ({ activityData, activityParent }) => {
+  console.log(activityParent);
+  if (activityParent.slug !== "seasonal-goods") {
+    return (
+      <ActivitiesPage
+        activityData={activityData}
+        activityParent={activityParent}
+      />
+    );
+  } else {
+    return (
+      <SeasonalPage
+        activityData={activityData}
+        activityParent={activityParent}
+      />
+    );
+  }
+};
+
+const ActivitiesPage = ({ activityData, activityParent }) => {
   return (
     <Layout>
       <Head>
@@ -26,14 +49,14 @@ const Page = ({ activityData, activityParent }) => {
           </span>
           <span>/</span>
           <span>
-            <Link href={"/activities"} className={layoutStyles.link}>
-              Activities
+            <Link href={"/the-farm"} className={layoutStyles.link}>
+              The Farm
             </Link>
           </span>
           <span>/</span>
           <span>
             <Link
-              href={`/activities/${activityParent.title}`}
+              href={`/the-farm/${activityParent.slug}`}
               className={layoutStyles.link}
             >
               {activityParent.title}
@@ -61,10 +84,62 @@ const Page = ({ activityData, activityParent }) => {
           </div>
         </div>
       </section>
-      <section className={layoutStyles.section}>
-        <Suspense fallback={<Loading />}>
+      {/* {activityParent.title !== "seasonal goods" && (
+        <section className={layoutStyles.section}>
           <Recommended arr={activityParent.data} child={activityData.name} />
-        </Suspense>
+        </section>
+      )} */}
+    </Layout>
+  );
+};
+
+const SeasonalPage = ({ activityData, activityParent }) => {
+  console.log(activityData);
+  return (
+    <Layout>
+      <Head>
+        <title>{activityData.title}</title>
+      </Head>
+      <section className={layoutStyles.section}>
+        <HeroActivities
+          imageSrc={activityData.image}
+          title={activityData.name}
+        />
+      </section>
+      <section className={layoutStyles.section}>
+        <TextHero
+          tagline={activityData.small}
+          headline={activityData.title}
+          content={activityData.content}
+        />
+      </section>
+      <section className={layoutStyles.section}>
+        <ul className={`${styles.list} ${utilStyles.flexWrap}`}>
+          {seasonalGoods[activityData.slug].data.map((item, index) => {
+            return (
+              <li
+                key={index}
+                className={`${styles.listItem} ${utilStyles.columnFlex} ${utilStyles.alignCenter} ${utilStyles.marginBottom1} ${utilStyles.width20}`}
+              >
+                <Link href={item.link} className={styles.image}>
+                  <div className={`${styles.imageWrapper}`}>
+                    <Image src={item.image} alt={""} key={item.image} />
+                  </div>
+                </Link>
+                <span>
+                  <h3>
+                    <Link
+                      href={item.link}
+                      className={`${utilStyles.capitalize} ${layoutStyles.link}`}
+                    >
+                      {item.name}
+                    </Link>
+                  </h3>
+                </span>
+              </li>
+            );
+          })}
+        </ul>
       </section>
     </Layout>
   );
