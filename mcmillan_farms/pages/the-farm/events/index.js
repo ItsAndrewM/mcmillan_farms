@@ -8,6 +8,7 @@ import HeroActivities from "@/components/heroActivities/heroActivities";
 import wedding from "../../../public/images/wedding2.jpg";
 import Head from "next/head";
 import { weddingData } from "@/data/weddingData";
+import styles from "../../../styles/activities.module.css";
 
 const Page = () => {
   const weddingContent =
@@ -47,6 +48,7 @@ const Page = () => {
         alert("We can't submit the form, try again later?");
       }
     } else {
+      console.log(validationMessages);
       setErrors(validationMessages);
     }
   };
@@ -69,13 +71,15 @@ const Page = () => {
         />
       </section>
       <section className={layoutStyles.section}>
-        <ul className={utilStyles.bullets}>
+        <ul className={`${utilStyles.bullets} ${styles.eventList}`}>
           {weddingData.map((val, index) => {
             return (
               <li key={index}>
                 {val.name}
                 {val.data && (
-                  <ul>
+                  <ul
+                    className={`${utilStyles.bullets} ${utilStyles.marginLeft}`}
+                  >
                     {val.data.map((ele, index) => {
                       return <li key={index}>{ele.name}</li>;
                     })}
@@ -179,20 +183,29 @@ const Page = () => {
                     Select a subject
                   </option>
                   <option value="general inquiry">General Inquiry</option>
-                  <option value="school booking inquiry">School Booking</option>
-                  <option value="donation inquiry">Donation Inquiry</option>
-                  <option value="Feedback/suggestion">
-                    Feedback or suggestion
-                  </option>
-                  <option value="problem/issue">
-                    Report a problem or issue
-                  </option>
-                  <option value="collaboration/partnership">
-                    Interest in collaboration or partnership
-                  </option>
+                  <option value="wedding inquiry">Wedding Inquiry</option>
                 </select>
                 <span className={contactUsStyles.error}>
                   {getError("subject")}
+                </span>
+              </div>
+            </div>
+            <div className={`${contactUsStyles.row}`}>
+              <div
+                className={`${contactUsStyles.phone} ${contactUsStyles.block}`}
+              >
+                <label htmlFor="frm-date">Requested Date*</label>
+                <input
+                  id="frm-date"
+                  type="date"
+                  name="date"
+                  required
+                  className={`${utilStyles.lightText} ${
+                    getError("date") ? contactUsStyles.invalid : ""
+                  }`}
+                />
+                <span className={contactUsStyles.error}>
+                  {getError("date")}
                 </span>
               </div>
             </div>

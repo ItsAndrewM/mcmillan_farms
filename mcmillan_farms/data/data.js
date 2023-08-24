@@ -9,16 +9,9 @@ import cornMaze from "../public/images/attractions/cornMaze.jpg";
 import wildLife from "../public/images/attractions/wildLife.jpg";
 import heroCornMaze from "../public/images/cornmaze3.jpg";
 //seasonal goods
-import pumpkinProduct from "../public/images/products/pumpkins4.jpg";
-import appleJuice from "../public/images/products/appleJuice.jpg";
-import gourd from "../public/images/products/gourd.jpg";
-import hayBale from "../public/images/products/hayBale.jpg";
-import corn from "../public/images/products/ornamentalCorn.jpg";
-import painted from "../public/images/products/paintedPumpkin.jpg";
-import plums from "../public/images/products/plums.jpg";
-import sunflower from "../public/images/products/sunflower.jpg";
-import merchandise from "../public/images/products/merchandise.jpg";
 import heroPumpkins from "../public/images/pumpkins6.jpg";
+import summerGoods from "../public/images/summerGoods.jpg";
+import pumpkins2 from "../public/images/pumpkins5.jpg";
 //summer-activities
 import sunflowerSummer from "../public/images/sunflowerMaze.jpg";
 import sunflowerDog from "../public/images/sunflower3.jpg";
@@ -27,6 +20,7 @@ import deer from "../public/images/deer.jpg";
 export const data = {
   "fall-attractions": {
     title: "fall attractions",
+    slug: "fall-attractions",
     image: heroCornMaze,
     small: "discover your inner farmer",
     content:
@@ -84,6 +78,7 @@ export const data = {
   },
   "summer-activities": {
     title: "summer activities",
+    slug: "summer-activities",
     image: sunflowerSummer,
     small: "discover your inner farmer",
     content:
@@ -123,91 +118,29 @@ export const data = {
   },
   "seasonal-goods": {
     title: "seasonal goods",
+    slug: "seasonal-goods",
     image: heroPumpkins,
     small: "fresh from the farm",
     content:
       "At McMillan Farms, we are passionate about our crops and goods that come straight from our soil. You can choose from a variety of seasonal items, such as pumpkins and hay in the fall, or plums and sunflowers in the summer. Our ornamental corn, gourds, merchandise and apple juice are also made from our own crops. You can visit our farm and pick your own products, or let us know if you need any assistance. Discover the freshness and quality of McMillan Farms now!",
     data: [
       {
-        name: "pumpkins",
-        link: "/the-farm/seasonal-goods/pumpkins",
-        slug: "pumpkins",
-        image: pumpkinProduct,
-        tag: "PICK YOUR PERFECT PUMPKIN",
-        content:
-          "Pumpkins are a staple of the fall season, and we have plenty of them at McMillan Farms. You can choose from different sizes, shapes, and colors of pumpkins, and carve them into your own masterpiece. Our pumpkins are grown with care and quality, and they are perfect for decorating, baking, or making jack-o-lanterns. Come and pick your perfect pumpkin today!",
-      },
-      {
-        name: "hay",
-        link: "/the-farm/seasonal-goods/hay",
-        slug: "hay",
-        image: hayBale,
-        tag: "HAVE A HAY DAY",
-        content:
-          "Hay is not only a great feed for animals, but also a fun and versatile material for crafts and activities. At McMillan Farms, we sell hay in bales or bundles, and you can use it for making scarecrows, wreaths, or hay rides. Our hay is fresh and clean, and it adds a rustic charm to any occasion. Have a hay day with our hay!",
-      },
-      {
-        name: "Fresh Plums",
-        link: "/the-farm/seasonal-goods/fresh-plums",
-        slug: "fresh-plums",
-        image: plums,
-        tag: "PLUCK A PLUM",
-        content:
-          "Plums are a delicious and nutritious fruit that you can enjoy fresh or dried. At McMillan Farms, we grow and harvest plums in our orchard, and you can pluck your own plums from our trees. Our plums are juicy and sweet, and they are great for making jams, pies, or snacks. Pluck a plum from our farm and taste the difference!",
-      },
-      {
-        name: "ornamental corn",
-        link: "/the-farm/seasonal-goods/ornamental-corn",
-        slug: "ornamental-corn",
-        image: corn,
-        tag: "CORN FOR ALL SEASONS",
-        content:
-          "Ornamental corn is a type of corn that has colorful kernels and husks, and it is used for decoration or crafts. At McMillan Farms, we grow and sell ornamental corn in various colors and sizes, and you can use it for making centerpieces, garlands, or wreaths. Our ornamental corn is eye-catching and festive, and it is suitable for all seasons. Corn for all seasons with our ornamental corn!",
-      },
-      {
-        name: "sunflowers",
-        link: "/the-farm/seasonal-goods/sunflowers",
-        slug: "sunflowers",
-        image: sunflower,
-        tag: "SUNNY AND STUNNING",
-        content:
-          "Sunflowers are a beautiful and cheerful flower that brightens up any space. At McMillan Farms, we grow and sell sunflowers in different varieties and heights, and you can cut your own sunflowers from our fields. Our sunflowers are sunny and stunning, and they are ideal for bouquets, arrangements, or gifts. Bring some sunshine to your home with our sunflowers!",
-      },
-      {
-        name: "gourds",
-        link: "/the-farm/seasonal-goods/gourds",
-        slug: "gourds",
-        image: gourd,
-        tag: "GORGEOUS GOURDS",
-        content:
-          "Gourds are a type of fruit that has a hard shell and a unique shape, and it is used for decoration or crafts. At McMillan Farms, we grow and sell gourds in different shapes, sizes, and colors, and you can pick your own gourds from our farm. Our gourds are gorgeous and creative, and they are perfect for making lanterns, birdhouses, or sculptures. Express your creativity with our gourds!",
-      },
-      {
-        name: "merchandise",
-        link: "/the-farm/seasonal-goods/merchandise",
-        slug: "merchandise",
-        image: merchandise,
+        name: "summer crops",
+        link: "/the-farm/seasonal-goods/summer-crops",
+        slug: "summer-crops",
+        image: summerGoods,
         tag: "SHOW YOUR SUPPORT",
         content:
           "Merchandise is a way to show your support for your favorite farm or brand. At McMillan Farms, we sell merchandise such as hats, shirts, mugs, bags, or stickers with our logo or slogan. Our merchandise is high-quality and stylish, and it is a great way to show your love for our farm or to give as a souvenir. Show your support with our merchandise!",
       },
       {
-        name: "decorated gourds",
-        link: "/the-farm/seasonal-goods/decorated-gourds",
-        slug: "decorated-gourds",
-        image: painted,
+        name: "fall goods",
+        link: "/the-farm/seasonal-goods/fall-goods",
+        slug: "fall-goods",
+        image: pumpkins2,
         tag: "ADD SOME FLAIR",
         content:
           "Decorated gourds are a fun and creative way to spice up your home or garden. At McMillan Farms, we sell decorated gourds that have been dried, painted, or carved by our talented artists. You can choose from different designs, themes, and colors of decorated gourds, or you can request a custom-made one. Our decorated gourds are unique and beautiful, and they are a great way to add some flair to your space. Come and see our decorated gourds today!",
-      },
-      {
-        name: "Fresh Locally Sourced Apple Juice",
-        link: "/the-farm/seasonal-goods/fresh-locally-sourced-apple-juice",
-        slug: "fresh-locally-sourced-apple-juice",
-        image: appleJuice,
-        tag: "SIP AND SAVOR",
-        content:
-          "Apple juice is a refreshing and healthy drink that you can enjoy any time of the day. At McMillan Farms, we make our own apple juice from our apples that we grow in our orchard. Our apple juice is natural and pure, and it has no added sugar or preservatives. Sip and savor our apple juice!",
       },
     ],
   },

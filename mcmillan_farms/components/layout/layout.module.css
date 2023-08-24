@@ -101,7 +101,7 @@
   gap: 1em;
 }
 
-.postWrapper p>img {
+.postWrapper p > img {
   height: 600px;
 }
 
@@ -140,8 +140,8 @@
   transform: scaleX(1);
 }
 
-.postWrapper>h2,
-.postWrapper>h1 {
+.postWrapper > h2,
+.postWrapper > h1 {
   width: 100%;
   border-bottom: 1px solid black;
 }
@@ -235,10 +235,9 @@
   justify-content: flex-start;
   align-items: center;
   padding: 1em;
-  gap: .5em;
+  gap: 0.5em;
   text-transform: capitalize;
 }
-
 
 /* //////////////////////////////////////////////////////////////// */
 /* /////////////////////////mobile styling///////////////////////// */
@@ -269,6 +268,24 @@
   }
 
   .imageLink {
+    display: none;
+  }
+
+  #breadcrumb a,
+  #breadcrumb span {
+    font-size: var(--font-sm);
+  }
+
+  #breadcrumb {
+    flex-wrap: wrap;
+  }
+
+  #breadcrumb span > a {
+    width: 40%;
+  }
+
+  #breadcrumb span:last-child,
+  #breadcrumb span:nth-last-child(2) {
     display: none;
   }
 }
