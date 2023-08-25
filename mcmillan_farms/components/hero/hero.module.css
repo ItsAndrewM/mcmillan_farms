@@ -41,12 +41,16 @@
 
 @media (max-width: 600px) {
   .container {
-    padding: 1em;
-    width: 262px;
+    padding: 0 1em;
+    /* width: 262px; */
   }
 
   .heroWrapper {
     padding: 1em;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .container p,

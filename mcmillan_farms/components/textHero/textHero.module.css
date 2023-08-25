@@ -41,6 +41,7 @@
 /* //////////////////////////////////////////////////////////////// */
 
 @media (max-width: 600px) {
+
   .container small,
   .container h1 {
     text-align: center;
@@ -48,5 +49,9 @@
 
   .container h1 {
     font-size: var(--font-lg);
+  }
+
+  .container {
+    align-items: center;
   }
 }

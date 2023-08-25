@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { random } from "@/lib/random";
 
 export const featuredProducts = (list, emptyList) => {
-  while (emptyList.length !== 5) {
+  while (emptyList.length !== list.length) {
     const num = random(list.length);
     const find = emptyList.find((val) => {
       return val === list[num];
@@ -23,8 +23,16 @@ export const featuredProducts = (list, emptyList) => {
 };
 
 const Recommended = ({ arr, child }) => {
-  const [reccomend, setReccomend] = useState(new Array(5));
-
+  console.log(arr.length)
+  let arrLength = arr.length - 1
+  if (arr.length - 1 < 5) {
+    arrLength = arr.length - 1
+  }
+  else {
+    arrLength = 5
+  }
+  const [reccomend, setReccomend] = useState(new Array(arrLength));
+  console.log(arr)
   useEffect(() => {
     const array = [];
     let filtered = arr.filter((val) => {

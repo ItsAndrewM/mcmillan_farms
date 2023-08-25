@@ -16,7 +16,6 @@ import TextHero from "@/components/textHero/texthero";
 import { seasonalGoods } from "@/data/seasonalGoods";
 
 const Page = ({ activityData, activityParent }) => {
-  console.log(activityParent);
   if (activityParent.slug !== "seasonal-goods") {
     return (
       <ActivitiesPage
@@ -33,8 +32,8 @@ const Page = ({ activityData, activityParent }) => {
     );
   }
 };
-
 const ActivitiesPage = ({ activityData, activityParent }) => {
+  console.log(activityData)
   return (
     <Layout>
       <Head>
@@ -84,11 +83,11 @@ const ActivitiesPage = ({ activityData, activityParent }) => {
           </div>
         </div>
       </section>
-      {/* {activityParent.title !== "seasonal goods" && (
+      {activityParent.title !== "seasonal goods" && (
         <section className={layoutStyles.section}>
           <Recommended arr={activityParent.data} child={activityData.name} />
         </section>
-      )} */}
+      )}
     </Layout>
   );
 };

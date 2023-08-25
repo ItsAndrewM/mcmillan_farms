@@ -18,10 +18,10 @@ const Page = () => {
   return (
     <Layout>
       <Head>
-        <title>Activities</title>
+        <title>The Farm</title>
       </Head>
       <section className={layoutStyles.section}>
-        <HeroActivities imageSrc={pumpkinField} title={"Activities"} />
+        <HeroActivities imageSrc={pumpkinField} title={"The Farm"} />
       </section>
       <section className={layoutStyles.section}>
         <TextHero tagline={tagLine} headline={headline} content={content} />
