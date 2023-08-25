@@ -23,7 +23,6 @@ export const featuredProducts = (list, emptyList) => {
 };
 
 const Recommended = ({ arr, child }) => {
-  console.log(arr.length)
   let arrLength = arr.length - 1
   if (arr.length - 1 < 5) {
     arrLength = arr.length - 1
@@ -32,7 +31,6 @@ const Recommended = ({ arr, child }) => {
     arrLength = 5
   }
   const [reccomend, setReccomend] = useState(new Array(arrLength));
-  console.log(arr)
   useEffect(() => {
     const array = [];
     let filtered = arr.filter((val) => {

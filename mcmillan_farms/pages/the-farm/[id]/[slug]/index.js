@@ -33,7 +33,6 @@ const Page = ({ activityData, activityParent }) => {
   }
 };
 const ActivitiesPage = ({ activityData, activityParent }) => {
-  console.log(activityData)
   return (
     <Layout>
       <Head>
@@ -93,7 +92,6 @@ const ActivitiesPage = ({ activityData, activityParent }) => {
 };
 
 const SeasonalPage = ({ activityData, activityParent }) => {
-  console.log(activityData);
   return (
     <Layout>
       <Head>

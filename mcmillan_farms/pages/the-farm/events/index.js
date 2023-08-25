@@ -48,7 +48,6 @@ const Page = () => {
         alert("We can't submit the form, try again later?");
       }
     } else {
-      console.log(validationMessages);
       setErrors(validationMessages);
     }
   };
@@ -171,9 +170,8 @@ const Page = () => {
                   id="frm-subject"
                   name="subject"
                   required
-                  className={`${utilStyles.lightText} ${
-                    getError("subject") ? contactUsStyles.invalid : ""
-                  }`}
+                  className={`${utilStyles.lightText} ${getError("subject") ? contactUsStyles.invalid : ""
+                    }`}
                 >
                   <option
                     disabled={true}
@@ -200,9 +198,8 @@ const Page = () => {
                   type="date"
                   name="date"
                   required
-                  className={`${utilStyles.lightText} ${
-                    getError("date") ? contactUsStyles.invalid : ""
-                  }`}
+                  className={`${utilStyles.lightText} ${getError("date") ? contactUsStyles.invalid : ""
+                    }`}
                 />
                 <span className={contactUsStyles.error}>
                   {getError("date")}
