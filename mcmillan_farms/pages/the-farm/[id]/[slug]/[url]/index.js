@@ -58,8 +58,6 @@ const Page = ({ activityData, activityParent }) => {
               alt={""}
               key={activityData.image}
               priority={true}
-              width={auto}
-              height={auto}
             />
           </div>
           <div className={styles.textWrapper}>
