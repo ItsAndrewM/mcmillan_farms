@@ -9,11 +9,12 @@ import wedding from "../../../public/images/wedding2.jpg";
 import Head from "next/head";
 import { weddingData } from "@/data/weddingData";
 import styles from "../../../styles/activities.module.css";
+import Accordian from "@/components/accordian/accordian";
 
 const Page = () => {
+  const [errors, setErrors] = useState({});
   const weddingContent =
     "McMillan Farms offers a unique outdoor farm wedding venue in the Kelowna area. At 110 acres, we are able to offer a variety of locations virtually anywhere on the farm with hilltop views, open fields, beautiful iconic trees, and forests and even with farm animals grazing in the background.If you schedule your event in spring, you’ll enjoy blossoms on our plum, apricot and lilac trees.In the fall, surround your ceremony with our pumpkins and bales of hay.Make sure you take a hayride to any location on the farm for your wedding pictures in the corn field, surrounded by horses or near our famous “Willow Tree”.";
-  const [errors, setErrors] = useState({});
   const weddingSmall = "THE PERFECT PLACE TO SAY 'I DO'";
 
   const handleSubmit = async (e) => {
@@ -70,24 +71,10 @@ const Page = () => {
         />
       </section>
       <section className={layoutStyles.section}>
-        <ul className={`${utilStyles.bullets} ${styles.eventList}`}>
-          {weddingData.map((val, index) => {
-            return (
-              <li key={index}>
-                {val.name}
-                {val.data && (
-                  <ul
-                    className={`${utilStyles.bullets} ${utilStyles.marginLeft}`}
-                  >
-                    {val.data.map((ele, index) => {
-                      return <li key={index}>{ele.name}</li>;
-                    })}
-                  </ul>
-                )}
-              </li>
-            );
-          })}
-        </ul>
+        <Accordian
+          arr={weddingData}
+          title={"What to expect on your special day"}
+        />
       </section>
       <section className={layoutStyles.section}>
         <div className={contactUsStyles.wrapper}>
@@ -170,8 +157,9 @@ const Page = () => {
                   id="frm-subject"
                   name="subject"
                   required
-                  className={`${utilStyles.lightText} ${getError("subject") ? contactUsStyles.invalid : ""
-                    }`}
+                  className={`${utilStyles.lightText} ${
+                    getError("subject") ? contactUsStyles.invalid : ""
+                  }`}
                 >
                   <option
                     disabled={true}
@@ -182,6 +170,9 @@ const Page = () => {
                   </option>
                   <option value="general inquiry">General Inquiry</option>
                   <option value="wedding inquiry">Wedding Inquiry</option>
+                  <option value="other event inquiry">
+                    Other Event Inquiry - be specific in your message
+                  </option>
                 </select>
                 <span className={contactUsStyles.error}>
                   {getError("subject")}
@@ -198,8 +189,9 @@ const Page = () => {
                   type="date"
                   name="date"
                   required
-                  className={`${utilStyles.lightText} ${getError("date") ? contactUsStyles.invalid : ""
-                    }`}
+                  className={`${utilStyles.lightText} ${
+                    getError("date") ? contactUsStyles.invalid : ""
+                  }`}
                 />
                 <span className={contactUsStyles.error}>
                   {getError("date")}
