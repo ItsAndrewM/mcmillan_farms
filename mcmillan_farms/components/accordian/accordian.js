@@ -10,7 +10,7 @@ const Accordian = ({ arr, title }) => {
         <ul className={`${styles.eventList}`}>
           {arr.map((val, index) => {
             return (
-              <li>
+              <li key={index}>
                 <details className={`${styles.accordian}`}>
                   <summary>{val.summary}</summary>
                 </details>
