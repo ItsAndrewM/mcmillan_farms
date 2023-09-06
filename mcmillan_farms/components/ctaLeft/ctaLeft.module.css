@@ -57,6 +57,7 @@
   .wrapper {
     flex-direction: column;
     padding: 1em;
+    max-height: fit-content;
     /* height: 600px; */
     background-color: inherit;
   }

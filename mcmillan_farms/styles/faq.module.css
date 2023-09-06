@@ -43,3 +43,26 @@
   text-align: left;
   width: 100%;
 }
+
+/* //////////////////////////////////////////////////////////////// */
+/* /////////////////////////mobile styling///////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 1em;
+  }
+  .container,
+  .box {
+    flex-direction: column;
+  }
+
+  .container {
+    gap: 1.5em;
+  }
+
+  .textWrapper p,
+  .textWrapper small {
+    text-align: center;
+  }
+}

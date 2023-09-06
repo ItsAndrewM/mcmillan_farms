@@ -30,6 +30,10 @@
   cursor: pointer;
 }
 
+.accordian summary::-webkit-details-marker {
+  display: none;
+}
+
 .accordian > summary::before,
 .accordian > summary::after {
   content: "";
@@ -78,5 +82,8 @@
   .accordian > summary::after {
     width: 1rem;
     border-bottom: 0.2rem solid black;
+  }
+  .accordian > summary {
+    margin-right: 1em;
   }
 }
