@@ -27,9 +27,9 @@ const Page = () => {
                 <GiPumpkinLantern width={50} size={50} />
               </div>
               <div className={styles.textWrapper}>
-                <p>Can't find an answer to your question?</p>
+                <p>Cant find an answer to your question?</p>
                 <small>
-                  Contact us, and we'll do our best to answer any of your
+                  Contact us, and we will do our best to answer any of your
                   queries.
                 </small>
               </div>
