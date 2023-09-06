@@ -46,7 +46,7 @@ export default function Home() {
         <title>McMillan Farms</title>
         <meta
           name="description"
-          content="A mainstay in your family's tradition, visit McMillan Farms this October for all your family fall fun needs!"
+          content="A mainstay in your familys tradition, visit McMillan Farms this October for all your family fall fun needs!"
           key="desc"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
