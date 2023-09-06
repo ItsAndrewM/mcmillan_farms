@@ -16,7 +16,7 @@ import CtaLeftColoured from "@/components/ctaLeftColoured/ctaLeftColoured";
 import HeroCta from "@/components/heroCta/heroCta";
 import ContactUsBanner from "@/components/contactUsBanner/contactUsBanner";
 import donkey from "../public/images/donkey.jpg";
-import hayride from "../../public/images/hayride.jpg";
+import hayride from "../public/images/hayride.jpg";
 
 // https://oishii.com/
 //https://dev.to/codeclown/styling-a-native-date-input-into-a-custom-no-library-datepicker-2in
