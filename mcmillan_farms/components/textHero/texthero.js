@@ -5,7 +5,7 @@ const TextHero = ({ tagline, headline, content }) => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <small>{tagline}</small>
-        <h1>McMillan Farms {headline}</h1>
+        <h1>McMillan Farms | {headline}</h1>
         <p>{content}</p>
       </div>
     </div>

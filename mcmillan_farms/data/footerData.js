@@ -6,8 +6,12 @@ export const footerData = [
     link: "/the-farm",
     submenu: [
       {
-        name: "attractions",
-        link: "/the-farm/attractions",
+        name: "fall attractions",
+        link: "/the-farm/fall-attractions",
+      },
+      {
+        name: "summer activities",
+        link: "/the-farm/summer-activities",
       },
       {
         name: "seasonal goods",
@@ -29,7 +33,7 @@ export const footerData = [
     submenu: [
       {
         name: "our farm",
-        link: "/about-us#our-farms",
+        link: "/about-us#our-farm",
       },
       {
         name: "meet the farmers",
@@ -47,7 +51,7 @@ export const footerData = [
     submenu: [
       {
         name: "support",
-        link: "/support",
+        link: "/faq",
       },
       {
         name: "careers",

@@ -33,6 +33,7 @@ const Page = ({ activityData, activityParent }) => {
   }
 };
 const ActivitiesPage = ({ activityData, activityParent }) => {
+  console.log(activityData);
   return (
     <Layout>
       <Head>

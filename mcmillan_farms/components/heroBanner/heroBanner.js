@@ -37,15 +37,17 @@ const HeroBanner = () => {
       </div>
       <div className={style.container}>
         <div className={ctaLeftStyles.textContainer}>
-          <h1>Find Oishii at Whole Foods Market</h1>
+          <h1>A partnership we're proud of</h1>
           <p>
-            Oishii and Whole Foods have partnered to bring our berries to
-            locations throughout New York City, New Jersey, Connecticut, and
-            D.C.
+            Lentelus Farms and McMillan Farms have partnered to bring you a 5
+            acre Sunflower Maze. We've got a lot more coming summer 2024.
           </p>
           <span>
-            <Link href={"/"} className={`${layoutStyles.link}`}>
-              Find Oishii at Whole Foods Market
+            <Link
+              href={"/the-farm/summer-activities"}
+              className={`${layoutStyles.link}`}
+            >
+              Check out our other summer activities
             </Link>
           </span>
         </div>

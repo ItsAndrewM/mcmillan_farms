@@ -5,30 +5,22 @@ import layoutStyles from "../layout/layout.module.css";
 import donkey from "../../public/images/donkey.jpg";
 import Link from "next/link";
 
-const CtaLeftColoured = () => {
+const CtaLeftColoured = ({ imageSrc, headline, desc, link, linkText }) => {
   return (
     <div className={`${style.wrapper} ${utilStyles.cream}`}>
       <div className={style.container}>
-        <Image
-          src={donkey}
-          height={800}
-          quality={100}
-          alt={"small orange pumpkins in a pile"}
-        />
+        <Image src={imageSrc} height={800} quality={100} alt={""} />
       </div>
       <div className={`${style.container}  ${style.cream}`}>
         <div className={style.textContainer}>
-          <h1>Now Available In Washington D.C.</h1>
-          <p>
-            The refreshingly sweet, subtly tart Koyo Berry is now available in
-            Washington D.C. at three new Whole Foods Market locations!
-          </p>
+          <h1>{headline}</h1>
+          <p>{desc}</p>
           <span>
             <Link
-              href={"/"}
+              href={link}
               className={`${utilStyles.paddingTop1} ${layoutStyles.link}`}
             >
-              Learn More
+              {linkText}
             </Link>
           </span>
         </div>

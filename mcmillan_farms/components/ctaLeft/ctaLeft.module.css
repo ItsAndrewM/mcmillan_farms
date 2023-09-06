@@ -36,6 +36,15 @@
   text-align: left;
 }
 
+.textContainer h1 {
+  text-transform: capitalize;
+}
+
+.textContainer span > a {
+  text-align: left;
+  text-transform: capitalize;
+}
+
 /* .cream {
   background-color: inherit;
 } */

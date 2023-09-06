@@ -49,7 +49,12 @@ const Page = () => {
   return (
     <Layout>
       <Head>
-        <title>Contact us</title>
+        <title>McMillan Farms | Contact us</title>
+        <meta
+          name="description"
+          content="McMillan Farms | If you'd like to get in touch, please send us a message below or email us at information@mcmillanfarms.ca. Full Name. Email Address. Subject."
+          key="desc"
+        />
       </Head>
       <section className={layoutStyles.section}>
         <div className={contactUsStyles.wrapper}>

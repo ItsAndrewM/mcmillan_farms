@@ -31,48 +31,72 @@ export const data = {
         link: "/the-farm/fall-attractions/pumpkins",
         slug: "pumpkins",
         image: pumpkins,
+        tag: "PICK YOUR PERFECT PUMPKIN",
+        content:
+          "Pumpkins are a staple of the fall season, and we have plenty of them at McMillan Farms. You can choose from different sizes, shapes, and colors of pumpkins, and carve them into your own masterpiece. Our pumpkins are grown with care and quality, and they are perfect for decorating, baking, or making jack-o-lanterns. Come and pick your perfect pumpkin today!",
       },
       {
         name: "corn maze",
         link: "/the-farm/fall-attractions/corn-maze",
         slug: "corn-maze",
         image: cornMaze,
+        tag: "FIND YOUR WAY OUT",
+        content:
+          "Corn mazes are a fun and challenging activity for all ages, and we have one of the best at McMillan Farms. You can navigate through the twists and turns of our corn field, and try to reach the exit. Our corn maze is designed with creativity and variety, and it changes every year. Don’t miss this opportunity to test your skills and have fun in the corn maze.",
       },
       {
         name: "Hay Rides",
         link: "/the-farm/fall-attractions/hay-rides",
         slug: "hay-rides",
         image: hayRide,
+        tag: "EXPLORE The farm ON A HAY RIDE",
+        content:
+          "Hay rides are a relaxing and enjoyable way to see the beauty and diversity of McMillan Farms. You can ride on a wagon pulled by a tractor, and see our pumpkin and sunflower fields, our farm animals, and our willow tree by the creek. Our hay rides are suitable for everyone, and they run throughout the day. Come and join us for a hay ride at McMillan Farms.",
       },
       {
         name: "Hay Maze",
         link: "/the-farm/fall-attractions/hay-maze",
         slug: "hay-maze",
         image: hayMaze,
+        tag: "HAVE A BLAST IN THE HAY MAZE",
+        content:
+          "Hay mazes are a great way to have some fun and excitement at McMillan Farms. You can crawl, climb, and slide through our hay bales, and try to find your way out. Our hay maze is safe and sturdy, and it is perfect for kids and adults alike. Don’t forget to bring your camera and capture some memorable moments in the hay maze.",
       },
       {
         name: "pumpkin slingshot",
         link: "/the-farm/fall-attractions/pumpkin-slingshot",
         slug: "pumpkin-slingshot",
         image: pumpkinSlingshot,
+        tag: "Sling some pumpkins",
+        content:
+          "Pumpkin slingshots are a thrilling and unique activity that you can only find at McMillan Farms. You can launch some pumpkins into the air with our giant slingshot, and try to hit some targets. Our pumpkin slingshot is easy to use and fun to watch, and it is a great way to release some energy and have some laughs. Come and try our pumpkin slingshot today.",
       },
       {
         name: "petting zoo",
         link: "/the-farm/fall-attractions/petting-zoo",
         slug: "petting-zoo",
         image: pettingZoo,
+        tag: "MEET OUR FRIENDLY FARM ANIMALS",
+        content:
+          "Petting zoos are a wonderful way to interact with farm animals, and we have a lot of them at McMillan Farms. You can meet pigs, donkeys, chickens, goats, dogs, and cats, and feed them, pet them, and learn more about them. Our farm animals are well-cared for and gentle, and they love to meet new people. Don’t miss this chance to make some new animal friends at the petting zoo.",
       },
       {
         name: "concession stand",
         link: "/the-farm/fall-attractions/concession-stand",
         slug: "concession-stand",
         image: concessionStand,
+        tag: "TASTE OUR DELICIOUS SEASONAL TREATS",
+        content:
+          "Concession stands are a must-have when you visit McMillan Farms, where you can taste our delicious seasonal treats. You can choose from a variety of snacks and drinks, such as popcorn, candy apples, hot chocolate, cider doughnuts, pumpkin pie, and more. Our concession stand uses fresh and local ingredients, and it offers something for everyone. Come and treat yourself to our concession stand today.",
       },
       {
         name: "wild life",
         link: "/the-farm/fall-attractions/wild-life",
         slug: "wild-life",
         image: wildLife,
+        tag: "DISCOVER THE WILD LIFE AT the farm",
+        content:
+          "Wild life is an amazing part of nature, and we have a lot of it at McMillan Farms. You can see coyotes, deer, turkey vultures, eagles, hawks, owls, and if you're lucky a lynx or beaver, and more in their natural habitat. You can also learn more about their behavior and characteristics from our staff. Our wild life is diverse and fascinating, and it adds to the charm of the farm. Come and discover the wild life at McMillan Farms",
       },
     ],
   },
@@ -89,30 +113,45 @@ export const data = {
         link: "/the-farm/summer-activities/sunflower-maze",
         slug: "sunflower-maze",
         image: sunflowerDog,
+        content:
+          "We are proud to present our sunflower maze at McMillan Farms, where you can walk through a field of bright and cheerful sunflowers. You can admire the different varieties and colors of sunflowers, and pick your own bouquet. You can also take advantage of the photo opportunities in the sunflower maze, where you can capture some stunning and Instagram-worthy shots. Don’t miss this chance to experience the sunflower maze at McMillan Farms.",
+        tag: "Walk Through the Sunflower Maze",
       },
       {
         name: "Hay Rides",
-        link: "/the-farm/summer-activities/hay-rides",
+        link: "/the-farm/fall-attractions/hay-rides",
         slug: "hay-rides",
         image: hayRide,
+        tag: "EXPLORE The farm ON A HAY RIDE",
+        content:
+          "Hay rides are a relaxing and enjoyable way to see the beauty and diversity of McMillan Farms. You can ride on a wagon pulled by a tractor, and see our pumpkin and sunflower fields, our farm animals, and our willow tree by the creek. Our hay rides are suitable for everyone, and they run throughout the day. Come and join us for a hay ride at McMillan Farms.",
       },
       {
         name: "petting zoo",
         link: "/the-farm/summer-activities/petting-zoo",
         slug: "petting-zoo",
         image: pettingZoo,
+        tag: "MEET OUR FRIENDLY FARM ANIMALS",
+        content:
+          "Petting zoos are a wonderful way to interact with farm animals, and we have a lot of them at McMillan Farms. You can meet pigs, donkeys, chickens, goats, dogs, and cats, and feed them, pet them, and learn more about them. Our farm animals are well-cared for and gentle, and they love to meet new people. Don’t miss this chance to make some new animal friends at the petting zoo.",
       },
       {
         name: "concession stand",
         link: "/the-farm/summer-activities/concession-stand",
         slug: "concession-stand",
         image: concessionStand,
+        tag: "TASTE OUR DELICIOUS SEASONAL TREATS",
+        content:
+          "Concession stands are a must-have when you visit McMillan Farms, where you can taste our delicious seasonal treats. You can choose from a variety of snacks and drinks, such as popcorn, candy apples, hot chocolate, cider doughnuts, pumpkin pie, and more. Our concession stand uses fresh and local ingredients, and it offers something for everyone. Come and treat yourself to our concession stand today.",
       },
       {
         name: "wild life",
         link: "/the-farm/summer-activities/wild-life",
         slug: "wild-life",
         image: deer,
+        tag: "DISCOVER THE WILD LIFE AT the farm",
+        content:
+          "Wild life is an amazing part of nature, and we have a lot of it at McMillan Farms. You can see coyotes, deer, turkey vultures, eagles, hawks, owls, and if you're lucky a lynx or beaver, and more in their natural habitat. You can also learn more about their behavior and characteristics from our staff. Our wild life is diverse and fascinating, and it adds to the charm of the farm. Come and discover the wild life at McMillan Farms",
       },
     ],
   },
@@ -129,18 +168,18 @@ export const data = {
         link: "/the-farm/seasonal-goods/summer-crops",
         slug: "summer-crops",
         image: summerGoods,
-        tag: "SHOW YOUR SUPPORT",
+        tag: "Enjoy the Freshness and Flavor of summer",
         content:
-          "Merchandise is a way to show your support for your favorite farm or brand. At McMillan Farms, we sell merchandise such as hats, shirts, mugs, bags, or stickers with our logo or slogan. Our merchandise is high-quality and stylish, and it is a great way to show your love for our farm or to give as a souvenir. Show your support with our merchandise!",
+          "Summer is a great time to visit McMillan Farms, where you can enjoy the freshness and flavor of our summer crops. You can pick from sunflowers, fresh flowers, handmade food, drink and goods and produce and more. Our summer crops are grown with care and quality. Come and taste the difference of our summer crops today.",
       },
       {
         name: "fall goods",
         link: "/the-farm/seasonal-goods/fall-goods",
         slug: "fall-goods",
         image: pumpkins2,
-        tag: "ADD SOME FLAIR",
+        tag: "Discover the Variety and Quality of this years harvest",
         content:
-          "Decorated gourds are a fun and creative way to spice up your home or garden. At McMillan Farms, we sell decorated gourds that have been dried, painted, or carved by our talented artists. You can choose from different designs, themes, and colors of decorated gourds, or you can request a custom-made one. Our decorated gourds are unique and beautiful, and they are a great way to add some flair to your space. Come and see our decorated gourds today!",
+          "Fall is a wonderful time to visit McMillan Farms, where you can celebrate the harvest and the season with our fall goods. You can find a variety of products, such as pumpkins, squash, corn, apples, and more. You can also enjoy our homemade goods, such as pies, breads, soups, and cider. Our fall goods are made with love and tradition, and they are perfect for decorating, baking, or gifting. Come and discover the charm of our fall goods today.",
       },
     ],
   },

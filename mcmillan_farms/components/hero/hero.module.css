@@ -35,6 +35,14 @@
   font-size: 32px;
 }
 
+.container span > a {
+  text-transform: capitalize;
+}
+
+.container span {
+  margin-top: 2em;
+}
+
 /* //////////////////////////////////////////////////////////////// */
 /* /////////////////////////mobile styling///////////////////////// */
 /* //////////////////////////////////////////////////////////////// */
@@ -58,6 +66,7 @@
   .container span {
     width: 100%;
     text-align: center;
+    margin: 0;
   }
 
   .container h1 {

@@ -5,29 +5,26 @@ import layoutStyles from "../layout/layout.module.css";
 import hayride from "../../public/images/hayride.jpg";
 import Link from "next/link";
 
-const CtaRight = () => {
+const CtaRight = ({ headline, desc, link, linkText, imgSrc }) => {
   return (
     <div className={style.wrapper}>
       <div className={style.container}>
         <div className={style.textContainer}>
-          <h1>Now Available In Washington D.C.</h1>
-          <p>
-            The refreshingly sweet, subtly tart Koyo Berry is now available in
-            Washington D.C. at three new Whole Foods Market locations!
-          </p>
+          <h1>{headline}</h1>
+          <p>{desc}</p>
           <span>
             <Link
-              href={"/"}
+              href={link}
               className={`${utilStyles.paddingTop1} ${layoutStyles.link}`}
             >
-              Learn More
+              {linkText}
             </Link>
           </span>
         </div>
       </div>
       <div className={style.container}>
         <Image
-          src={hayride}
+          src={imgSrc}
           quality={100}
           alt={"2 tractors parked pulling wagons for a hayride"}
         />

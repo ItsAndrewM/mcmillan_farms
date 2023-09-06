@@ -27,7 +27,7 @@ const Footer = () => {
                 <ul className={styles.column} key={index}>
                   <li>
                     <h3>
-                      <Link href={menuItem.link} className={layoutStyles.link}>
+                      <Link href={menuItem.link} className={styles.link}>
                         {menuItem.name}
                       </Link>
                     </h3>
@@ -36,12 +36,9 @@ const Footer = () => {
                     {menuItem.submenu.map((subMenuItem, index) => {
                       return (
                         <li key={index}>
-                          {subMenuItem.icon && subMenuItem.icon}
-                          <Link
-                            className={layoutStyles.link}
-                            href={subMenuItem.link}
-                          >
-                            {subMenuItem.name}
+                          <Link className={styles.link} href={subMenuItem.link}>
+                            <span>{subMenuItem.icon && subMenuItem.icon}</span>
+                            <span>{subMenuItem.name}</span>
                           </Link>
                         </li>
                       );
@@ -53,32 +50,29 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.container}>
-          <div>
+          <div className={styles.legalContainer}>
             <p>
-              © McMillan Farms 2023 • Site by{" "}
+              © McMillan Farms 2023 • Site by
               <span>
                 <Link
                   href={"https://muffinware.vercel.app/"}
-                  className={layoutStyles.link}
+                  className={styles.link}
                 >
                   MuffinWare
                 </Link>
               </span>
             </p>
           </div>
-          <div className={styles.legal}>
+          <div className={`${styles.legal} ${styles.legalContainer}`}>
             <span>
-              <Link
-                className={layoutStyles.link}
-                href={"/legal/privacy-policy"}
-              >
+              <Link className={styles.link} href={"/legal/privacy-policy"}>
                 Privacy Policy
               </Link>
             </span>
             <span>|</span>
             <span>
               <Link
-                className={layoutStyles.link}
+                className={styles.link}
                 href={"/legal/terms-and-conditions"}
               >
                 Terms and Conditions

@@ -58,7 +58,8 @@ const Page = () => {
   return (
     <Layout>
       <Head>
-        <title>{"events"}</title>
+        <title>{"McMillan Farms | Events and Weddings"}</title>
+        <meta name="description" content={weddingContent} key="desc" />
       </Head>
       <section className={layoutStyles.section}>
         <HeroActivities imageSrc={wedding} title={"events"} />

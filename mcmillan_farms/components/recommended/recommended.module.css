@@ -16,6 +16,7 @@
 
 .textWrapper h1 {
   font-size: var(--font-xl);
+  text-transform: capitalize;
 }
 
 .list {

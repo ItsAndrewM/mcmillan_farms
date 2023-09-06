@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "../hero/hero.module.css";
 import utilStyles from "../../styles/utils.module.css";
 
-const HeroActivities = ({ imageSrc, title }) => {
+const HeroTitle = ({ imageSrc, title }) => {
   return (
     <div className={`${styles.heroWrapper}`}>
       <Image
@@ -14,13 +14,10 @@ const HeroActivities = ({ imageSrc, title }) => {
         priority={true}
       />
       <div className={styles.container}>
-        {title.toLowerCase() !== "activities" && (
-          <p className={utilStyles.capitalize}>Activities</p>
-        )}
         <h1 className={utilStyles.capitalize}>{title}</h1>
       </div>
     </div>
   );
 };
 
-export default HeroActivities;
+export default HeroTitle;

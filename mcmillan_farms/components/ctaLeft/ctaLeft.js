@@ -18,10 +18,11 @@ const CtaLeft = () => {
       </div>
       <div className={`${style.container}`}>
         <div className={style.textContainer}>
-          <h1>Now Available In Washington D.C.</h1>
+          <h1>Every type of Pumpkin you could ever imagine</h1>
           <p>
-            The refreshingly sweet, subtly tart Koyo Berry is now available in
-            Washington D.C. at three new Whole Foods Market locations!
+            Prepare to be overwhelmed by pumpkins. We've got your baking,
+            cooking, carving, decorating, painting, roasting, smashing pumpkin
+            needs covered. Seriously, we've got it all.
           </p>
           <span>
             <Link

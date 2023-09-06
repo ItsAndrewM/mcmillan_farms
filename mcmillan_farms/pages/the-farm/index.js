@@ -18,7 +18,11 @@ const Page = () => {
   return (
     <Layout>
       <Head>
-        <title>The Farm</title>
+        <title>
+          McMillan Farms | The Farm | Summer Activities, Fall Attractions,
+          Seasonal Goods, Events and School Bookings
+        </title>
+        <meta name="description" content={content} key="desc" />
       </Head>
       <section className={layoutStyles.section}>
         <HeroActivities imageSrc={pumpkinField} title={"The Farm"} />

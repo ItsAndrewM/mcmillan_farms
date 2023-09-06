@@ -15,28 +15,50 @@ import HeroBanner from "@/components/heroBanner/heroBanner";
 import CtaLeftColoured from "@/components/ctaLeftColoured/ctaLeftColoured";
 import HeroCta from "@/components/heroCta/heroCta";
 import ContactUsBanner from "@/components/contactUsBanner/contactUsBanner";
+import donkey from "../public/images/donkey.jpg";
+import hayride from "../../public/images/hayride.jpg";
 
 // https://oishii.com/
 //https://dev.to/codeclown/styling-a-native-date-input-into-a-custom-no-library-datepicker-2in
 
 export default function Home() {
+  const heroHeader = "Fall Fun at McMillan Farms";
+  const heroDesc =
+    "Celebrate the arrival of fall at our farm and check out all the amazing attractions, seasonal crops, and more! Get lost in the corn maze or enjoy a scenic tour on a hay ride, there's tons to do at McMillan Farms!";
+  const heroLink = "/the-farm";
+  const heroLinkText = "learn more";
+
+  const desc =
+    "We are so excited to welcome you back to this fall, where you can enjoy the best of the season with all McMillan Farms has to offer. We've been working hard to prepare so many fun and exciting activities for you. Don’t miss your chance to make some unforgettable memories at McMillan Farms.";
+  const headline = "Fall at the farm";
+  const link = "/";
+  const linkText = "learn more";
+
+  const rightHeadline = "Experience the Best Hay Ride in Kelowna";
+  const rightDesc =
+    "See all the farm has to offer on our unique, 100+ acre hay ride tour like where we grow the pumpkins, our summer Sunflower fields and of course, our famous willow tree Don’t miss out this fall, make sure you come down and jump on a hay ride at McMillan Farms";
+  const rightLink = "/the-farm/fall-attractions/hay-rides";
+  const rightLinkText = "Learn More";
+
   return (
     <Layout home>
       <Head>
         <title>McMillan Farms</title>
-        <meta name="description" content="McMillan Farms" />
+        <meta
+          name="description"
+          content="A mainstay in your family's tradition, visit McMillan Farms this October for all your family fall fun needs!"
+          key="desc"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={layoutStyles.section}>
         <Hero
           imageSrc={backgroundImage}
-          header={"Fall Fun at McMillan Farms"}
-          description={
-            "Celebrate fall at our farm with amazing attractions and pick-your-own produce. Experience nature's beauty and bounty at McMillan Farms!"
-          }
-          link={"https://www.showpass.com/o/mcmillan-farms/"}
-          linkText={"BOOK YOUR TICKETS ONLINE"}
+          header={heroHeader}
+          description={heroDesc}
+          link={heroLink}
+          linkText={heroLinkText}
         />
       </section>
       <section className={layoutStyles.section}>
@@ -46,10 +68,22 @@ export default function Home() {
         <Cta />
       </section>
       <section className={layoutStyles.section}>
-        <CtaLeftColoured />
+        <CtaLeftColoured
+          imageSrc={donkey}
+          headline={headline}
+          desc={desc}
+          link={link}
+          linkText={linkText}
+        />
       </section>
       <section className={layoutStyles.section}>
-        <CtaRight />
+        <CtaRight
+          headline={rightHeadline}
+          desc={rightDesc}
+          link={rightLink}
+          linkText={rightLinkText}
+          imgSrc={hayride}
+        />
       </section>
       <section className={layoutStyles.section}>
         <CtaLeft />

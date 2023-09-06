@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { random } from "@/lib/random";
 
 export const featuredProducts = (list, emptyList) => {
-  while (emptyList.length !== list.length) {
+  while (emptyList.length < 5) {
     const num = random(list.length);
     const find = emptyList.find((val) => {
       return val === list[num];
@@ -23,13 +23,13 @@ export const featuredProducts = (list, emptyList) => {
 };
 
 const Recommended = ({ arr, child }) => {
-  let arrLength = arr.length - 1
+  let arrLength = arr.length - 1;
   if (arr.length - 1 < 5) {
-    arrLength = arr.length - 1
+    arrLength = arr.length - 1;
+  } else {
+    arrLength = 5;
   }
-  else {
-    arrLength = 5
-  }
+
   const [reccomend, setReccomend] = useState(new Array(arrLength));
   useEffect(() => {
     const array = [];
@@ -43,7 +43,7 @@ const Recommended = ({ arr, child }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.textWrapper}>
-        <h1>Learn what else is at the farm</h1>
+        <h1>Check out what else the farm has to offer</h1>
       </div>
       <ul className={styles.list}>
         {reccomend.map((item, index) => {

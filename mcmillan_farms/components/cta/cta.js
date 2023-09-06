@@ -2,6 +2,7 @@ import Image from "next/image";
 import style from "./cta.module.css";
 import pumpkin from "../../public/images/pumpkins5.jpg";
 import cornmaze from "../../public/images/cornmaze2.jpg";
+import hayride from "../../public/images/hayride3.jpg";
 import Link from "next/link";
 import heroStyles from "../hero/hero.module.css";
 import utilStyles from "../../styles/utils.module.css";
@@ -22,16 +23,16 @@ const Cta = () => {
         </div>
         <div className={style.contentWrapper}>
           <div className={style.textWrapper}>
-            <h1>Get Your Perfect Pumpkin</h1>
+            <h1>Get Your Dream Pumpkin</h1>
             <p>
-              Are you looking for a fresh, local, and organic pumpkin to
-              decorate your home, carve a jack-o-lantern, or make a delicious
-              pie? Look no further with our vast and varied selection.
+              Whether you're baking the perfect pie, carving the scariest
+              jack-o-lantern or looking for some festive decor, we've got you
+              covered. Every pumpkin is grown right here, on our 100+ acre farm.
             </p>
           </div>
           <span>
             <Link
-              href={"/"}
+              href={"/faq"}
               className={`${utilStyles.alignCenter} ${utilStyles.capitalize} ${utilStyles.white} ${layoutStyles.link}`}
             >
               Directions to your dream pumpkin
@@ -46,15 +47,16 @@ const Cta = () => {
             height={800}
             quality={100}
             className={style.image}
-            alt={"One sunflower in a field"}
+            alt={"cornmaze and a path"}
           />
         </div>
         <div className={style.contentWrapper}>
           <div className={style.textWrapper}>
-            <h1>Walk Among the Sunflowers</h1>
+            <h1>Join the Corn Maze Adventure</h1>
             <p>
-              Grab your sunglasses and come on out to see all 5 acres of our
-              sunflowers! You wont find a more beautiful spot in all of Kelowna.
+              If you're up for an adventure, try your luck in our 5 acre corn
+              maze. Experience our incredible, unique corn maze and discover the
+              hidden secrets and surprises along the way
             </p>
           </div>
           <span>
@@ -62,7 +64,7 @@ const Cta = () => {
               href={"/"}
               className={`${utilStyles.alignCenter} ${utilStyles.capitalize} ${utilStyles.white} ${layoutStyles.link}`}
             >
-              Book Your Sunflower Adventure
+              Learn more
             </Link>
           </span>
         </div>

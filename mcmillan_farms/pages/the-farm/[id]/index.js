@@ -16,7 +16,12 @@ const Page = ({ attractionData }) => {
   return (
     <Layout>
       <Head>
-        <title>{attractionData.title}</title>
+        <title>{`McMillan Farms | ${attractionData.title}`}</title>
+        <meta
+          name="description"
+          content={`${attractionData.content} | McMillan Farms`}
+          key="desc"
+        />
       </Head>
       <section className={layoutStyles.section}>
         <HeroActivities
