@@ -20,9 +20,9 @@ const CtaLeft = () => {
         <div className={style.textContainer}>
           <h1>Every type of Pumpkin you could ever imagine</h1>
           <p>
-            Prepare to be overwhelmed by pumpkins. We've got your baking,
+            Prepare to be overwhelmed by pumpkins. We have got your baking,
             cooking, carving, decorating, painting, roasting, smashing pumpkin
-            needs covered. Seriously, we've got it all.
+            needs covered. Seriously, we have got it all.
           </p>
           <span>
             <Link

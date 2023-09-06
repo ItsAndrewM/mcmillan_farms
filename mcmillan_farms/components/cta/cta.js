@@ -25,8 +25,8 @@ const Cta = () => {
           <div className={style.textWrapper}>
             <h1>Get Your Dream Pumpkin</h1>
             <p>
-              Whether you're baking the perfect pie, carving the scariest
-              jack-o-lantern or looking for some festive decor, we've got you
+              Whether you are baking the perfect pie, carving the scariest
+              jack-o-lantern or looking for some festive decor, we have got you
               covered. Every pumpkin is grown right here, on our 100+ acre farm.
             </p>
           </div>
@@ -54,7 +54,7 @@ const Cta = () => {
           <div className={style.textWrapper}>
             <h1>Join the Corn Maze Adventure</h1>
             <p>
-              If you're up for an adventure, try your luck in our 5 acre corn
+              If you are up for an adventure, try your luck in our 5 acre corn
               maze. Experience our incredible, unique corn maze and discover the
               hidden secrets and surprises along the way
             </p>
