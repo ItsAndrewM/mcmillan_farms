@@ -1,0 +1,38 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.wrapper h1,
+.wrapper p,
+.wrapper span {
+  width: 100%;
+  text-align: left;
+}
+
+#iframe {
+  min-height: 540px;
+}
+
+.wrapper > div:first-child {
+  gap: 1em;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+/* /////////////////////////mobile styling///////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+@media (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .wrapper > div > span {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -18,12 +18,14 @@ const HeroBanner = () => {
           width={470}
           alt={"lentelus collab with McMillan Farms"}
           id={style.collabVertical}
+          loading="lazy"
         />
         <Image
           src={collabHorizontal}
           width={300}
           alt={"lentelus collab with McMillan Farms"}
           id={style.collabHorizontal}
+          loading="lazy"
         />
       </div>
       <div className={style.skinnyContainer}>
@@ -33,6 +35,7 @@ const HeroBanner = () => {
           height={700}
           width={690}
           className={`${style.image}`}
+          loading="lazy"
         />
       </div>
       <div className={style.container}>

@@ -9,7 +9,13 @@ const CtaLeftColoured = ({ imageSrc, headline, desc, link, linkText }) => {
   return (
     <div className={`${style.wrapper} ${utilStyles.cream}`}>
       <div className={style.container}>
-        <Image src={imageSrc} height={800} quality={100} alt={""} />
+        <Image
+          src={imageSrc}
+          height={800}
+          quality={100}
+          alt={""}
+          loading="lazy"
+        />
       </div>
       <div className={`${style.container}  ${style.cream}`}>
         <div className={style.textContainer}>

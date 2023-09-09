@@ -19,10 +19,10 @@ export const menuItems = [
         name: "events",
         link: "/the-farm/events",
       },
-      {
-        name: "school bookings",
-        link: "/the-farm/school-bookings",
-      },
+      // {
+      //   name: "school bookings",
+      //   link: "/the-farm/school-bookings",
+      // },
     ],
   },
   {

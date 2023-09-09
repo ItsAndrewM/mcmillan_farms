@@ -6,7 +6,13 @@ import layoutStyles from "../layout/layout.module.css";
 const HeroCta = ({ imageSrc, header, link, linkText }) => {
   return (
     <div className={`${styles.heroWrapper}`}>
-      <Image src={imageSrc} className={styles.image} quality={100} alt={""} />
+      <Image
+        src={imageSrc}
+        className={styles.image}
+        quality={100}
+        alt={""}
+        loading="lazy"
+      />
       <div className={heroCtaStyles.container}>
         <h1>{header}</h1>
         <span>

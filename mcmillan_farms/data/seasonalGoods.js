@@ -100,15 +100,15 @@ export const seasonalGoods = {
         content:
           "Hay is not only a great feed for animals, but also a fun and versatile material for crafts and activities. At McMillan Farms, we sell hay in bales or bundles, and you can use it for making scarecrows, wreaths, or hay rides. Our hay is fresh and clean, and it adds a rustic charm to any occasion. Have a hay day with our hay!",
       },
-      {
-        name: "Fresh Plums",
-        link: "/the-farm/seasonal-goods/fall-goods/fresh-plums",
-        slug: "fresh-plums",
-        image: plums,
-        tag: "PLUCK A PLUM",
-        content:
-          "Plums are a delicious and nutritious fruit that you can enjoy fresh or dried. At McMillan Farms, we grow and harvest plums in our orchard, and you can pluck your own plums from our trees. Our plums are juicy and sweet, and they are great for making jams, pies, or snacks. Pluck a plum from our farm and taste the difference!",
-      },
+      // {
+      //   name: "Fresh Plums",
+      //   link: "/the-farm/seasonal-goods/fall-goods/fresh-plums",
+      //   slug: "fresh-plums",
+      //   image: plums,
+      //   tag: "PLUCK A PLUM",
+      //   content:
+      //     "Plums are a delicious and nutritious fruit that you can enjoy fresh or dried. At McMillan Farms, we grow and harvest plums in our orchard, and you can pluck your own plums from our trees. Our plums are juicy and sweet, and they are great for making jams, pies, or snacks. Pluck a plum from our farm and taste the difference!",
+      // },
       {
         name: "ornamental corn",
         link: "/the-farm/seasonal-goods/fall-goods/ornamental-corn",

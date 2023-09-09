@@ -33,11 +33,15 @@ const Page = ({ activityData, activityParent }) => {
   }
 };
 const ActivitiesPage = ({ activityData, activityParent }) => {
-  console.log(activityData);
   return (
     <Layout>
       <Head>
         <title>{activityData.name}</title>
+        <meta
+          name="description"
+          content={`${activityData.content} | McMillan Farms`}
+          key="desc"
+        />
       </Head>
       <section className={layoutStyles.section}>
         <div id={layoutStyles.breadcrumb}>
@@ -73,7 +77,8 @@ const ActivitiesPage = ({ activityData, activityParent }) => {
               quality={100}
               alt={""}
               key={activityData.image}
-              priority={true}
+              // priority={true}
+              loading="lazy"
             />
           </div>
           <div className={styles.textWrapper}>
@@ -96,7 +101,12 @@ const SeasonalPage = ({ activityData, activityParent }) => {
   return (
     <Layout>
       <Head>
-        <title>{activityData.title}</title>
+        <title>{activityData.name}</title>
+        <meta
+          name="description"
+          content={`${activityData.content} | McMillan Farms`}
+          key="desc"
+        />
       </Head>
       <section className={layoutStyles.section}>
         <HeroActivities
@@ -107,7 +117,7 @@ const SeasonalPage = ({ activityData, activityParent }) => {
       <section className={layoutStyles.section}>
         <TextHero
           tagline={activityData.small}
-          headline={activityData.title}
+          headline={activityData.name}
           content={activityData.content}
         />
       </section>

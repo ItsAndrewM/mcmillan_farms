@@ -11,7 +11,8 @@ const HeroTitle = ({ imageSrc, title }) => {
         quality={100}
         alt={""}
         key={imageSrc}
-        priority={true}
+        // priority={true}
+        loading="lazy"
       />
       <div className={styles.container}>
         <h1 className={utilStyles.capitalize}>{title}</h1>

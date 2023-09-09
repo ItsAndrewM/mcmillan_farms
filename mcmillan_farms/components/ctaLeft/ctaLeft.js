@@ -14,6 +14,7 @@ const CtaLeft = () => {
           height={800}
           quality={100}
           alt={"small orange pumpkins in a pile"}
+          loading="lazy"
         />
       </div>
       <div className={`${style.container}`}>

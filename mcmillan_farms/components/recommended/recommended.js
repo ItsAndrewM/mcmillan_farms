@@ -54,7 +54,12 @@ const Recommended = ({ arr, child }) => {
             >
               <Link href={item.link} className={styles.image}>
                 <div className={`${styles.imageWrapper}`}>
-                  <Image src={item.image} alt={""} key={item.image} />
+                  <Image
+                    src={item.image}
+                    alt={""}
+                    key={item.image}
+                    loading="lazy"
+                  />
                 </div>
               </Link>
               <span>

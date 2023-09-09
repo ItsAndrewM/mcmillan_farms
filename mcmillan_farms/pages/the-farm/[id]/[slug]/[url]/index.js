@@ -57,7 +57,8 @@ const Page = ({ activityData, activityParent }) => {
               quality={100}
               alt={""}
               key={activityData.image}
-              priority={true}
+              // priority={true}
+              loading="lazy"
             />
           </div>
           <div className={styles.textWrapper}>

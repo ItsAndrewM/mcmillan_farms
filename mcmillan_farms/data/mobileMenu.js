@@ -26,6 +26,10 @@ export const mobileMenu = [
     ],
   },
   {
+    name: "events",
+    link: "/the-farm/events",
+  },
+  {
     name: "about us",
     link: "/about-us",
   },

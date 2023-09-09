@@ -19,6 +19,7 @@ const Cta = () => {
             quality={100}
             className={style.image}
             alt={"pumpkins in a pile"}
+            loading="lazy"
           />
         </div>
         <div className={style.contentWrapper}>

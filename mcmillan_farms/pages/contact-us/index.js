@@ -4,6 +4,7 @@ import contactUsStyles from "../../styles/contactUs.module.css";
 import utilStyles from "../../styles/utils.module.css";
 import { useState, useEffect } from "react";
 import Head from "next/head";
+import Directions from "@/components/directions/directions";
 
 const Page = () => {
   const [errors, setErrors] = useState({});
@@ -160,6 +161,7 @@ const Page = () => {
                   <option value="collaboration/partnership">
                     Interest in collaboration or partnership
                   </option>
+                  <option value="birthday">Birthday Party Inquiry</option>
                 </select>
                 <span className={contactUsStyles.error}>
                   {getError("subject")}
@@ -189,6 +191,11 @@ const Page = () => {
               </button>
             </div>
           </form>
+        </div>
+      </section>
+      <section className={layoutStyles.section}>
+        <div className={contactUsStyles.wrapper}>
+          <Directions />
         </div>
       </section>
     </Layout>

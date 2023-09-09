@@ -23,11 +23,7 @@ const CtaRight = ({ headline, desc, link, linkText, imgSrc }) => {
         </div>
       </div>
       <div className={style.container}>
-        <Image
-          src={imgSrc}
-          quality={100}
-          alt={"2 tractors parked pulling wagons for a hayride"}
-        />
+        <Image src={imgSrc} quality={100} alt={""} loading="lazy" />
       </div>
     </div>
   );

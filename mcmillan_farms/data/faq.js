@@ -39,4 +39,41 @@ export const faq = [
     content:
       "If you've purchased a ticket for the pumpkin slingshot, hayride or corn maze and the weather changed significantly in a short amount of time then you will receive 100% full refund.  However, if the weather is less-than-ideal prior to your ticket purchase then we will not provide a refund (unless under specific circumstances).",
   },
+  {
+    summary: "Can I have my childs birthday at the farm?",
+    content:
+      "Yes, you can have your child’s birthday at the farm. We offer a farm birthday party package that includes admission, activities, animal feed, and pumpkins for up to 20 guests. You can also use our picnic tables and benches for your convenience. Your child and your guests will have a great time at the farm, enjoying all the activities we have to offer. They can explore the corn maze, take a hayride, try the slingshot, and bounce on the jump pad. They can also interact with our farm animals and take home a small pumpkin as a souvenir. You can book the farm for two hours for only $125, or extend your party for an additional $50 per half hour, subject to availability. You can also add a food package option for an extra $8 per person, which includes a hotdog, chips, and pop for each guest. To book your farm birthday party, please fill out this form [here]. We look forward to celebrating with you!",
+  },
+  {
+    summary: "How much does it cost to have my birthday at the farm?",
+    content: `The cost of having your birthday at the farm depends on the number of guests and the duration of your party. The farm birthday party package includes admission, activities, animal feed, and pumpkins for up to 20 guests. You can also use our picnic tables and benches for your convenience. The package costs $125 for two hours of rental. If you have more than 20 guests, you will need to pay an extra $8 per person. If you want to extend your party beyond two hours, you will need to pay an additional $50 per half hour, subject to availability. You can also add a food package option for an extra $8 per person, which includes a hotdog, chips, and pop for each guest. We look forward to celebrating with you!`,
+  },
+  {
+    summary: "What are the farm hours?",
+    content:
+      "The farm hours are 10am to 6pm most days from the last weekend of September to October 31st. However, the hours may change on holidays or days with inclement weather. Please check our website or call us before you visit to confirm our opening and closing times.",
+  },
+  {
+    summary: "Are you open on thanksgiving weekend?",
+    content:
+      "Yes, we are open on thanksgiving weekend, but we close at 5pm on holidays. You can still enjoy all the activities we have to offer, such as the corn maze, hayride, slingshot, and jump pad. You can also interact with our farm animals and take home a small pumpkin as a souvenir.",
+  },
+  {
+    summary: "How do I get to the farm?",
+    content:
+      "The farm is located at 3690 Berard Rd, Kelowna, BC V1W 4A9. You can find directions to the farm at the bottom of this page. We have ample parking space for your convenience.",
+  },
+  {
+    summary: "Can I book the farm for a wedding?",
+    content:
+      "Yes, you can book the farm for a wedding. We offer a unique and beautiful outdoor farm wedding venue in Kelowna, with hilltop views, open fields, iconic trees, and farm animals. You can choose from a variety of locations on the farm for your ceremony and reception, such as the plum orchard, the hay bale area, or the willow tree.",
+  },
+  // {
+  //   summary: "What does does that include?",
+  //   content: "Our farm wedding package includes the venue rental, tables and chairs, sound system, portable washrooms, and parking. We also provide a professional and friendly staff that will help you plan and execute your dream farm wedding."
+  // },
+  // {
+  //   summary: "How many people can I have for a farm wedding?",
+  //   content: "You can have up to 150 people for your farm wedding. This is the maximum capacity for our venue and facilities. If you have more than 150 guests, please contact us in advance to make arrangements. We may not be able to accommodate large groups without prior notice."
+  // }
 ];

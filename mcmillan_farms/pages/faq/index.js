@@ -6,6 +6,7 @@ import styles from "../../styles/faq.module.css";
 import Link from "next/link";
 import { GiPumpkinLantern } from "react-icons/gi";
 import Head from "next/head";
+import Directions from "@/components/directions/directions";
 
 const Page = () => {
   return (
@@ -21,6 +22,15 @@ const Page = () => {
       <section className={layoutStyles.section}>
         <div className={styles.wrapper}>
           <Accordian arr={faq} title={"Frequently Asked Questions"} />
+        </div>
+      </section>
+      <section className={layoutStyles.section}>
+        <div className={styles.wrapper}>
+          <Directions />
+        </div>
+      </section>
+      <section className={layoutStyles.section}>
+        <div className={styles.wrapper}>
           <div className={styles.container}>
             <div className={styles.box}>
               <div>

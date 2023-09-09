@@ -11,7 +11,8 @@ const HeroActivities = ({ imageSrc, title }) => {
         quality={100}
         alt={""}
         key={imageSrc}
-        priority={true}
+        // priority={true}
+        loading="lazy"
       />
       <div className={styles.container}>
         {title.toLowerCase() !== "activities" && (
