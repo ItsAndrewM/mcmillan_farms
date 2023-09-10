@@ -25,8 +25,8 @@ export default function Home() {
   const heroHeader = "Fall Fun at McMillan Farms";
   const heroDesc =
     "Celebrate the arrival of fall at our farm and check out all the amazing attractions, seasonal crops, and more! Get lost in the corn maze or enjoy a scenic tour on a hay ride, there is tons to do at McMillan Farms!";
-  const heroLink = "/the-farm";
-  const heroLinkText = "learn more";
+  const heroLink = "https://www.showpass.com/o/mcmillan-farms/";
+  const heroLinkText = "Book Tickets now";
 
   const desc =
     "We are so excited to welcome you back to this fall, where you can enjoy the best of the season with all McMillan Farms has to offer. We have been working hard to prepare so many fun and exciting activities for you. Don’t miss your chance to make some unforgettable memories at McMillan Farms.";

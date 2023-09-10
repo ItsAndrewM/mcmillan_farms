@@ -42,6 +42,6 @@ export const birthdayData = [
   {
     summary: "Food Package Option",
     content:
-      "You can add a food package option to your 2secon birthday package for an additional $8 per person. This includes a hotdog, chips, and pop for each guest. You will receive coupons for the food package when you book your party. You can redeem them at our onsite food vendor on the day of your party",
+      "You can add a food package option to your birthday package for an additional amount per person. This includes a hotdog, chips, and pop for each guest. You will receive coupons for the food package when you book your party. You can redeem them at our onsite food vendor on the day of your party.  Contact us for more details!",
   },
 ];

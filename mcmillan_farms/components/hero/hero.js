@@ -16,7 +16,11 @@ const Hero = ({ imageSrc, header, description, link, linkText }) => {
         <h1>{header}</h1>
         <p>{description}</p>
         <span>
-          <Link href={link} className={`${layoutStyles.link}`}>
+          <Link
+            href={link}
+            // className={`${layoutStyles.link} ${layoutStyles.button}`}
+            className={` ${layoutStyles.button}`}
+          >
             {linkText}
           </Link>
         </span>

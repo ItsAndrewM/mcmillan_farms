@@ -7,18 +7,34 @@ import { useEffect, useState } from "react";
 import { random } from "@/lib/random";
 
 export const featuredProducts = (list, emptyList) => {
-  while (emptyList.length < 5) {
-    const num = random(list.length);
-    const find = emptyList.find((val) => {
-      return val === list[num];
-    });
-    if (!find) {
-      emptyList.push(list[num]);
-      featuredProducts(list, emptyList);
-    } else {
-      featuredProducts(list, emptyList);
+  if (list.length < 5) {
+    while (emptyList.length < list.length - 1) {
+      const num = random(list.length);
+      const find = emptyList.find((val) => {
+        return val === list[num];
+      });
+      if (!find) {
+        emptyList.push(list[num]);
+        featuredProducts(list, emptyList);
+      } else {
+        featuredProducts(list, emptyList);
+      }
+      return emptyList;
     }
-    return emptyList;
+  } else {
+    while (emptyList.length < 5) {
+      const num = random(list.length);
+      const find = emptyList.find((val) => {
+        return val === list[num];
+      });
+      if (!find) {
+        emptyList.push(list[num]);
+        featuredProducts(list, emptyList);
+      } else {
+        featuredProducts(list, emptyList);
+      }
+      return emptyList;
+    }
   }
 };
 
