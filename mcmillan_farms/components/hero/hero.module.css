@@ -72,4 +72,10 @@
   .container h1 {
     font-size: var(--mobile-h);
   }
+  .container span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+  }
 }
