@@ -12,6 +12,7 @@ const CtaLeft = () => {
         <Image
           src={pumpkin}
           height={800}
+          width={800}
           quality={100}
           alt={"small orange pumpkins in a pile"}
           loading="lazy"
@@ -30,7 +31,7 @@ const CtaLeft = () => {
               href={"/"}
               className={`${utilStyles.paddingTop1} ${layoutStyles.link}`}
             >
-              Learn More
+              learn more about our varieties, sizes, and prices
             </Link>
           </span>
         </div>

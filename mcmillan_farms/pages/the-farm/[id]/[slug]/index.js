@@ -75,16 +75,26 @@ const ActivitiesPage = ({ activityData, activityParent }) => {
             <Image
               src={activityData.image}
               quality={100}
+              width={400}
+              height={400}
               alt={""}
               key={activityData.image}
-              // priority={true}
-              loading="lazy"
+              priority={true}
+              // loading="lazy"
             />
           </div>
           <div className={styles.textWrapper}>
             <h1>{activityData.name}</h1>
             <small>{activityData.tag}</small>
             <p>{activityData.content}</p>
+            <span>
+              <Link
+                href={"https://www.showpass.com/o/mcmillan-farms/"}
+                className={layoutStyles.button}
+              >
+                Book your tickets now
+              </Link>
+            </span>
           </div>
         </div>
       </section>

@@ -16,6 +16,7 @@ const Cta = () => {
           <Image
             src={pumpkin}
             height={800}
+            width={800}
             quality={100}
             className={style.image}
             alt={"pumpkins in a pile"}

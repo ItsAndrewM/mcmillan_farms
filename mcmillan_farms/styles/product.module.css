@@ -15,5 +15,11 @@
   .container {
     flex-direction: column;
     padding: 1em;
+    margin-bottom: 1em;
+  }
+  .container > div > span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }

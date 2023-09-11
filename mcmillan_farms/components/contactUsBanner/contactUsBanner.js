@@ -1,7 +1,6 @@
 import Link from "next/link";
 import logo from "../../public/images/logo_large.png";
 import styles from "./contactUsBanner.module.css";
-import Image from "next/image";
 import layoutStyles from "../layout/layout.module.css";
 import utilStyles from "../../styles/utils.module.css";
 import { GiPumpkinLantern } from "react-icons/gi";

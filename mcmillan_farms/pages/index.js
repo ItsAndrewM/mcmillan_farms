@@ -31,14 +31,14 @@ export default function Home() {
   const desc =
     "We are so excited to welcome you back to this fall, where you can enjoy the best of the season with all McMillan Farms has to offer. We have been working hard to prepare so many fun and exciting activities for you. Don’t miss your chance to make some unforgettable memories at McMillan Farms.";
   const headline = "Fall at the farm";
-  const link = "/";
-  const linkText = "learn more";
+  const link = "/the-farm";
+  const linkText = "Discover more about activities and products";
 
   const rightHeadline = "Experience the Best Hay Ride in Kelowna";
   const rightDesc =
     "See all the farm has to offer on our unique, 100+ acre hay ride tour like where we grow the pumpkins, our summer Sunflower fields and of course, our famous willow tree Don’t miss out this fall, make sure you come down and jump on a hay ride at McMillan Farms";
   const rightLink = "/the-farm/fall-attractions/hay-rides";
-  const rightLinkText = "Learn More";
+  const rightLinkText = "Enjoy a hayride: find out how";
 
   return (
     <Layout home>

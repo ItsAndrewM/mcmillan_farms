@@ -198,6 +198,7 @@
 
 .button {
   background-color: var(--brown);
+  border: 1px solid var(--brown);
   padding: 15px 20px;
   overflow: hidden;
 }

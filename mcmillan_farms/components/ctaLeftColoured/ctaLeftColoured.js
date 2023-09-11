@@ -12,6 +12,7 @@ const CtaLeftColoured = ({ imageSrc, headline, desc, link, linkText }) => {
         <Image
           src={imageSrc}
           height={800}
+          width={800}
           quality={100}
           alt={""}
           loading="lazy"

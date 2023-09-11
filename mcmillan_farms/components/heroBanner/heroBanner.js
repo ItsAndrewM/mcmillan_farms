@@ -32,8 +32,8 @@ const HeroBanner = () => {
         <Image
           src={sunflower}
           alt={"picture of sunflowers"}
-          height={700}
-          width={690}
+          height={750}
+          width={520}
           className={`${style.image}`}
           loading="lazy"
         />
