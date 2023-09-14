@@ -269,7 +269,7 @@ const Page = () => {
                 className={`${contactUsStyles.name} ${contactUsStyles.block}`}
               >
                 <label htmlFor="frm-time-second">
-                  Requested Time - second choice*
+                  Requested Time - second choice
                 </label>
                 <input
                   id="frm-time-second"
@@ -310,7 +310,7 @@ const Page = () => {
                 className={`${contactUsStyles.name} ${contactUsStyles.block}`}
               >
                 <label htmlFor="frm-time-second">
-                  Requested Time - third choice*
+                  Requested Time - third choice
                 </label>
                 <input
                   id="frm-time-third"
