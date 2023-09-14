@@ -129,7 +129,7 @@ const Page = () => {
             </div>
             <div className={`${contactUsStyles.row}`}>
               <div
-                className={`${contactUsStyles.phone} ${contactUsStyles.block}`}
+                className={`${contactUsStyles.name} ${contactUsStyles.block}`}
               >
                 <label htmlFor="frm-phone">Phone*</label>
                 <input
@@ -146,7 +146,26 @@ const Page = () => {
                 </span>
               </div>
               <div
-                className={`${contactUsStyles.phone} ${contactUsStyles.block}`}
+                className={`${contactUsStyles.name} ${contactUsStyles.block}`}
+              >
+                <label htmlFor="frm-number">Class Size*</label>
+                <input
+                  id="frm-number"
+                  type="number"
+                  name="number"
+                  min="1"
+                  placeholder="Enter class size"
+                  required
+                  className={getError("number") ? contactUsStyles.invalid : ""}
+                />
+                <span className={contactUsStyles.error}>
+                  {getError("number")}
+                </span>
+              </div>
+            </div>
+            <div className={`${contactUsStyles.row}`}>
+              <div
+                className={`${contactUsStyles.name} ${contactUsStyles.block}`}
               >
                 <label htmlFor="frm-schools">School*</label>
                 <select
@@ -180,13 +199,13 @@ const Page = () => {
                   handleChange={(val) => setValue(val)}
                 /> */}
                 <span className={contactUsStyles.error}>
-                  {getError("subject")}
+                  {getError("schools")}
                 </span>
               </div>
             </div>
             <div className={`${contactUsStyles.row}`}>
               <div
-                className={`${contactUsStyles.phone} ${contactUsStyles.block}`}
+                className={`${contactUsStyles.name} ${contactUsStyles.block}`}
               >
                 <label htmlFor="frm-date-first">
                   Requested Date - first choice*
@@ -204,10 +223,31 @@ const Page = () => {
                   {getError("date-first")}
                 </span>
               </div>
+              <div
+                className={`${contactUsStyles.name} ${contactUsStyles.block}`}
+              >
+                <label htmlFor="frm-time-first">
+                  Requested Time - first choice*
+                </label>
+                <input
+                  id="frm-time-first"
+                  type="time"
+                  name="time-first"
+                  min="9:00"
+                  max="16:00"
+                  required
+                  className={`${utilStyles.lightText} ${styles.frmDate} ${
+                    getError("time-first") ? contactUsStyles.invalid : ""
+                  }`}
+                />
+                <span className={contactUsStyles.error}>
+                  {getError("time-first")}
+                </span>
+              </div>
             </div>
             <div className={`${contactUsStyles.row}`}>
               <div
-                className={`${contactUsStyles.phone} ${contactUsStyles.block}`}
+                className={`${contactUsStyles.name} ${contactUsStyles.block}`}
               >
                 <label htmlFor="frm-date-second">
                   Requested Date - second choice
@@ -223,6 +263,26 @@ const Page = () => {
                 />
                 <span className={contactUsStyles.error}>
                   {getError("date-second")}
+                </span>
+              </div>
+              <div
+                className={`${contactUsStyles.name} ${contactUsStyles.block}`}
+              >
+                <label htmlFor="frm-time-second">
+                  Requested Time - second choice*
+                </label>
+                <input
+                  id="frm-time-second"
+                  type="time"
+                  name="time-second"
+                  min="9:00"
+                  max="16:00"
+                  className={`${utilStyles.lightText} ${styles.frmDate} ${
+                    getError("time-second") ? contactUsStyles.invalid : ""
+                  }`}
+                />
+                <span className={contactUsStyles.error}>
+                  {getError("time-second")}
                 </span>
               </div>
             </div>
@@ -244,6 +304,26 @@ const Page = () => {
                 />
                 <span className={contactUsStyles.error}>
                   {getError("date-third")}
+                </span>
+              </div>
+              <div
+                className={`${contactUsStyles.name} ${contactUsStyles.block}`}
+              >
+                <label htmlFor="frm-time-second">
+                  Requested Time - third choice*
+                </label>
+                <input
+                  id="frm-time-third"
+                  type="time"
+                  name="time-third"
+                  min="9:00"
+                  max="16:00"
+                  className={`${utilStyles.lightText} ${styles.frmDate} ${
+                    getError("time-third") ? contactUsStyles.invalid : ""
+                  }`}
+                />
+                <span className={contactUsStyles.error}>
+                  {getError("time-third")}
                 </span>
               </div>
             </div>
