@@ -8,7 +8,7 @@ export default function Custom404() {
   return (
     <Layout>
       <Head>
-        <title>McMillan Farms</title>
+        <title>McMillan Farms | 404</title>
         <meta
           name="description"
           content="A mainstay in your familys tradition, visit McMillan Farms this October for all your family fall fun needs!"

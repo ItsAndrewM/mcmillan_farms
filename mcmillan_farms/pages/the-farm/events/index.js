@@ -57,7 +57,7 @@ const Page = () => {
         return acc;
       }, {});
       try {
-        const response = await fetch("/api/contact-us", {
+        const response = await fetch("/api/events", {
           method: "post",
           body: new URLSearchParams(data),
         });
@@ -254,7 +254,7 @@ const Page = () => {
                   type="date"
                   name="date-first"
                   required
-                  className={`${utilStyles.lightText} ${
+                  className={`${utilStyles.lightText} ${styles.frmDate} ${
                     getError("date-first") ? contactUsStyles.invalid : ""
                   }`}
                 />
@@ -275,7 +275,7 @@ const Page = () => {
                   type="date"
                   name="date-second"
                   // required
-                  className={`${utilStyles.lightText} ${
+                  className={`${utilStyles.lightText} ${styles.frmDate} ${
                     getError("date-second") ? contactUsStyles.invalid : ""
                   }`}
                 />
@@ -296,7 +296,7 @@ const Page = () => {
                   type="date"
                   name="date-third"
                   // required
-                  className={`${utilStyles.lightText} ${
+                  className={`${utilStyles.lightText} ${styles.frmDate} ${
                     getError("date-third") ? contactUsStyles.invalid : ""
                   }`}
                 />

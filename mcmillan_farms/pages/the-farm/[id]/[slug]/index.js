@@ -33,10 +33,12 @@ const Page = ({ activityData, activityParent }) => {
   }
 };
 const ActivitiesPage = ({ activityData, activityParent }) => {
+  const title =
+    activityData.name.charAt(0).toUpperCase() + activityData.name.slice(1);
   return (
     <Layout>
       <Head>
-        <title>{activityData.name}</title>
+        <title>McMillan Farms | {title}</title>
         <meta
           name="description"
           content={`${activityData.content} | McMillan Farms`}
@@ -108,10 +110,12 @@ const ActivitiesPage = ({ activityData, activityParent }) => {
 };
 
 const SeasonalPage = ({ activityData, activityParent }) => {
+  const title =
+    activityData.name.charAt(0).toUpperCase() + activityData.name.slice(1);
   return (
     <Layout>
       <Head>
-        <title>{activityData.name}</title>
+        <title>McMillan Farms | {title}</title>
         <meta
           name="description"
           content={`${activityData.content} | McMillan Farms`}

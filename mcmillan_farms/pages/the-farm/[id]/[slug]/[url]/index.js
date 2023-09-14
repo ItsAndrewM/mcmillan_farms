@@ -10,10 +10,17 @@ import Image from "next/image";
 import Recommended from "@/components/recommended/recommended";
 
 const Page = ({ activityData, activityParent }) => {
+  const title =
+    activityData.name.charAt(0).toUpperCase() + activityData.name.slice(1);
   return (
     <Layout>
       <Head>
-        <title>{activityData.name}</title>
+        <title>McMillan Farms | {title}</title>
+        <meta
+          name="description"
+          content={`${activityData.content} | McMillan Farms`}
+          key="desc"
+        />
       </Head>
       <section className={layoutStyles.section}>
         <div id={layoutStyles.breadcrumb}>
