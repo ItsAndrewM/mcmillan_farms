@@ -33,9 +33,9 @@ export const seasonalGoods = {
         link: "/the-farm/seasonal-goods/summer-crops/sunflowers",
         slug: "sunflowers",
         image: sunflowerSummer,
-        tag: "PICK YOUR PERFECT PUMPKIN",
+        tag: "Brighten up your day with our farm-fresh sunflowers",
         content:
-          "Pumpkins are a staple of the fall season, and we have plenty of them at McMillan Farms. You can choose from different sizes, shapes, and colors of pumpkins, and carve them into your own masterpiece. Our pumpkins are grown with care and quality, and they are perfect for decorating, baking, or making jack-o-lanterns. Come and pick your perfect pumpkin today!",
+          "Nothing says summer like a bouquet of sunflowers. That’s why we grow them on our farm, with love and care, to bring you the best quality and beauty. Our sunflowers are available in different sizes and colors, from classic yellow to vibrant red. They are perfect for any occasion, whether you want to decorate your home, surprise a loved one, or treat yourself. Order online or visit us at our farm stand and pick your own sunflowers. You’ll be amazed by their freshness and charm.",
       },
       {
         name: "fresh flower bouquets",
@@ -46,23 +46,23 @@ export const seasonalGoods = {
         content:
           "Hay is not only a great feed for animals, but also a fun and versatile material for crafts and activities. At McMillan Farms, we sell hay in bales or bundles, and you can use it for making scarecrows, wreaths, or hay rides. Our hay is fresh and clean, and it adds a rustic charm to any occasion. Have a hay day with our hay!",
       },
-      {
-        name: "handmade goods",
-        link: "/the-farm/seasonal-goods/summer-crops/handmade-goods",
-        slug: "handmade-goods",
-        image: handmadeGoods,
-        tag: "PLUCK A PLUM",
-        content:
-          "Plums are a delicious and nutritious fruit that you can enjoy fresh or dried. At McMillan Farms, we grow and harvest plums in our orchard, and you can pluck your own plums from our trees. Our plums are juicy and sweet, and they are great for making jams, pies, or snacks. Pluck a plum from our farm and taste the difference!",
-      },
+      // {
+      //   name: "handmade goods",
+      //   link: "/the-farm/seasonal-goods/summer-crops/handmade-goods",
+      //   slug: "handmade-goods",
+      //   image: handmadeGoods,
+      //   tag: "PLUCK A PLUM",
+      //   content:
+      //     "Plums are a delicious and nutritious fruit that you can enjoy fresh or dried. At McMillan Farms, we grow and harvest plums in our orchard, and you can pluck your own plums from our trees. Our plums are juicy and sweet, and they are great for making jams, pies, or snacks. Pluck a plum from our farm and taste the difference!",
+      // },
       {
         name: "food and drinks",
         link: "/the-farm/seasonal-goods/summer-crops/food-and-drinks",
         slug: "food-and-drinks",
         image: chips,
-        tag: "CORN FOR ALL SEASONS",
+        tag: "Handmade from the Farm, just for you",
         content:
-          "Ornamental corn is a type of corn that has colorful kernels and husks, and it is used for decoration or crafts. At McMillan Farms, we grow and sell ornamental corn in various colors and sizes, and you can use it for making centerpieces, garlands, or wreaths. Our ornamental corn is eye-catching and festive, and it is suitable for all seasons. Corn for all seasons with our ornamental corn!",
+          "We have a variety of unique and beautiful items that are made with care and creativity. Whether you’re looking for knitted crafts, painted items, pins, or something else, you’ll find something that suits your taste and style. Our handmade goods are perfect for gifts, home decor, or personal use. Browse our collection and discover the charm and quality of handmade goods.",
       },
       {
         name: "produce",
@@ -98,7 +98,7 @@ export const seasonalGoods = {
         image: hayBale,
         tag: "HAVE A HAY DAY",
         content:
-          "Hay is not only a great feed for animals, but also a fun and versatile material for crafts and activities. At McMillan Farms, we sell hay in bales or bundles, and you can use it for making scarecrows, wreaths, or hay rides. Our hay is fresh and clean, and it adds a rustic charm to any occasion. Have a hay day with our hay!",
+          "Hay is not only a great feed for animals, but also a fun and versatile material for crafts and activities. At McMillan Farms, we sell hay in bales or bundles, and you can use it for making scarecrows, wreaths, or hay rides. Our hay is fresh and clean, and it adds a rustic charm to any occasion. Have a hay day with our hay, while supplies last and vary.",
       },
       // {
       //   name: "Fresh Plums",
@@ -109,15 +109,15 @@ export const seasonalGoods = {
       //   content:
       //     "Plums are a delicious and nutritious fruit that you can enjoy fresh or dried. At McMillan Farms, we grow and harvest plums in our orchard, and you can pluck your own plums from our trees. Our plums are juicy and sweet, and they are great for making jams, pies, or snacks. Pluck a plum from our farm and taste the difference!",
       // },
-      {
-        name: "ornamental corn",
-        link: "/the-farm/seasonal-goods/fall-goods/ornamental-corn",
-        slug: "ornamental-corn",
-        image: corn,
-        tag: "CORN FOR ALL SEASONS",
-        content:
-          "Ornamental corn is a type of corn that has colorful kernels and husks, and it is used for decoration or crafts. At McMillan Farms, we grow and sell ornamental corn in various colors and sizes, and you can use it for making centerpieces, garlands, or wreaths. Our ornamental corn is eye-catching and festive, and it is suitable for all seasons. Corn for all seasons with our ornamental corn!",
-      },
+      // {
+      //   name: "ornamental corn",
+      //   link: "/the-farm/seasonal-goods/fall-goods/ornamental-corn",
+      //   slug: "ornamental-corn",
+      //   image: corn,
+      //   tag: "CORN FOR ALL SEASONS",
+      //   content:
+      //     "Ornamental corn is a type of corn that has colorful kernels and husks, and it is used for decoration or crafts. At McMillan Farms, we grow and sell ornamental corn in various colors and sizes, and you can use it for making centerpieces, garlands, or wreaths. Our ornamental corn is eye-catching and festive, and it is suitable for all seasons. Corn for all seasons with our ornamental corn!",
+      // },
       {
         name: "sunflowers",
         link: "/the-farm/seasonal-goods/fall-goods/sunflowers",
@@ -161,7 +161,7 @@ export const seasonalGoods = {
         image: appleJuice,
         tag: "SIP AND SAVOR",
         content:
-          "Apple juice is a refreshing and healthy drink that you can enjoy any time of the day. At McMillan Farms, we make our own apple juice from our apples that we grow in our orchard. Our apple juice is natural and pure, and it has no added sugar or preservatives. Sip and savor our apple juice!",
+          "Apple juice is a refreshing and healthy drink that you can enjoy any time of the day. At McMillan Farms, we provide apple juice from locally grown apples that are grown in orchard from here in Kelowna. Our apple juice is natural and pure, and it has no added sugar or preservatives. Sip and savor our apple juice, while supplies last.",
       },
     ],
   },

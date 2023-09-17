@@ -6,32 +6,32 @@ import sunflower from "../public/images/sunflower3.jpg";
 
 export const attractionsAndProducts = [
   {
-    name: "fall attractions",
+    name: "Fall Attractions",
     link: "/the-farm/fall-attractions",
     slug: "fall-attractions",
     image: cornMaze,
   },
   {
-    name: "seasonal goods",
+    name: "Seasonal Goods",
     link: "/the-farm/seasonal-goods",
     slug: "seasonal-goods",
     image: pumpkins,
   },
   {
-    name: "summer activities",
+    name: "Summer Activities",
     link: "/the-farm/summer-activities",
     slug: "summer-activities",
     image: sunflower,
   },
   // {
-  //   name: "weddings",
-  //   link: "/activities/weddings",
+  //   name: "events",
+  //   link: "/the-farm/events",
   //   slug: "weddings",
   //   image: wedding,
   // },
   // {
   //   name: "school bookings",
-  //   link: "/activities/school-bookings",
+  //   link: "/the-farm/school-bookings",
   //   slug: "school-bookings",
   //   image: fieldTrip,
   // },

@@ -29,7 +29,8 @@ const Cta = () => {
             <p>
               Whether you are baking the perfect pie, carving the scariest
               jack-o-lantern or looking for some festive decor, we have got you
-              covered. Every pumpkin is grown right here, on our 100+ acre farm.
+              covered. We grow over 20 different pumpkin varieties right here,
+              on our 100+ acre farm.
             </p>
           </div>
           <span>
@@ -56,9 +57,10 @@ const Cta = () => {
           <div className={style.textWrapper}>
             <h1>Join the Corn Maze Adventure</h1>
             <p>
-              If you are up for an adventure, try your luck in our 5 acre corn
-              maze. Experience our incredible, unique corn maze and discover the
-              hidden secrets and surprises along the way
+              If you are up for an adventure, try your luck in our
+              family-friendly corn maze. Youll have a blast finding your way
+              through the twists and turns of our amazing maze, while enjoying
+              the fresh air and beautiful scenery.
             </p>
           </div>
           <span>

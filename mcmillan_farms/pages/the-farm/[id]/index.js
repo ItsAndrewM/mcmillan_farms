@@ -13,13 +13,12 @@ import HeroActivities from "@/components/heroActivities/heroActivities";
 import TextHero from "@/components/textHero/texthero";
 
 const Page = ({ attractionData }) => {
-  const title =
-    attractionData.title.charAt(0).toUpperCase() +
-    attractionData.title.slice(1);
   return (
     <Layout>
       <Head>
-        <title>McMillan Farms |{title}</title>
+        <title className={utilStyles.capitalize}>
+          {`McMillan Farms | ${attractionData.title}`}
+        </title>
         <meta
           name="description"
           content={`${attractionData.content} | McMillan Farms`}

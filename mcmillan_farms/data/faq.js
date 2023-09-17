@@ -2,7 +2,7 @@ export const faq = [
   {
     summary: "How many acres is the farm?",
     content:
-      "The farm is just over 100 acres and spans from Berard Road to Mission Creek.  The farm is made up of a 30+ hay field, a 5 acre corn maze, approximetly 5 acres of pumpkins (spread all across the farm) and forested and swampy land everywhere in between.",
+      "The farm is just over 100 acres and spans from Berard Road to Mission Creek.  The farm is made up of a 20+ acre hay field, a 3 acre corn maze, approximetly 5 acres of pumpkins (spread all across the farm) and forested and swampy land everywhere in between.",
   },
   {
     summary: "How long has the farm been open?",
@@ -27,12 +27,12 @@ export const faq = [
   {
     summary: "Do I need to book ahead for activities?",
     content:
-      "There is no ticketing system during the fall, but there is during the summer for our Sunflower Maze.  During the fall, our hayrides, corn maze and pumpkin slingshot admission is all first come, first serve.",
+      "There is ticketing system during the fall and the summer.  During the fall, our hayrides, corn maze and pumpkin slingshot is all admission based and require a ticket to participate.  Buying a ticket online is reccomended to avoid dissapointment.  Visit https://www.showpass.com/o/mcmillan-farms/ for ticketing info.",
   },
   {
     summary: "Is there an admission fee to visit the farm?",
     content:
-      "There is no admission fee! The farm is completely free to visit if you want to check out the hay maze, photo oppurtunities and farm animals.  There is a fee for the hayride, corn maze, pumpkin slingshot and all the different pumpkins and produce.",
+      "There is no admission fee! The farm is completely free to visit if you want to check out the fence maze, photo oppurtunities and farm animals.  There is a fee for the hayride, corn maze, pumpkin slingshot and all the different pumpkins and produce.",
   },
   {
     summary: "Can I get a refund if the weather is bad?",
@@ -66,7 +66,7 @@ export const faq = [
   {
     summary: "Can I book the farm for a wedding?",
     content:
-      "Yes, you can book the farm for a wedding. We offer a unique and beautiful outdoor farm wedding venue in Kelowna, with hilltop views, open fields, iconic trees, and farm animals. You can choose from a variety of locations on the farm for your ceremony and reception, such as the plum orchard, the hay bale area, or the willow tree.",
+      "Yes, you can book the farm for a wedding. We offer a unique and beautiful outdoor farm wedding venue in Kelowna, with hilltop views, open fields, iconic trees, and farm animals. You can choose from a variety of locations on the farm for your ceremony and reception, the hay bale area, or the willow tree.",
   },
   // {
   //   summary: "What does does that include?",

@@ -38,7 +38,7 @@ const ActivitiesPage = ({ activityData, activityParent }) => {
   return (
     <Layout>
       <Head>
-        <title>McMillan Farms | {title}</title>
+        <title>{`McMillan Farms | ${title}`}</title>
         <meta
           name="description"
           content={`${activityData.content} | McMillan Farms`}
@@ -115,7 +115,7 @@ const SeasonalPage = ({ activityData, activityParent }) => {
   return (
     <Layout>
       <Head>
-        <title>McMillan Farms | {title}</title>
+        <title>{`McMillan Farms | ${title}`}</title>
         <meta
           name="description"
           content={`${activityData.content} | McMillan Farms`}

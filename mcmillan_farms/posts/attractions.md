@@ -19,9 +19,9 @@ Another popular attraction at McMillan Farms is their corn maze, which is one of
 
 If you want to relax and enjoy the beauty of nature, you can hop on a hay ride at McMillan Farms. The hay ride is a tractor-pulled wagon that takes you around the farm and shows you the different crops and animals that they have. You can see the rolling hay fields, the lush pasture land for grazing horses, and the dense swamp that is home to many wildlife species. The hay ride is a great way to learn more about the farm and its history, as well as to take some amazing photos of the scenery. The hay ride is available from late September to October 31st, on weekends and holidays.
 
-## Hay Maze
+## fence maze
 
-If you are looking for a fun and easy activity for kids, you can try the hay maze at McMillan Farms. The hay maze is a smaller version of the corn maze, made of stacked hay bales that form walls and paths. The hay maze is designed for younger children who might find the corn maze too difficult or scary. The hay maze is also safer and more comfortable than the corn maze, as it has no sharp edges or rough surfaces. The hay maze is open from late September to October 31st, during the day.
+If you are looking for a fun and easy activity for kids, you can try the fence maze at McMillan Farms. The fence maze is a smaller version of the corn maze, made of stacked hay bales that form walls and paths. The fence maze is designed for younger children who might find the corn maze too difficult or scary. The fence maze is also safer and more comfortable than the corn maze, as it has no sharp edges or rough surfaces. The fence maze is open from late September to October 31st, during the day.
 
 ## Pumpkin Slingshot
 

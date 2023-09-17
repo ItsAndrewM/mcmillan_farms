@@ -42,8 +42,8 @@ const HeroBanner = () => {
         <div className={ctaLeftStyles.textContainer}>
           <h1>A partnership we are proud of</h1>
           <p>
-            Lentelus Farms and McMillan Farms have partnered to bring you a 5
-            acre Sunflower Maze. We have got a lot more coming summer 2024.
+            Lentelus Farms and McMillan Farms have partnered to bring you a
+            Sunflower Maze. We have got a lot more coming summer 2024.
           </p>
           <span>
             <Link
