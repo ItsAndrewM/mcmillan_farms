@@ -31,4 +31,5 @@ export const elementarySchools = [
   { id: 30, name: "Springvalley Elementary" },
   { id: 31, name: "Watson Road Elementary" },
   { id: 32, name: "Webber Road Elementary" },
+  { id: 33, name: "Other (non SD23 school/Middle or High School" },
 ];

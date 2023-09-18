@@ -1,7 +1,7 @@
 import Image from "next/image";
 import style from "./cta.module.css";
 import pumpkin from "../../public/images/pumpkins5.jpg";
-import cornmaze from "../../public/images/cornmaze2.jpg";
+import cornmaze from "../../public/images/cornmaze4.jpg";
 import hayride from "../../public/images/hayride3.jpg";
 import Link from "next/link";
 import heroStyles from "../hero/hero.module.css";
@@ -22,6 +22,7 @@ const Cta = () => {
             alt={"pumpkins in a pile"}
             loading="lazy"
           />
+          <div className={style.filter}></div>
         </div>
         <div className={style.contentWrapper}>
           <div className={style.textWrapper}>
@@ -52,6 +53,7 @@ const Cta = () => {
             className={style.image}
             alt={"cornmaze and a path"}
           />
+          <div className={style.filter}></div>
         </div>
         <div className={style.contentWrapper}>
           <div className={style.textWrapper}>

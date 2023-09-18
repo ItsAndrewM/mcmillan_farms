@@ -7,7 +7,7 @@ import pettingZoo from "../public/images/attractions/pettingZoo.jpg";
 import pumpkinSlingshot from "../public/images/attractions/pumpkinSlingshot.png";
 import cornMaze from "../public/images/attractions/cornMaze.jpg";
 import wildLife from "../public/images/attractions/wildLife.jpg";
-import heroCornMaze from "../public/images/cornmaze3.jpg";
+import hayride from "../public/images/hayride4.jpg";
 //seasonal goods
 import heroPumpkins from "../public/images/pumpkins6.jpg";
 import summerGoods from "../public/images/summerGoods.jpg";
@@ -21,7 +21,7 @@ export const data = {
   "fall-attractions": {
     title: "fall attractions",
     slug: "fall-attractions",
-    image: heroCornMaze,
+    image: hayride,
     small: "discover your inner farmer",
     content:
       "McMillan Farms is more than just a farm, it’s a destination. We have a range of attractions that will delight and entertain you and your family. Our hay ride is one of a kind, as it spans 100 acres of farm land and offers a scenic view of the countryside. Our wildlife is also unpredictable, as you never know what animals you might encounter on your visit. Whether you want to carve a pumpkin, shoot a slingshot, pet a goat, or see a deer, we have something for everyone.",

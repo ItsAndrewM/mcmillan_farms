@@ -8,7 +8,7 @@ import TextHero from "@/components/textHero/texthero";
 import CtaLeftColoured from "@/components/ctaLeftColoured/ctaLeftColoured";
 import wedding from "../../public/images/wedding3.jpg";
 import CtaRight from "@/components/ctaRight/ctaRight";
-import hayride from "../../public/images/hayride4.jpg";
+import hayride from "../../public/images/hayfield.jpg";
 import { GiPumpkinLantern } from "react-icons/gi";
 import Link from "next/link";
 import faqStyles from "../../styles/faq.module.css";

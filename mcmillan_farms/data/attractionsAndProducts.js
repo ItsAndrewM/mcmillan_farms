@@ -1,4 +1,4 @@
-import cornMaze from "../public/images/cornmaze.jpg";
+import hayride from "../public/images/hayride4.jpg";
 import pumpkins from "../public/images/pumpkins.jpg";
 import wedding from "../public/images/wedding.jpg";
 import fieldTrip from "../public/images/fieldTrip.jpg";
@@ -9,7 +9,7 @@ export const attractionsAndProducts = [
     name: "Fall Attractions",
     link: "/the-farm/fall-attractions",
     slug: "fall-attractions",
-    image: cornMaze,
+    image: hayride,
   },
   {
     name: "Seasonal Goods",
