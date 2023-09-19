@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "../hero/hero.module.css";
 import utilStyles from "../../styles/utils.module.css";
 
-const HeroTitle = ({ imageSrc, titlem, altText }) => {
+const HeroTitle = ({ imageSrc, title, altText }) => {
   return (
     <div className={`${styles.heroWrapper}`}>
       <Image
