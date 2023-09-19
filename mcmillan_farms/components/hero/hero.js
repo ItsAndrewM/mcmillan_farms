@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./hero.module.css";
 import Link from "next/link";
 import layoutStyles from "../layout/layout.module.css";
-const Hero = ({ imageSrc, header, description, link, linkText }) => {
+const Hero = ({ imageSrc, header, description, link, linkText, altText }) => {
   return (
     <div className={`${styles.heroWrapper}`}>
       <Image
@@ -11,7 +11,7 @@ const Hero = ({ imageSrc, header, description, link, linkText }) => {
         quality={100}
         height={750}
         width={1125}
-        alt={""}
+        alt={altText}
         priority
       />
       <div className={styles.container}>

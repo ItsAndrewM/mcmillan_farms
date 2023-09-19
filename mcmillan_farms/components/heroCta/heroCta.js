@@ -3,14 +3,14 @@ import styles from "../hero/hero.module.css";
 import heroCtaStyles from "./heroCta.module.css";
 import Link from "next/link";
 import layoutStyles from "../layout/layout.module.css";
-const HeroCta = ({ imageSrc, header, link, linkText }) => {
+const HeroCta = ({ imageSrc, header, link, linkText, altText }) => {
   return (
     <div className={`${styles.heroWrapper}`}>
       <Image
         src={imageSrc}
         className={styles.image}
         quality={100}
-        alt={""}
+        alt={altText}
         loading="lazy"
       />
       <div className={heroCtaStyles.container}>

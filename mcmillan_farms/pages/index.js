@@ -60,6 +60,7 @@ export default function Home() {
           description={heroDesc}
           link={heroLink}
           linkText={heroLinkText}
+          altText={"pumpkins in a pile in a field"}
         />
       </section>
       <section className={layoutStyles.section}>
@@ -75,6 +76,7 @@ export default function Home() {
           desc={desc}
           link={link}
           linkText={linkText}
+          altText={"2 miniature donkeys looking at the camera"}
         />
       </section>
       <section className={layoutStyles.section}>
@@ -84,6 +86,7 @@ export default function Home() {
           link={rightLink}
           linkText={rightLinkText}
           imgSrc={hayride}
+          altText={"a red tractor next to a green tractor, both with trailers"}
         />
       </section>
       <section className={layoutStyles.section}>
@@ -98,6 +101,7 @@ export default function Home() {
           header={"Rooted in History"}
           link={"/the-farm"}
           linkText={"Explore our farms"}
+          altText={"sunset over a hayfield"}
         />
       </section>
       <section className={layoutStyles.section}>

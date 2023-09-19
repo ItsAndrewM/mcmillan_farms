@@ -5,7 +5,14 @@ import layoutStyles from "../layout/layout.module.css";
 import donkey from "../../public/images/donkey.jpg";
 import Link from "next/link";
 
-const CtaLeftColoured = ({ imageSrc, headline, desc, link, linkText }) => {
+const CtaLeftColoured = ({
+  imageSrc,
+  headline,
+  desc,
+  link,
+  linkText,
+  altText,
+}) => {
   return (
     <div className={`${style.wrapper} ${utilStyles.cream}`}>
       <div className={style.container}>
@@ -14,7 +21,7 @@ const CtaLeftColoured = ({ imageSrc, headline, desc, link, linkText }) => {
           height={800}
           width={800}
           quality={100}
-          alt={""}
+          alt={altText}
           loading="lazy"
         />
       </div>

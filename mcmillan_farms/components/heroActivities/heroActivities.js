@@ -2,14 +2,14 @@ import Image from "next/image";
 import styles from "../hero/hero.module.css";
 import utilStyles from "../../styles/utils.module.css";
 
-const HeroActivities = ({ imageSrc, title }) => {
+const HeroActivities = ({ imageSrc, title, altText }) => {
   return (
     <div className={`${styles.heroWrapper}`}>
       <Image
         src={imageSrc}
         className={styles.image}
         quality={100}
-        alt={""}
+        alt={altText}
         key={imageSrc}
         // priority={true}
         loading="lazy"

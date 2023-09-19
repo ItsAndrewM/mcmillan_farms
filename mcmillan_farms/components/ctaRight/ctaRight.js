@@ -5,7 +5,7 @@ import layoutStyles from "../layout/layout.module.css";
 import hayride from "../../public/images/hayride.jpg";
 import Link from "next/link";
 
-const CtaRight = ({ headline, desc, link, linkText, imgSrc }) => {
+const CtaRight = ({ headline, desc, link, linkText, imgSrc, altText }) => {
   return (
     <div className={style.wrapper}>
       <div className={style.container}>
@@ -23,7 +23,7 @@ const CtaRight = ({ headline, desc, link, linkText, imgSrc }) => {
         </div>
       </div>
       <div className={style.container}>
-        <Image src={imgSrc} quality={100} alt={""} loading="lazy" />
+        <Image src={imgSrc} quality={100} alt={altText} loading="lazy" />
       </div>
     </div>
   );

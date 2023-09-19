@@ -89,7 +89,13 @@ const Page = () => {
         />
       </Head>
       <section className={layoutStyles.section}>
-        <HeroActivities imageSrc={wedding} title={"events"} />
+        <HeroActivities
+          imageSrc={wedding}
+          title={"events"}
+          altText={
+            "wedding couple walking away from camera in a large open field"
+          }
+        />
       </section>
       <section className={layoutStyles.section}>
         <TextHero
@@ -111,6 +117,9 @@ const Page = () => {
           desc={heroDesc}
           link={heroLink}
           linkText={heroLinkText}
+          altText={
+            "a wedding under a willow tree with rows of seating facing towards the couple"
+          }
         />
       </section>
       <section className={layoutStyles.section}>
@@ -134,6 +143,7 @@ const Page = () => {
           desc={birthdayDesc}
           link={birthdayLink}
           linkText={birthdayLinkText}
+          altText={"a pygmy goat in an enclosure"}
         />
       </section>
       <section className={layoutStyles.section} id="contact-form">

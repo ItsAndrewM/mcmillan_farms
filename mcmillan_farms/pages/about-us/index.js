@@ -24,7 +24,11 @@ const Page = () => {
       </Head>
       <section className={layoutStyles.section}>
         <div className={styles.wrapper}>
-          <HeroTitle imageSrc={farm} title={"About Us"} />
+          <HeroTitle
+            imageSrc={farm}
+            title={"About Us"}
+            altText={"farmer riding a tractor in a field pulling a trailer"}
+          />
         </div>
       </section>
       <section className={layoutStyles.section} id="our-farm">
@@ -43,6 +47,7 @@ const Page = () => {
           link={""}
           linkText={""}
           imgSrc={hayride}
+          altText={"hayfield with haybales, next to cornmaze"}
         />
       </section>
       <section className={layoutStyles.section} id="meet-the-farmers">
@@ -54,6 +59,7 @@ const Page = () => {
           }
           link={""}
           linkText={""}
+          altText={"mcmillan family standing shoulder to shoulder at a wedding"}
         />
       </section>
       <section className={layoutStyles.section}>

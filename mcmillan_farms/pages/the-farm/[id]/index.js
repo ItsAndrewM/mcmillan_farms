@@ -29,6 +29,7 @@ const Page = ({ attractionData }) => {
         <HeroActivities
           imageSrc={attractionData.image}
           title={attractionData.title}
+          altText={attractionData.title}
         />
       </section>
       <section className={layoutStyles.section}>

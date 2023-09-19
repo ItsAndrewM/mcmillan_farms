@@ -126,6 +126,7 @@ const SeasonalPage = ({ activityData, activityParent }) => {
         <HeroActivities
           imageSrc={activityData.image}
           title={activityData.name}
+          altText={activityData.name}
         />
       </section>
       <section className={layoutStyles.section}>

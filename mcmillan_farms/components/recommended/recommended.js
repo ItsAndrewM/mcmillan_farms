@@ -72,7 +72,7 @@ const Recommended = ({ arr, child }) => {
                 <div className={`${styles.imageWrapper}`}>
                   <Image
                     src={item.image}
-                    alt={""}
+                    alt={item.name}
                     key={item.image}
                     loading="lazy"
                   />

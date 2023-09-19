@@ -25,7 +25,11 @@ const Page = () => {
         <meta name="description" content={content} key="desc" />
       </Head>
       <section className={layoutStyles.section}>
-        <HeroActivities imageSrc={pumpkinField} title={"The Farm"} />
+        <HeroActivities
+          imageSrc={pumpkinField}
+          title={"The Farm"}
+          altText={"orange pumpkins on the vine in a field"}
+        />
       </section>
       <section className={layoutStyles.section}>
         <TextHero tagline={tagLine} headline={headline} content={content} />
