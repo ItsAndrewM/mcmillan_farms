@@ -16,7 +16,7 @@ const HeroCta = ({ imageSrc, header, link, linkText }) => {
       <div className={heroCtaStyles.container}>
         <h1>{header}</h1>
         <span>
-          <Link href={link} className={`${layoutStyles.link}`}>
+          <Link href={link} className={`${heroCtaStyles.link}`}>
             {linkText}
           </Link>
         </span>

@@ -17,6 +17,7 @@ import HeroCta from "@/components/heroCta/heroCta";
 import ContactUsBanner from "@/components/contactUsBanner/contactUsBanner";
 import donkey from "../public/images/donkey.jpg";
 import hayride from "../public/images/hayride.jpg";
+import farmSunset from "../public/images/farmSunset.jpg";
 
 // https://oishii.com/
 //https://dev.to/codeclown/styling-a-native-date-input-into-a-custom-no-library-datepicker-2in
@@ -93,7 +94,7 @@ export default function Home() {
       </section>
       <section className={layoutStyles.section}>
         <HeroCta
-          imageSrc={hayfield}
+          imageSrc={farmSunset}
           header={"Rooted in History"}
           link={"/the-farm"}
           linkText={"Explore our farms"}
