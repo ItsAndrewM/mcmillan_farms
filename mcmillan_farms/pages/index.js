@@ -4,7 +4,7 @@ import styles from "@/styles/Home.module.css";
 import Layout from "@/components/layout/layout";
 import layoutStyles from "@/components/layout/layout.module.css";
 import Hero from "@/components/hero/hero";
-import backgroundImage from "../public/images/pumpkins7.jpg";
+import backgroundImage from "../public/images/pumpkinsHome.jpg";
 import hayfield from "../public/images/hayfield2.jpg";
 import Banner from "@/components/banner/banner";
 import Comparison from "@/components/comparison/comparison";

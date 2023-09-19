@@ -196,7 +196,7 @@
   text-transform: capitalize;
 }
 
-.button {
+/* .button {
   background-color: var(--brown);
   border: 1px solid var(--brown);
   padding: 15px 20px;
@@ -227,10 +227,22 @@
   color: var(--brown);
   background-color: var(--cream);
   border: 1px solid var(--brown);
+} */
+
+.button {
+  background-color: var(--cream);
+  border: 1px solid var(--brown);
+  padding: 15px 20px;
+  overflow: hidden;
+  color: var(--brown);
+  transition: all 0.5s ease-in-out;
+  position: relative;
 }
 
-.button:hover::before {
-  /* transform: scaleX(1); */
+.button:hover,
+.button:focus {
+  box-shadow: inset 14em 0 0 0 var(--brown);
+  color: var(--cream);
 }
 
 /* //////////////////////////////////////////////////////////////// */

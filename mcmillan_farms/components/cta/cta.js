@@ -67,10 +67,10 @@ const Cta = () => {
           </div>
           <span>
             <Link
-              href={"/"}
+              href={"/the-farm/fall-attractions/corn-maze"}
               className={`${utilStyles.alignCenter} ${utilStyles.capitalize} ${utilStyles.white} ${layoutStyles.link}`}
             >
-              Learn more
+              Find Your Way To the Maze
             </Link>
           </span>
         </div>
