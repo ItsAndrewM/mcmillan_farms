@@ -1,5 +1,5 @@
 import { ImageResponse } from "@vercel/og";
-import logo from "../../assets/images/logos/logo.svg";
+// import logo from "../../public/images/logos/logo_no_border.png";
 import Image from "next/image";
 
 export const config = {
@@ -10,8 +10,10 @@ export const config = {
 export default async function handler(request) {
   try {
     const imageData = await fetch(
-      new URL("../../assets/images/logos/logo_simple.svg", import.meta.url)
-    ).then((res) => res.arrayBuffer());
+      new URL("../../assets/images/logos/logo.png", import.meta.url)
+    ).then((res) => {
+      return res.arrayBuffer();
+    });
     const { searchParams } = new URL(request.url);
 
     // ?title=<title>
