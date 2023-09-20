@@ -227,13 +227,14 @@ const Page = () => {
                   id="frm-subject"
                   name="subject"
                   required
+                  defaultValue={"Select a subject"}
                   className={`${utilStyles.lightText} ${
                     getError("subject") ? contactUsStyles.invalid : ""
                   }`}
                 >
                   <option
                     disabled={true}
-                    value=""
+                    value="Select a subject"
                     className={utilStyles.lightText}
                   >
                     Select a subject
