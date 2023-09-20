@@ -19,7 +19,7 @@ export default function handler(req, res) {
   res.send(200);
   try {
     const msg = {
-      to: email, // Change to your recipient | change to information@mcmillanfarms.ca
+      to: "mcmillanfarmskelowna@gmail.com", // Change to your recipient | change to information@mcmillanfarms.ca
       from: process.env.SENDGRID_FROM, // Change to your verified sender
       subject: `School Booking from ${schools} - ${fullName}`,
       html: `<div>
