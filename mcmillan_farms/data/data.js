@@ -53,15 +53,15 @@ export const data = {
         content:
           "Hay rides are a relaxing and enjoyable way to see the beauty and diversity of McMillan Farms. You can ride on a wagon pulled by a tractor, and see our pumpkin and sunflower fields, our farm animals, and our willow tree by the creek. Our hay rides are suitable for everyone, and they run throughout the day. Come and join us for a hay ride at McMillan Farms.",
       },
-      {
-        name: "fence maze",
-        link: "/the-farm/fall-attractions/fence-maze",
-        slug: "fence-maze",
-        image: hayMaze,
-        tag: "HAVE A BLAST IN THE fence maze",
-        content:
-          "Fence mazes are a great way to have some fun and excitement at McMillan Farms. You can crawl, climb, and slide through our hay bales, and try to find your way out. Our fence maze is safe and sturdy, and it is perfect for kids and adults alike. Don’t forget to bring your camera and capture some memorable moments in the fence maze.",
-      },
+      // {
+      //   name: "fence maze",
+      //   link: "/the-farm/fall-attractions/fence-maze",
+      //   slug: "fence-maze",
+      //   image: hayMaze,
+      //   tag: "HAVE A BLAST IN THE fence maze",
+      //   content:
+      //     "Fence mazes are a great way to have some fun and excitement at McMillan Farms. You can crawl, climb, and slide through our hay bales, and try to find your way out. Our fence maze is safe and sturdy, and it is perfect for kids and adults alike. Don’t forget to bring your camera and capture some memorable moments in the fence maze.",
+      // },
       {
         name: "pumpkin slingshot",
         link: "/the-farm/fall-attractions/pumpkin-slingshot",
