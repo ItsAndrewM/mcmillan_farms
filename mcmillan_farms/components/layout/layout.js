@@ -6,6 +6,7 @@ import Link from "next/link";
 import Script from "next/script";
 import NavBar from "../navbar/navbar";
 import Footer from "../footer/footer";
+import { useRouter } from "next/router";
 
 const name = "Andrew";
 export const siteTitle = "McMillan Farms";
@@ -18,9 +19,7 @@ const Layout = ({ children, home }) => {
         <meta name="description" content="McMillan Farms" />
         <meta
           property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          content={`https://mcmillanfarms.xyz/api/og`}
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
