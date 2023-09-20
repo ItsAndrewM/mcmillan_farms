@@ -172,13 +172,14 @@ const Page = () => {
                   id="frm-schools"
                   name="schools"
                   required
+                  defaultValue={"Select a SD23 school"}
                   className={`${utilStyles.lightText} ${
                     getError("schools") ? contactUsStyles.invalid : ""
                   }`}
                 >
                   <option
                     disabled={true}
-                    value=""
+                    value="Select a SD23 school"
                     className={utilStyles.lightText}
                   >
                     Select a SD23 school
