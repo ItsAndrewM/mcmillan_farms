@@ -1,5 +1,5 @@
 import Image from "next/image";
-import castanet from "../../public/images/Castanet_Logo.jpg";
+import castanet from "../../public/images/castanet.png";
 import cbc from "../../public/images/cbc_news_network.jpg";
 import global from "../../public/images/global_news.png";
 import kcn from "../../public/images/kelownaCapitalNews.png";
