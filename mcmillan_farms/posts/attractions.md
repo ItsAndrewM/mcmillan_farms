@@ -27,9 +27,9 @@ If you are looking for a fun and easy activity for kids, you can try the fence m
 
 If you are feeling adventurous and want to try something new, you can try the pumpkin slingshot at McMillan Farms. The pumpkin slingshot is a giant slingshot that launches small pumpkins into the air at high speeds. You can aim for different targets that are set up in the field, such as scarecrows, barrels, or signs. You can also compete with your friends or family to see who can hit the most targets or launch the farthest pumpkin. The pumpkin slingshot is a fun and exciting way to test your accuracy and strength, as well as to use up some leftover pumpkins that might otherwise go to waste. The pumpkin slingshot is available from late September to October 31st, on weekends and holidays.
 
-## Petting Zoo
+## animal encounter
 
-If you love animals and want to get close to them, you can visit the petting zoo at McMillan Farms. The petting zoo has a variety of farm animals that you can see, touch, and feed. Some of the animals that you can find at the petting zoo are pigs, donkeys, chickens, goats, rabbits, and more. You can learn more about each animal's name, breed, personality, and habits from the friendly staff at the farm. You can also buy some animal feed from the farm stand and give them a treat. The petting zoo is a great way to interact with animals and learn more about them in a safe and supervised environment. The petting zoo is open from late September to October 31st, during the day.
+If you love animals and want to get close to them, you can visit the animal encounter at McMillan Farms. The animal encounter has a variety of farm animals that you can see, touch, and feed. Some of the animals that you can find at the animal encounter are pigs, donkeys, chickens, goats, rabbits, and more. You can learn more about each animal's name, breed, personality, and habits from the friendly staff at the farm. You can also buy some animal feed from the farm stand and give them a treat. The animal encounter is a great way to interact with animals and learn more about them in a safe and supervised environment. The animal encounter is open from late September to October 31st, during the day.
 
 ## Concession Stand
 

@@ -72,13 +72,13 @@ export const data = {
           "Pumpkin slingshots are a thrilling and unique activity that you can only find at McMillan Farms. You can launch some pumpkins, gourds and apples into the air with our giant slingshot, and try to hit some targets. Our pumpkin slingshot is easy to use and fun to watch, and it is a great way to release some energy and have some laughs. Come and try our pumpkin slingshot today.",
       },
       {
-        name: "petting zoo",
-        link: "/the-farm/fall-attractions/petting-zoo",
-        slug: "petting-zoo",
+        name: "animal encounter",
+        link: "/the-farm/fall-attractions/animal-encounter",
+        slug: "animal-encounter",
         image: pettingZoo,
         tag: "MEET OUR FRIENDLY FARM ANIMALS",
         content:
-          "Petting zoos are a wonderful way to interact with farm animals, and we have a lot of them at McMillan Farms. You can visit the pigs, donkeys, chickens, goats, dogs, and cats, and feed them, pet them, and learn more about them. Our farm animals are well-cared for and gentle, and they love to meet new people. Don’t miss this chance to make some new animal friends at the petting zoo.",
+          "The animal encounter is a wonderful way to interact with farm animals, and we have a lot of them at McMillan Farms. You can visit the pigs, donkeys, chickens, goats, dogs, and cats, and feed them, pet them, and learn more about them. Our farm animals are well-cared for and gentle, and they love to meet new people. Don’t miss this chance to make some new animal friends at the animal encounter.",
       },
       {
         name: "concession",
@@ -127,13 +127,13 @@ export const data = {
           "Hay rides are a relaxing and enjoyable way to see the beauty and diversity of McMillan Farms. You can ride on a wagon pulled by a tractor, and see our pumpkin and sunflower fields, our farm animals, and our willow tree by the creek. Our hay rides are suitable for everyone, and they run throughout the day. Come and join us for a hay ride at McMillan Farms.",
       },
       {
-        name: "petting zoo",
-        link: "/the-farm/summer-activities/petting-zoo",
-        slug: "petting-zoo",
+        name: "animal encounter",
+        link: "/the-farm/summer-activities/animal-encounter",
+        slug: "animal-encounter",
         image: pettingZoo,
         tag: "MEET OUR FRIENDLY FARM ANIMALS",
         content:
-          "Petting zoos are a wonderful way to interact with farm animals, and we have a lot of them at McMillan Farms. You can meet pigs, donkeys, chickens, goats, dogs, and cats, and feed them and learn more about them. Our farm animals are well-cared for and gentle, and they love to meet new people. Don’t miss this chance to make some new animal friends at the petting zoo.",
+          "The animal encounter is a wonderful way to interact with farm animals, and we have a lot of them at McMillan Farms. You can meet pigs, donkeys, chickens, goats, dogs, and cats, and feed them and learn more about them. Our farm animals are well-cared for and gentle, and they love to meet new people. Don’t miss this chance to make some new animal friends at the animal encounter.",
       },
       {
         name: "concession",

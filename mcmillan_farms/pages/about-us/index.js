@@ -15,7 +15,7 @@ import faqStyles from "../../styles/faq.module.css";
 
 const Page = () => {
   const content =
-    "We are a family-owned farm in Kelowna, BC, offering fun and educational experiences for all ages. McMillan Farms was started in 1950 and has grown to produce thousands of pumpkins, gourds, and corn every year. Come and enjoy our hayrides, corn maze, petting zoo, and more. McMillan Farms is your destination for farm-fresh fun";
+    "We are a family-owned farm in Kelowna, BC, offering fun and educational experiences for all ages. McMillan Farms was started in 1950 and has grown to produce thousands of pumpkins, gourds, and corn every year. Come and enjoy our hayrides, corn maze, animal encounter, and more. McMillan Farms is your destination for farm-fresh fun";
   return (
     <Layout>
       <Head>

@@ -25,9 +25,9 @@ const Directions = () => {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d41149.67603664258!2d-119.44399100000001!3d49.863973!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x537d8c81892438fd%3A0xff76bf9b17d74875!2s3690%20Berard%20Rd%2C%20Kelowna%2C%20BC%20V1W%204A9!3m2!1d49.8501763!2d-119.4439187!5e0!3m2!1sen!2sca!4v1694229709246!5m2!1sen!2sca"
           // style="border:0;"
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
           id={styles.iframe}
         ></iframe>
       </div>
