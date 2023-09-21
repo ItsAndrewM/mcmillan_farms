@@ -96,7 +96,7 @@ export const data = {
         image: wildLife,
         tag: "DISCOVER THE WILD LIFE AT the farm",
         content:
-          "Wild life is an amazing part of nature, and we have a lot of it at McMillan Farms. You can see coyotes, deer, turkey vultures, eagles, hawks, owls, and if you're lucky a lynx or beaver, and more in their natural habitat. You can also learn more about their behavior and characteristics from our tractor and hay ride drivers. Our wild life is diverse and fascinating, and it adds to the charm of the farm. Come and discover the wild life at McMillan Farms",
+          "Wild life is an amazing part of nature, and we have a lot of it at McMillan Farms. You can see coyotes, deer, turkey vultures, eagles, hawks, owls, blue herons, and if you're lucky a bobcat, bear or beaver, and more in their natural habitat. You can also learn more about their behavior and characteristics from our tractor and hay ride drivers. Our wild life is diverse and fascinating, and it adds to the charm of the farm. Come and discover the wild life at McMillan Farms",
       },
     ],
   },
@@ -151,7 +151,7 @@ export const data = {
         image: deer,
         tag: "DISCOVER THE WILD LIFE AT the farm",
         content:
-          "Wild life is an amazing part of nature, and we have a lot of it at McMillan Farms. You can see coyotes, deer, turkey vultures, eagles, hawks, owls, and if you're lucky a lynx or beaver, and more in their natural habitat. You can also learn more about their behavior and characteristics from the tractor and hay ride drivers. Our wild life is diverse and fascinating, and it adds to the charm of the farm. Come and discover the wild life at McMillan Farms",
+          "Wild life is an amazing part of nature, and we have a lot of it at McMillan Farms. You can see coyotes, deer, turkey vultures, eagles, hawks, owls, blue herons, and if you're lucky a bobcat, bear or beaver and more in their natural habitat. You can also learn more about their behavior and characteristics from the tractor and hay ride drivers. Our wild life is diverse and fascinating, and it adds to the charm of the farm. Come and discover the wild life at McMillan Farms",
       },
     ],
   },

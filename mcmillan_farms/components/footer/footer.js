@@ -47,6 +47,22 @@ const Footer = () => {
                 </ul>
               );
             })}
+            <ul className={styles.column}>
+              <li>
+                <h3>Hours of Operation</h3>
+              </li>
+              <ul>
+                <li>
+                  <h4>September 23 to October 30:</h4>
+                </li>
+                <li>Sunday to Wednesday: 10am to 5pm</li>
+                <li>Thursday to Saturday: 10am to 6pm</li>
+                <li>
+                  <h4>October 31:</h4>
+                </li>
+                <li>Tuesday: 10am to 2pm</li>
+              </ul>
+            </ul>
           </div>
         </div>
         <div className={styles.container}>

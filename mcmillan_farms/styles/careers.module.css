@@ -1,0 +1,29 @@
+.uploadDropZone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 250px;
+}
+
+.uploadDropZone :first-child {
+  height: 80px;
+  cursor: pointer;
+  background-color: var(--background-color);
+  padding: 1em;
+  border-radius: 25px;
+}
+
+.uploadDropZone button {
+  /* color: black; */
+}
+
+.box {
+  min-height: 550px;
+  justify-content: flex-start;
+}
+
+.text {
+  width: 50%;
+  margin-bottom: 5em;
+}

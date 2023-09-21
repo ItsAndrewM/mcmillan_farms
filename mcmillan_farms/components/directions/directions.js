@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Directions = () => {
   const content =
-    "From KLO road, turn onto Spiers road and follow for 1.1km.  Before spiers begins to turn, continue straight onto Berard road and watch for signs for McMillan Farms.  Parking is available in the large field before McMillan Farms and in the farm, follow signs for parking for both.";
+    "From KLO road, turn onto Spiers Road and follow for 1.1km.  Before Spiers Road begins to turn, continue straight onto Berard road and watch for signs for McMillan Farms.  Parking is available in the large field before McMillan Farms and in the farm, follow signs for parking for both.";
   const headline = "Directions to McMillan Farms";
   const link =
     "https://maps.google.com/maps?ll=49.863973,-119.443991&z=12&t=m&hl=en&gl=CA&mapclient=embed&saddr=&daddr=3690%20Berard%20Rd%2C%20Kelowna%2C%20BC%20V1W%204A9&dirflg=d";

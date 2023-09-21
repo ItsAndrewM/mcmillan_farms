@@ -22,7 +22,7 @@ export const faq = [
   {
     summary: "Are dogs allowed on the farm?",
     content:
-      "Dogs are allowed on the farm, as long as they're under control and on leash and as long as you clean up after them.  We love dogs at the farm but we don't love when your furry friends bug our furry and feathered friends.",
+      "Well behaved dogs are allowed on the farm, as long as they're under control and on leash and as long as you clean up after them.  We love dogs at the farm but we don't love when your furry friends bug our furry and feathered friends.",
   },
   {
     summary: "Do I need to book ahead for activities?",
@@ -37,7 +37,7 @@ export const faq = [
   {
     summary: "Can I get a refund if the weather is bad?",
     content:
-      "If you've purchased a ticket for the pumpkin slingshot, hayride or corn maze and the weather changed significantly in a short amount of time then you will receive 100% full refund.  However, if the weather is less-than-ideal prior to your ticket purchase then we will not provide a refund (unless under specific circumstances).",
+      "Our refund policy is if we need to close due to severe weather or other reason, refunds will be issued. If you are unable to attend for any reason, refunds are not available. Please email us to reschedule your ticket",
   },
   {
     summary: "Can I have my childs birthday at the farm?",
@@ -51,12 +51,12 @@ export const faq = [
   {
     summary: "What are the farm hours?",
     content:
-      "The farm hours are 10am to 6pm most days from the last weekend of September to October 31st. However, the hours may change on holidays or days with inclement weather. Please check our website or call us before you visit to confirm our opening and closing times.",
+      "Our hours of operation at the farm are 10am to 5pm from Sunday to Wednesday and 10am to 6pm Thursday to Saturday, from the September 23rd to October 30. We are October 31st from 10am to 2pm. However, the hours may change on holidays or days with inclement weather. Please check our website or call us before you visit to confirm our opening and closing times.",
   },
   {
     summary: "Are you open on thanksgiving weekend?",
     content:
-      "Yes, we are open on thanksgiving weekend, but we close at 5pm on holidays. You can still enjoy all the activities we have to offer, such as the corn maze, hayride, slingshot, and jump pad. You can also interact with our farm animals and take home a small pumpkin as a souvenir.",
+      "Yes, we are open on thanksgiving weekend, regular hours apply. You can still enjoy all the activities we have to offer, such as the corn maze, hayride, slingshot, and jump pad. You can also interact with our farm animals and purchase a small pumpkin as a souvenir.",
   },
   {
     summary: "How do I get to the farm?",

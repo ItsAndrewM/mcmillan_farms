@@ -32,6 +32,6 @@ export const weddingData = [
   {
     summary: "Cost",
     content:
-      "The cost for any of these locations is $1,200 + GST. A non-refundable deposit of $500 is required to hold your reservation. For more details or to schedule a viewing, please contact us at information@mcmillanfarms.ca. We look forward to hosting your special day at McMillan Farms!",
+      "Costs are dependent on your vision and number of questions.  Please fill out the contact form below and we can provide a quote for your dream wedding. A non-refundable deposit is required to hold your reservation. For more details or to schedule a viewing, please contact us at information@mcmillanfarms.ca or fill out the contact form below. We look forward to hosting your special day at McMillan Farms!",
   },
 ];
