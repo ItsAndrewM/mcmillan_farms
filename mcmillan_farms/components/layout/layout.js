@@ -38,6 +38,14 @@ const Layout = ({ children, home }) => {
 
               gtag('config', 'G-C4HJJ32CM8');`}
         </Script>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-ML8PTFQV"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden"
+          ></iframe>
+        </noscript>
       </div>
 
       <NavBar />
