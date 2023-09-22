@@ -17,7 +17,7 @@ export const faq = [
   {
     summary: "Is the farm open on Thanksgiving weekend?",
     content:
-      "The farm is open all weekend during Thanksgiving! We have modified hours on Monday but we're otherwise open as normal! Make sure you come early as we've been known to be busy.",
+      "The farm is open all weekend during Thanksgiving, regular hours apply! Make sure you come early as we've been known to be busy. regular hours apply. You can still enjoy all the activities we have to offer, such as the corn maze, hayride, slingshot, and jump pad. You can also interact with our farm animals and purchase a small pumpkin as a souvenir.",
   },
   {
     summary: "Are dogs allowed on the farm?",
@@ -52,11 +52,6 @@ export const faq = [
     summary: "What are the farm hours?",
     content:
       "Our hours of operation at the farm are 10am to 5pm from Sunday to Wednesday and 10am to 6pm Thursday to Saturday, from the September 23rd to October 30. We are October 31st from 10am to 2pm. However, the hours may change on holidays or days with inclement weather. Please check our website or call us before you visit to confirm our opening and closing times.",
-  },
-  {
-    summary: "Are you open on thanksgiving weekend?",
-    content:
-      "Yes, we are open on thanksgiving weekend, regular hours apply. You can still enjoy all the activities we have to offer, such as the corn maze, hayride, slingshot, and jump pad. You can also interact with our farm animals and purchase a small pumpkin as a souvenir.",
   },
   {
     summary: "How do I get to the farm?",
