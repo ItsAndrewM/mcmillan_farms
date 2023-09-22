@@ -47,7 +47,7 @@ const Footer = () => {
                 </ul>
               );
             })}
-            <ul className={styles.column}>
+            <ul className={styles.column} id={styles.hours}>
               <li>
                 <h3>Hours of Operation</h3>
               </li>

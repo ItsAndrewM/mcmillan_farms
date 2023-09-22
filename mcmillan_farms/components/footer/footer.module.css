@@ -149,4 +149,8 @@
     display: flex;
     justify-content: center;
   }
+
+  #hours {
+    width: 100%;
+  }
 }
