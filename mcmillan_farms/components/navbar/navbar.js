@@ -85,7 +85,7 @@ const NavBar = () => {
       }`}
     >
       <AnnoucementBar
-        annoucement={"We are now open! Hours today are"}
+        annoucement={"We are now open! Today's hours are"}
         annoucement2={"Want to book ahead?"}
         hours={hours}
         today={today}
