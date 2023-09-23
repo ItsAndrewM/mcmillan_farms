@@ -7,13 +7,32 @@ import Link from "next/link";
 import logo from "../../public/images/logo_large.png";
 import { menuItemsRight } from "@/data/menuItemsRight";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { mobileMenu } from "@/data/mobileMenu";
 import { socialLinks } from "@/data/socialLinks";
+import AnnoucementBar from "../announcementBar/announcementBar";
 
 const NavBar = () => {
   const [show, setShow] = useState(false);
   const pathname = usePathname();
+  const [isVisible, setIsVisible] = useState(true);
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const onScroll = (e) => {
+    let heightToHideFrom = 200;
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+
+    if (winScroll > heightToHideFrom) {
+      isVisible && // to limit setting state only the first time
+        setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+  };
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -25,7 +44,18 @@ const NavBar = () => {
     setShow(false);
   };
   return (
-    <header className={navbarStyles.pageHeader}>
+    <header
+      className={`${navbarStyles.pageHeader} ${
+        isVisible ? navbarStyles.padding : navbarStyles.noPadding
+      }`}
+    >
+      <AnnoucementBar
+        annoucement={
+          "We are now open! Hours today are 10:00am to 6:00pm, September 23rd.  Want to book ahead?"
+        }
+        linkText={"Get tickets here!"}
+        link={"https://www.showpass.com/o/mcmillan-farms/"}
+      />
       <nav className={navbarStyles.navigation}>
         {/* mobile menu */}
         <div id={navbarStyles.menuToggle}>
@@ -53,6 +83,15 @@ const NavBar = () => {
                 </li>
               );
             })}
+            <li className={navbarStyles.borderTop}>Open now! 10am to 6pm</li>
+            <li className={navbarStyles.borderBottom}>
+              <Link
+                href={"https://www.showpass.com/o/mcmillan-farms/"}
+                className={layoutStyles.button}
+              >
+                Book Tickets now!
+              </Link>
+            </li>
             <li>
               <ul id={navbarStyles.social}>
                 {socialLinks.map((menuItem, index) => {

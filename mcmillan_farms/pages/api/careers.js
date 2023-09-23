@@ -1,10 +1,9 @@
 const sgMail = require("@sendgrid/mail");
 sgMail.setApiKey(process.env.SENDGRID_KEY);
-import { utapi } from "uploadthing/server";
 
 export default async function handler(req, res) {
   const { fullName, email, phone, subject, message } = req.body;
-  //   const response = await utapi.uploadFiles(file);
+  // console.dir(JSON.parse(req.body.file));
   res.send(200);
   try {
     const msg = {

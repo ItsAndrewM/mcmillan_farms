@@ -1,6 +1,5 @@
 .pageHeader {
   min-height: 60px;
-  padding-top: 30px;
   width: 100%;
   margin-bottom: 30px;
   position: fixed;
@@ -45,6 +44,14 @@
 
 #menuToggle {
   display: none;
+}
+
+.padding {
+  /* padding-top: 30px; */
+}
+
+.noPadding {
+  margin-top: -18px;
 }
 
 /* //////////////////////////////////////////////////////////////// */
@@ -161,5 +168,23 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+  }
+
+  .noPadding {
+    margin-top: 0;
+  }
+
+  .borderTop {
+    font-size: 13px;
+    padding-top: 0.5em;
+    border-top: 1px solid var(--brown);
+  }
+  .borderBottom {
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid var(--brown);
+  }
+
+  .borderBottom a {
+    padding: 10px 10px;
   }
 }

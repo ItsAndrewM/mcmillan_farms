@@ -30,6 +30,15 @@ const CareerUpload = () => {
         acc[key] = formData.get(key);
         return acc;
       }, {});
+      // const data = new FormData();
+      // data.append("file", e.currentTarget.file);
+      // data.append("firstName", e.currentTarget.firstName);
+      // data.append("lastName", e.currentTarget.lastName);
+      // data.append("email", e.currentTarget.email);
+      // data.append("phone", e.currentTarget.phone);
+      // data.append("message", e.currentTarget.message);
+      // const newData = new URLSearchParams(data);
+      // console.log(newData);
       try {
         // const uploadResponse = await utapi.uploadFiles(files);
         // console.log(uploadResponse);
@@ -37,6 +46,7 @@ const CareerUpload = () => {
           method: "post",
           body: new URLSearchParams(data),
         });
+
         if (!response.ok) {
           throw new Error(`Invalid response: ${response.status}`);
         }
@@ -149,12 +159,31 @@ const CareerUpload = () => {
             <span className={contactUsStyles.error}>{getError("email")}</span>
           </div>
         </div>
-        {/* <div className={`${contactUsStyles.row}`}>
+        <div className={`${contactUsStyles.message} ${contactUsStyles.block}`}>
+          <label htmlFor="frm-message">Message*</label>
+          <textarea
+            id="frm-message"
+            rows="6"
+            name="message"
+            required
+            className={getError("message") ? contactUsStyles.invalid : ""}
+          ></textarea>
+          <span className={contactUsStyles.error}>{getError("message")}</span>
+        </div>
+        <div className={`${contactUsStyles.row}`}>
           <div className={`${contactUsStyles.name} ${contactUsStyles.block}`}>
-            <label>Upload file</label>
-            <input name="file" type="file" multiple />
+            <label>Upload file*</label>
+            <input
+              name="file"
+              type="file"
+              required
+              multiple
+              accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,text/plain, application/pdf"
+              className={getError("file") ? contactUsStyles.invalid : ""}
+            />
+            <span className={contactUsStyles.error}>{getError("file")}</span>
           </div>
-        </div> */}
+        </div>
 
         {/* <UploadDropzone
               className={styles.uploadDropZone}
@@ -174,6 +203,7 @@ const CareerUpload = () => {
                 console.log("Uploading: ", name);
               }}
             /> */}
+
         <div className={`${contactUsStyles.button} ${contactUsStyles.block}`}>
           <button type="submit" className={contactUsStyles.buttonInput}>
             Submit
