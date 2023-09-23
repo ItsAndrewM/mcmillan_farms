@@ -14,8 +14,43 @@ import AnnoucementBar from "../announcementBar/announcementBar";
 
 const NavBar = () => {
   const [show, setShow] = useState(false);
+  const [hours, setHours] = useState();
   const pathname = usePathname();
   const [isVisible, setIsVisible] = useState(true);
+  const [today, setToday] = useState(
+    new Date().toLocaleDateString("en-us", { month: "long", day: "numeric" })
+  );
+
+  useEffect(() => {
+    const setTodaysHours = () => {
+      let hours;
+      switch (new Date().getDay()) {
+        case 0:
+          hours = "10am To 5pm";
+          break;
+        case 1:
+          hours = "10am To 5pm";
+          break;
+        case 2:
+          hours = "10am To 5pm";
+          break;
+        case 3:
+          hours = "10am To 5pm";
+          break;
+        case 4:
+          hours = "10am To 6pm";
+          break;
+        case 5:
+          hours = "10am To 6pm";
+          break;
+        case 6:
+          hours = "10am To 6pm";
+      }
+      setHours(hours);
+    };
+    setTodaysHours();
+  }, []);
+
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
@@ -50,9 +85,10 @@ const NavBar = () => {
       }`}
     >
       <AnnoucementBar
-        annoucement={
-          "We are now open! Hours today are 10:00am to 6:00pm, September 23rd.  Want to book ahead?"
-        }
+        annoucement={"We are now open! Hours today are"}
+        annoucement2={"Want to book ahead?"}
+        hours={hours}
+        today={today}
         linkText={"Get tickets here!"}
         link={"https://www.showpass.com/o/mcmillan-farms/"}
       />
@@ -83,7 +119,7 @@ const NavBar = () => {
                 </li>
               );
             })}
-            <li className={navbarStyles.borderTop}>Open now! 10am to 6pm</li>
+            <li className={navbarStyles.borderTop}>Open now! {hours}</li>
             <li className={navbarStyles.borderBottom}>
               <Link
                 href={"https://www.showpass.com/o/mcmillan-farms/"}

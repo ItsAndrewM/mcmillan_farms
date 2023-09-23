@@ -2,8 +2,16 @@ import Link from "next/link";
 import styles from "./annoucementBar.module.css";
 import layoutStyles from "../layout/layout.module.css";
 import footerStyles from "../footer/footer.module.css";
+import utilStyles from "../../styles/utils.module.css";
 import { useEffect, useState } from "react";
-const AnnoucementBar = ({ annoucement, linkText, link }) => {
+const AnnoucementBar = ({
+  annoucement,
+  linkText,
+  link,
+  today,
+  hours,
+  annoucement2,
+}) => {
   const [isVisible, setIsVisible] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
@@ -25,7 +33,13 @@ const AnnoucementBar = ({ annoucement, linkText, link }) => {
   return (
     <div className={`${!isVisible ? styles.hide : styles.wrapper}`}>
       <div>
-        <p>{annoucement}</p>
+        <p>
+          {annoucement} <span className={utilStyles.underline}>{hours}</span>,{" "}
+          <span className={utilStyles.underline}>
+            {today}.{"  "}
+          </span>
+          {annoucement2}
+        </p>
         <span>
           <Link href={link} className={footerStyles.link}>
             {linkText}
