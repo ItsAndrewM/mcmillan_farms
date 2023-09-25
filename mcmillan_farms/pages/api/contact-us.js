@@ -9,7 +9,7 @@ export default function handler(req, res) {
       to: "mcmillanfarmskelowna@gmail.com", // Change to your recipient | change to information@mcmillanfarms.ca
       from: process.env.SENDGRID_FROM, // Change to your verified sender
       subject: `${subject} - ${fullName}`,
-      text: message,
+      text: `EMAIL: ${email}, PHONE: ${phone}, MESSAGE: ${message}`,
     };
     sgMail
       .send(msg)
