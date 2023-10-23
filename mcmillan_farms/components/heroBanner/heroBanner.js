@@ -48,7 +48,7 @@ const HeroBanner = () => {
           <span>
             <Link
               href={"/the-farm/summer-activities"}
-              className={`${layoutStyles.link}`}
+              className={`${layoutStyles.checkout} ${layoutStyles.largeCheckout}`}
             >
               Check out our other summer activities
             </Link>

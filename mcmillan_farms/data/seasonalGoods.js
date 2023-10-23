@@ -16,6 +16,7 @@ import plums from "../public/images/products/plums.jpg";
 import sunflower from "../public/images/products/sunflower.jpg";
 import merchandise from "../public/images/products/merchandise.jpg";
 import heroPumpkins from "../public/images/pumpkins6.jpg";
+import hat from "@/assets/images/products/merchandise/tanAndNavyHat.jpg";
 //summer-activities
 import sunflowerDog from "../public/images/sunflower3.jpg";
 import deer from "../public/images/deer.jpg";
@@ -138,9 +139,9 @@ export const seasonalGoods = {
       },
       {
         name: "merchandise",
-        link: "/the-farm/seasonal-goods/fall-goods/merchandise",
+        link: "https://shop.mcmillanfarms.ca/",
         slug: "merchandise",
-        image: merchandise,
+        image: hat,
         tag: "SHOW YOUR SUPPORT",
         content:
           "Merchandise is a way to show your support for your favorite farm or brand. At McMillan Farms, we sell merchandise such as hats, shirts, mugs, bags, or stickers with our logo or slogan. Our merchandise is high-quality and stylish, and it is a great way to show your love for our farm or to give as a souvenir. Show your support with our merchandise!",

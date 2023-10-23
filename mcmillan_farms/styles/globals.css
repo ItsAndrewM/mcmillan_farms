@@ -20,7 +20,7 @@
   --blue: #03001c;
   --green-tint: rgba(100, 255, 218, 0.1);
   --teal: #00b2a9;
-  --orange: #e43c40;
+  --orange: #e67e22;
   --brown: #bc7844;
   --black: #040204;
   --background-color: #f3f3f3;
@@ -86,7 +86,6 @@ h6 {
 /* //////////////////////////////////////////////////////////////// */
 
 @media (max-width: 600px) {
-
   h1,
   h2 {
     font-size: var(--mobile-h);

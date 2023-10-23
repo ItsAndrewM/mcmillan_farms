@@ -15,7 +15,7 @@ const CtaRight = ({ headline, desc, link, linkText, imgSrc, altText }) => {
           <span>
             <Link
               href={link}
-              className={`${utilStyles.paddingTop1} ${layoutStyles.link}`}
+              className={`${utilStyles.paddingTop1} ${layoutStyles.checkout} ${layoutStyles.largeCheckout}`}
             >
               {linkText}
             </Link>

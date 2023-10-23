@@ -212,6 +212,35 @@
   color: var(--cream);
 }
 
+.checkout {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 var(--brown);
+  background-color: var(--brown);
+  padding: 5px 30px;
+  outline: none;
+  color: white;
+  letter-spacing: 0.075em;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--brown);
+  transition: color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+}
+
+.checkout:hover {
+  color: #fff;
+}
+#ctaRightBtn:hover {
+  box-shadow: inset 325px 0 0 0 var(--orange);
+}
+#ctaLeftBtn:hover {
+  box-shadow: inset 410px 0 0 0 var(--orange);
+}
+
+.largeCheckout:hover {
+  box-shadow: inset 540px 0 0 0 var(--orange);
+}
+
 /* //////////////////////////////////////////////////////////////// */
 /* /////////////////////////mobile styling///////////////////////// */
 /* //////////////////////////////////////////////////////////////// */

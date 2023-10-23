@@ -29,7 +29,7 @@ const CtaLeft = () => {
           <span>
             <Link
               href={"/the-farm/fall-attractions/pumpkins"}
-              className={`${utilStyles.paddingTop1} ${layoutStyles.link}`}
+              className={`${utilStyles.paddingTop1} ${layoutStyles.checkout} ${layoutStyles.largeCheckout}`}
             >
               learn more about our varieties, sizes, and prices
             </Link>

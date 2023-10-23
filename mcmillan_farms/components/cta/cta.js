@@ -37,7 +37,8 @@ const Cta = () => {
           <span>
             <Link
               href={"/faq"}
-              className={`${utilStyles.alignCenter} ${utilStyles.capitalize} ${utilStyles.white} ${layoutStyles.link}`}
+              className={`${utilStyles.alignCenter} ${utilStyles.capitalize} ${utilStyles.white} ${layoutStyles.checkout}`}
+              id={layoutStyles.ctaLeftBtn}
             >
               Directions to your dream pumpkin
             </Link>
@@ -68,7 +69,8 @@ const Cta = () => {
           <span>
             <Link
               href={"/the-farm/fall-attractions/corn-maze"}
-              className={`${utilStyles.alignCenter} ${utilStyles.capitalize} ${utilStyles.white} ${layoutStyles.link}`}
+              className={`${utilStyles.alignCenter} ${utilStyles.capitalize} ${utilStyles.white} ${layoutStyles.checkout}`}
+              id={layoutStyles.ctaRightBtn}
             >
               Find Your Way To the Maze
             </Link>

@@ -18,6 +18,8 @@ import ContactUsBanner from "@/components/contactUsBanner/contactUsBanner";
 import donkey from "../public/images/donkey.jpg";
 import hayride from "../public/images/hayride.jpg";
 import farmSunset from "../public/images/farmSunset.jpg";
+import CtaLeftColouredVariation from "@/components/ctaLeftColouredVariation/ctaLeftColouredVariation";
+import sideBySide from "@/assets/images/farm/hat_black_white_black.jpg";
 
 // https://oishii.com/
 //https://dev.to/codeclown/styling-a-native-date-input-into-a-custom-no-library-datepicker-2in
@@ -94,6 +96,19 @@ export default function Home() {
       </section>
       <section className={layoutStyles.section}>
         <HeroBanner />
+      </section>
+      <section className={layoutStyles.section}>
+        <CtaLeftColouredVariation
+          imageSrc={sideBySide}
+          headline={"Inspired by the farm"}
+          desc={
+            "We are proud to introduce our new line of apparel, featuring designs that reflect the heritage and history of our family farm. Our clothing is designed to withstand the challenges of farming, while also looking fashionable and comfortable."
+          }
+          altText={"2 people side be side wearing farm hats"}
+          tag={"Making sure you look good on and off the farm"}
+          link={"https://shop.mcmillanfarms.ca/"}
+          linkText={"Shop Now for McMillan Farms Merchandise"}
+        />
       </section>
       <section className={layoutStyles.section}>
         <HeroCta

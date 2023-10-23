@@ -1,17 +1,17 @@
 import Image from "next/image";
-import style from "../ctaLeft/ctaLeft.module.css";
-import utilStyles from "../../styles/utils.module.css";
+import style from "./ctaLeftColouredVariation.module.css";
+import utilStyles from "@/styles/utils.module.css";
 import layoutStyles from "../layout/layout.module.css";
-import donkey from "../../public/images/donkey.jpg";
 import Link from "next/link";
 
-const CtaLeftColoured = ({
+const CtaLeftColouredVariation = ({
   imageSrc,
   headline,
   desc,
+  tag,
+  altText,
   link,
   linkText,
-  altText,
 }) => {
   return (
     <div className={`${style.wrapper} ${utilStyles.cream}`}>
@@ -27,7 +27,8 @@ const CtaLeftColoured = ({
       </div>
       <div className={`${style.container}  ${style.cream}`}>
         <div className={style.textContainer}>
-          <h1>{headline}</h1>
+          <small>{tag}</small>
+          <h3>{headline}</h3>
           <p>{desc}</p>
           <span>
             <Link
@@ -43,4 +44,4 @@ const CtaLeftColoured = ({
   );
 };
 
-export default CtaLeftColoured;
+export default CtaLeftColouredVariation;
