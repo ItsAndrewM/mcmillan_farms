@@ -6,7 +6,7 @@ import farm from "../../public/images/farm1.jpg";
 import Head from "next/head";
 import TextHero from "@/components/textHero/texthero";
 import CtaLeftColoured from "@/components/ctaLeftColoured/ctaLeftColoured";
-import wedding from "../../public/images/wedding3.jpg";
+import wedding from "@/assets/images/farm/about-us/all_mcmillans.jpg";
 import CtaRight from "@/components/ctaRight/ctaRight";
 import hayride from "../../public/images/hayfield.jpg";
 import { GiPumpkinLantern } from "react-icons/gi";
