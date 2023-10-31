@@ -32,7 +32,7 @@ const NavBar = () => {
           hours = "10am To 5pm";
           break;
         case 2:
-          hours = "10am To 5pm";
+          hours = "10am To 2pm";
           break;
         case 3:
           hours = "10am To 5pm";
@@ -85,7 +85,7 @@ const NavBar = () => {
       }`}
     >
       <AnnoucementBar
-        annoucement={"We are now open! Today's hours are"}
+        annoucement={"Last day of the season! Today's hours are"}
         annoucement2={"Want to book ahead?"}
         hours={hours}
         today={today}

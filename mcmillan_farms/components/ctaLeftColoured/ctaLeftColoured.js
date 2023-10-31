@@ -32,7 +32,7 @@ const CtaLeftColoured = ({
           <span>
             <Link
               href={link}
-              className={`${utilStyles.paddingTop1} ${layoutStyles.checkout} ${layoutStyles.largeCheckout}`}
+              className={` ${layoutStyles.checkout} ${layoutStyles.largeCheckout}`}
             >
               {linkText}
             </Link>
