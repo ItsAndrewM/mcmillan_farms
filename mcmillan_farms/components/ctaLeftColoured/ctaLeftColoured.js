@@ -29,14 +29,16 @@ const CtaLeftColoured = ({
         <div className={style.textContainer}>
           <h1>{headline}</h1>
           <p>{desc}</p>
-          <span>
-            <Link
-              href={link}
-              className={` ${layoutStyles.checkout} ${layoutStyles.largeCheckout}`}
-            >
-              {linkText}
-            </Link>
-          </span>
+          {link && linkText && (
+            <span>
+              <Link
+                href={link}
+                className={` ${layoutStyles.checkout} ${layoutStyles.largeCheckout}`}
+              >
+                {linkText}
+              </Link>
+            </span>
+          )}
         </div>
       </div>
     </div>
