@@ -85,12 +85,12 @@ const NavBar = () => {
       }`}
     >
       <AnnoucementBar
-        annoucement={"Last day of the season! Today's hours are"}
-        annoucement2={"Want to book ahead?"}
-        hours={hours}
-        today={today}
-        linkText={"Get tickets here!"}
-        link={"https://www.showpass.com/o/mcmillan-farms/"}
+        annoucement={"We are now closed for the season!"}
+        annoucement2={"Check out our new merchandise site and get your"}
+        // hours={hours}
+        // today={today}
+        linkText={" McMillan Farms Merch here!"}
+        link={"https://shop.mcmillanfarms.ca/"}
       />
       <nav className={navbarStyles.navigation}>
         {/* mobile menu */}

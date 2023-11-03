@@ -34,10 +34,14 @@ const AnnoucementBar = ({
     <div className={`${!isVisible ? styles.hide : styles.wrapper}`}>
       <div>
         <p>
-          {annoucement} <span className={utilStyles.underline}>{hours}</span>,{" "}
-          <span className={utilStyles.underline}>
-            {today}.{"  "}
-          </span>
+          {annoucement}{" "}
+          {hours && <span className={utilStyles.underline}>{hours}</span>}
+          {/* ,{" "} */}
+          {today && (
+            <span className={utilStyles.underline}>
+              {today}.{"  "}
+            </span>
+          )}
           {annoucement2}
         </p>
         <span>
