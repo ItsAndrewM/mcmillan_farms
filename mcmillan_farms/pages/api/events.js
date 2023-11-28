@@ -9,7 +9,7 @@ export default function handler(req, res) {
       to: process.env.SENDGRID_FROM, // Change to your recipient | change to information@mcmillanfarms.ca
       from: process.env.SENDGRID_FROM, // Change to your verified sender
       subject: `${subject} - ${fullName}`,
-
+      replyTo: email,
       text: `Email: ${email}. Phone Number: ${phone}.  Dates: 1st choice - ${req.body["date-first"]}, 2nd Choice: ${req.body["date-second"]}, 3rd Choice: ${req.body["date-third"]}.  MESSAGE: ${message}`,
     };
     sgMail

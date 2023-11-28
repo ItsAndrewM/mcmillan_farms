@@ -11,6 +11,7 @@ export default function handler(req, res) {
       from: process.env.SENDGRID_FROM, // Change to your verified sender
       subject: `${subject} - ${fullName}`,
       text: `EMAIL: ${email}, PHONE: ${phone}, MESSAGE: ${message}`,
+      replyTo: email,
     };
     sgMail
       .send(msg)

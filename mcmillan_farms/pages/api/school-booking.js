@@ -22,6 +22,7 @@ export default function handler(req, res) {
       to: "mcmillanfarmskelowna@gmail.com", // Change to your recipient | change to information@mcmillanfarms.ca
       from: process.env.SENDGRID_FROM, // Change to your verified sender
       subject: `School Booking from ${schools} - ${fullName}`,
+      replyTo: email,
       html: `<div>
       <p>Class Size: ${number}</p>
       <p>Phone number: ${phone}</p>
