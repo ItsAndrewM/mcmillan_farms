@@ -11,80 +11,80 @@ import { elementarySchools } from "@/data/elementarySchools";
 import SearchableDropdown from "@/components/searchableDropdown/searchableDropdown";
 
 const Page = () => {
-  const [errors, setErrors] = useState({});
-  const getError = (field) => errors[field];
-  const [value, setValue] = useState("Select option...");
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const isValid = e.target.checkValidity();
-    const form = e.target;
-    const formData = new FormData(e.currentTarget);
-    const validationMessages = Array.from(formData.keys()).reduce(
-      (acc, key) => {
-        acc[key] = form.elements[key].validationMessage;
-        return acc;
-      },
-      {}
-    );
-    if (isValid) {
-      // here you do what you need to do if is valid
-      const data = Array.from(formData.keys()).reduce((acc, key) => {
-        acc[key] = formData.get(key);
-        return acc;
-      }, {});
-      try {
-        const response = await fetch("/api/school-booking", {
-          method: "post",
-          body: new URLSearchParams(data),
-        });
-        if (!response.ok) {
-          throw new Error(`Invalid response: ${response.status}`);
-        }
-        alert("Thanks for contacting us, we will get back to you soon!");
-      } catch (err) {
-        console.error(err);
-        alert("We can't submit the form, try again later?");
-      }
-    } else {
-      setErrors(validationMessages);
-    }
-  };
+	const [errors, setErrors] = useState({});
+	const getError = (field) => errors[field];
+	const [value, setValue] = useState("Select option...");
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		const isValid = e.target.checkValidity();
+		const form = e.target;
+		const formData = new FormData(e.currentTarget);
+		const validationMessages = Array.from(formData.keys()).reduce(
+			(acc, key) => {
+				acc[key] = form.elements[key].validationMessage;
+				return acc;
+			},
+			{}
+		);
+		if (isValid) {
+			// here you do what you need to do if is valid
+			const data = Array.from(formData.keys()).reduce((acc, key) => {
+				acc[key] = formData.get(key);
+				return acc;
+			}, {});
+			try {
+				const response = await fetch("/api/school-booking", {
+					method: "post",
+					body: new URLSearchParams(data),
+				});
+				if (!response.ok) {
+					throw new Error(`Invalid response: ${response.status}`);
+				}
+				alert("Thanks for contacting us, we will get back to you soon!");
+			} catch (err) {
+				console.error(err);
+				alert("We can't submit the form, try again later?");
+			}
+		} else {
+			setErrors(validationMessages);
+		}
+	};
 
-  return (
-    <Layout>
-      <Head>
-        <title>{"McMillan Farms | School Bookings"}</title>
-        <meta
-          name="description"
-          content={
-            "Are you looking for a fun and educational field trip for your students? McMillan Farms offers a variety of school programs that are suitable for all ages and curriculum. You can book a tour of the farm, enjoy a hayride, learn about the history and culture of farming, and even pick your own pumpkins."
-          }
-          key="desc"
-        />
-      </Head>
-      <section className={layoutStyles.section}>
-        <div className={contactUsStyles.wrapper} style={{ gap: 0 }}>
-          <div className={contactUsStyles.textWrapper}>
-            <h1>Book a School Trip to McMillan Farms</h1>
-            <small>
-              Experience the joy of farming and learning at McMillan Farms
-            </small>
-            <p>
-              If you are looking for a fun and educational field trip for your
-              students, look no further than McMillan Farms.
-            </p>
-            <p>
-              For more information or to book your class trip today fill out our
-              contact form below or email us at{" "}
-              <span className={utilStyles.underline}>
-                information@mcmillanfarms.com
-              </span>
-            </p>
-          </div>
-          <div className={contactUsStyles.wrapper}>
-            <Accordian title={"School Bookings for 2023"} arr={schooBooking} />
-          </div>
-          <form
+	return (
+		<Layout>
+			<Head>
+				<title>{"McMillan Farms | School Bookings"}</title>
+				<meta
+					name="description"
+					content={
+						"Are you looking for a fun and educational field trip for your students? McMillan Farms offers a variety of school programs that are suitable for all ages and curriculum. You can book a tour of the farm, enjoy a hayride, learn about the history and culture of farming, and even pick your own pumpkins."
+					}
+					key="desc"
+				/>
+			</Head>
+			<section className={layoutStyles.section}>
+				<div className={contactUsStyles.wrapper} style={{ gap: 0 }}>
+					<div className={contactUsStyles.textWrapper}>
+						<h1>Book a School Trip to McMillan Farms</h1>
+						<small>
+							Experience the joy of farming and learning at McMillan Farms
+						</small>
+						<p>
+							If you are looking for a fun and educational field trip for your
+							students, look no further than McMillan Farms.
+						</p>
+						<p>
+							For more information or to book your class trip today fill out our
+							contact form below or email us at{" "}
+							<span className={utilStyles.underline}>
+								information@mcmillanfarms.com
+							</span>
+						</p>
+					</div>
+					<div className={contactUsStyles.wrapper}>
+						<Accordian title={"School Bookings for 2024"} arr={schooBooking} />
+					</div>
+					{/* <form
             className={`${contactUsStyles.container}`}
             onSubmit={handleSubmit}
             noValidate
@@ -191,15 +191,15 @@ const Page = () => {
                       </option>
                     );
                   })}
-                </select>
-                {/* <SearchableDropdown
+                </select> */}
+					{/* <SearchableDropdown
                   options={elementarySchools}
                   label="name"
                   id="frm-schools"
                   selectedVal={value}
                   handleChange={(val) => setValue(val)}
                 /> */}
-                <span className={contactUsStyles.error}>
+					{/* <span className={contactUsStyles.error}>
                   {getError("schools")}
                 </span>
               </div>
@@ -350,11 +350,11 @@ const Page = () => {
                 Submit
               </button>
             </div>
-          </form>
-        </div>
-      </section>
-    </Layout>
-  );
+          </form> */}
+				</div>
+			</section>
+		</Layout>
+	);
 };
 
 export default Page;
