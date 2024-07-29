@@ -1,28 +1,28 @@
-// app/api/subscribe/route.ts
-import { NextResponse } from "next/server";
 import sgClient from "@sendgrid/client";
 import sgMail from "@sendgrid/mail";
 
 sgClient.setApiKey(process.env.SENDGRID_API_KEY);
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-export async function POST(request) {
-	const { email, name, subject, message } = await request.json();
+export default async function handler(request, response) {
+	const data = await request.body;
+	console.log(data);
+	const { email, name, subject, message } = await request.body;
 
 	try {
 		// Add contact to list
-		await sgClient.request({
-			method: "PUT",
-			url: "/v3/marketing/contacts",
-			body: {
-				list_ids: [process.env.SENDGRID_LIST_ID],
-				contacts: [{ email }],
-			},
-		});
+		// await sgClient.request({
+		// 	method: "PUT",
+		// 	url: "/v3/marketing/contacts",
+		// 	body: {
+		// 		list_ids: [process.env.SENDGRID_LIST_ID],
+		// 		contacts: [{ email }],
+		// 	},
+		// });
 
 		// Send thank you email
 		const mailData = {
-			to: "rc_mcmillan@shaw.ca",
+			to: "information@mcmillanfarms.ca",
 			replyTo: String(email),
 			from: process.env.SENDGRID_FROM_EMAIL, // Your verified sender email
 			templateId: process.env.SENDGRID_CONTACT_FORM_TEMPLATE_ID,
@@ -37,7 +37,7 @@ export async function POST(request) {
 
 		await sgMail.send(mailData);
 
-		return NextResponse.json(
+		return response.json(
 			{
 				message: "Subscribed successfully and thank you email sent",
 				success: true,
@@ -45,8 +45,8 @@ export async function POST(request) {
 			{ status: 200 }
 		);
 	} catch (error) {
-		console.error("Error in subscription process", error);
-		return NextResponse.json(
+		console.error("Error in subscription process", error.response.body.errors);
+		return response.json(
 			{ error: "Error in subscription process", success: false },
 			{ status: 500 }
 		);
