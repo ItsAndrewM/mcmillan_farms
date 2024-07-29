@@ -22,7 +22,7 @@ export default async function handler(request, response) {
 
 		// Send thank you email
 		const mailData = {
-			to: "information@mcmillanfarms.ca",
+			to: "rc_mcmillan@shaw.ca",
 			replyTo: String(email),
 			from: process.env.SENDGRID_FROM_EMAIL, // Your verified sender email
 			templateId: process.env.SENDGRID_CONTACT_FORM_TEMPLATE_ID,
