@@ -5,7 +5,7 @@ import Layout from "@/components/layout/layout";
 import layoutStyles from "@/components/layout/layout.module.css";
 import Hero from "@/components/hero/hero";
 import backgroundImage from "../public/images/farm/sunflowers/sunflower-maze.jpg";
-
+import contactUsStyles from "../styles/contactUs.module.css";
 import hayfield from "../public/images/hayfield2.jpg";
 import Banner from "@/components/banner/banner";
 import Comparison from "@/components/comparison/comparison";
@@ -21,6 +21,7 @@ import hayride from "../public/images/hayride.jpg";
 import farmSunset from "../public/images/farmSunset.jpg";
 import CtaLeftColouredVariation from "@/components/ctaLeftColouredVariation/ctaLeftColouredVariation";
 import sideBySide from "@/assets/images/farm/hat_black_white_black.jpg";
+import Directions from "@/components/directions/directions";
 
 // https://oishii.com/
 //https://dev.to/codeclown/styling-a-native-date-input-into-a-custom-no-library-datepicker-2in
@@ -113,6 +114,11 @@ export default function Home() {
 					link={"https://shop.mcmillanfarms.ca/"}
 					linkText={"Shop Now for McMillan Farms Merchandise"}
 				/>
+			</section>
+			<section className={layoutStyles.section}>
+				<div className={contactUsStyles.wrapper}>
+					<Directions />
+				</div>
 			</section>
 			<section className={layoutStyles.section}>
 				<HeroCta

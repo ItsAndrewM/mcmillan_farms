@@ -7,7 +7,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 export default async function handler(request, response) {
 	const data = await request.body;
 	console.log(data);
-	const { email, name, subject, message } = await request.body;
+	const { email, fullName, subject, message } = await request.body;
 
 	try {
 		// Add contact to list
@@ -28,7 +28,7 @@ export default async function handler(request, response) {
 			templateId: process.env.SENDGRID_CONTACT_FORM_TEMPLATE_ID,
 
 			dynamicTemplateData: {
-				name: name,
+				name: fullName,
 				email: email,
 				message: message,
 				subject: subject,
