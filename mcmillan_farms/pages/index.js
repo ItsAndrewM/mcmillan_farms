@@ -21,6 +21,7 @@ import hayride from "../public/images/hayride.jpg";
 import farmSunset from "../public/images/farmSunset.jpg";
 import CtaLeftColouredVariation from "@/components/ctaLeftColouredVariation/ctaLeftColouredVariation";
 import sideBySide from "@/assets/images/farm/hat_black_white_black.jpg";
+import Directions from "@/components/directions/directions";
 
 // https://oishii.com/
 //https://dev.to/codeclown/styling-a-native-date-input-into-a-custom-no-library-datepicker-2in
