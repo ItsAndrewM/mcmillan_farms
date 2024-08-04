@@ -5,7 +5,7 @@ import Layout from "@/components/layout/layout";
 import layoutStyles from "@/components/layout/layout.module.css";
 import Hero from "@/components/hero/hero";
 import backgroundImage from "../public/images/farm/sunflowers/sunflower-maze.jpg";
-
+import contactUsStyles from "../styles/contactUs.module.css";
 import hayfield from "../public/images/hayfield2.jpg";
 import Banner from "@/components/banner/banner";
 import Comparison from "@/components/comparison/comparison";
@@ -113,6 +113,11 @@ export default function Home() {
 					link={"https://shop.mcmillanfarms.ca/"}
 					linkText={"Shop Now for McMillan Farms Merchandise"}
 				/>
+			</section>
+			<section className={layoutStyles.section}>
+				<div className={contactUsStyles.wrapper}>
+					<Directions />
+				</div>
 			</section>
 			<section className={layoutStyles.section}>
 				<HeroCta
